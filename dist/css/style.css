@@ -129,6 +129,55 @@ a {
     padding: 0 1rem;
   }
 }
+.ah_block-header {
+  position: relative;
+  padding: 7.5rem 0 0;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .ah_block-header {
+    padding: 3.75rem 0 0;
+  }
+}
+.ah_block-header h2 {
+  width: calc((100% - 4rem) / 3);
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .ah_block-header h2 {
+    width: 100%;
+    text-align: left;
+  }
+}
+.ah_block-header p {
+  position: relative;
+  margin-left: calc((100% - 4rem) / 3 + 2rem);
+}
+@media screen and (max-width: 768px) {
+  .ah_block-header p {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+.ah_block-header p::before {
+  position: absolute;
+  display: inline-block;
+  top: 0.5rem;
+  right: calc(100% + 2rem);
+  content: "";
+  height: 1rem;
+  width: 7rem;
+  background-size: contain;
+  background-image: url(../assets/wave-v.svg);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .ah_block-header p::before {
+    top: -1.5rem;
+    right: unset;
+    left: 0;
+  }
+}
 
 /**********************
  button
@@ -159,28 +208,15 @@ html, body, h1, h2, h3, h4, h5, p, span, a, button {
   }
 }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 400;
+h2 {
+  font-size: 3.25rem;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
   font-family: "BanglaMN", sans-serif;
 }
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 4.2rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 2.625rem;
-  }
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-@media screen and (max-width: 768px) {
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -194,7 +230,10 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 768px) {
   p {
@@ -222,6 +261,9 @@ p {
   }
 }
 
+/**********************
+ about
+***********************/
 /**********************
  footer
 ***********************/
@@ -529,7 +571,7 @@ p {
 }
 .ah_mv-triangle_wrapper {
   position: absolute;
-  left: calc(33.3333333333% + 1rem);
+  left: calc((100% - 4rem) / 3 + 2rem);
   bottom: 1rem;
   z-index: 100;
 }

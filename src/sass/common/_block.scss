@@ -16,5 +16,54 @@
         padding: 0 1rem;
       }
     }
+
+    &-header {
+      position: relative;
+      padding: 7.5rem 0 0;
+      z-index: 100;
+
+      @include mediaQuery(m) {
+        padding: 3.75rem 0 0;
+      }
+
+      & h2 {
+        width: calc((100% - 2rem * 2) / 3 );
+        text-align: right;
+
+        @include mediaQuery(m) {
+          width: 100%;
+          text-align: left;
+        }
+      }
+      
+      & p {
+        position: relative;
+        margin-left: calc(((100% - 2rem * 2) / 3 ) + 2rem);
+
+        @include mediaQuery(m) {
+          margin-left: 0;
+          margin-top: 1.5rem;
+        }
+
+        &::before {
+          position: absolute;
+          display: inline-block;
+          top: 0.5rem;
+          right: calc(100% + 2rem);
+          content: "";
+          height: 1rem;
+          width: 7rem;
+          background-size: contain;
+          background-image: url(../assets/wave-v.svg);
+          background-repeat: no-repeat;
+
+          @include mediaQuery(m) {
+            top: -1.5rem;
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
   }
 }

@@ -269,7 +269,7 @@
 
   		&_wrapper {
 	  		position: absolute;
-	  		left: calc((100% / 3) + 1rem);
+	  		left: calc(((100% - 2rem * 2) / 3) + 2rem);
 	  		bottom: 1rem;
 	  		z-index: 100;
 
