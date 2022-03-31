@@ -15,14 +15,13 @@ $siteName: 'ah';
 :root {
 	--#{$siteName}_full-width: 90rem;
 	--#{$siteName}_font-family: 'Montserrat', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
-	--#{$siteName}_main-text-color: #0e1112;
-	--#{$siteName}_white-text-color: #e5e5e5;
-	--#{$siteName}_main-color: #0e1112;
-	--#{$siteName}_border-color: #f3f6f8;
-	--#{$siteName}_icon-color: #aaaeb0;
-	--#{$siteName}_button-color: #071f2c;
-	--#{$siteName}_bg-gray-color: #f7f7f7;
-	--#{$siteName}_bg-black-color: #202021;
+	--#{$siteName}_main-color: #FDCCB1;
+	--#{$siteName}_accent-color: #EE864C;
+	--#{$siteName}_sub-color: #94AAF6;
+	--#{$siteName}_main-text-color: #4F4F4F;
+	--#{$siteName}_bg-color: #FEF0E8;
+	--#{$siteName}_bg-sub-color: #FFE5D7;
+	--#{$siteName}_link-color: rgba(79, 79, 79, 0.8);
 	--#{$siteName}_transition: all 0.25s ease-in-out;
 }
 
@@ -31,6 +30,7 @@ $siteName: 'ah';
 ***********************/
 body {
 	overflow-x: hidden;
+	background-color: var(--#{$siteName}_bg-color);
 }
 
 @import "reset";

@@ -1,0 +1,282 @@
+@import "../setting/breakpoints";
+
+/**********************
+ mv
+***********************/
+.#{$siteName} {
+  &_mv {
+  	height: 100vh;
+
+  	@include mediaQuery(m) {
+  		height: auto;
+  	}
+
+  	&-inner {
+	  	display: flex;
+	  	flex-direction: column;
+	  	justify-content: space-between;
+	  	height: 100%;
+
+	  	@include mediaQuery(m) {
+	  		display: block;
+	  		height: auto;
+	  	}
+	  }
+
+  	&-header {
+  		position: relative;
+  		flex-shrink: 0;
+  		height: 19vh;
+  		width: 100%;
+
+  		@include mediaQuery(m) {
+  			height: 10rem;
+  		}
+  	}
+
+  	&-footer {
+  		position: relative;
+  		flex: auto;
+  		height: 4rem;
+  	}
+
+  	&-block {
+  		display: flex;
+  		justify-content: space-between;
+  		flex: auto;
+  		height: 38rem;
+
+  		@include mediaQuery(m) {
+  			display: block;
+  			height: auto;
+  		}
+
+  		&_left {
+  			position: relative;
+  			width: calc((100% - 2rem * 2) / 3);
+
+  			@include mediaQuery(m) {
+  				width: 100%;
+  				margin-bottom: 2.5rem;
+	  		}
+
+  			& h1 {
+  				font-size: 5rem;
+				font-weight: 400;
+				font-family: 'BanglaMN', sans-serif;
+  				line-height: 1.325;
+  				letter-spacing: 0.08em;
+  				text-align: right;
+
+  				@include mediaQuery(m) {
+  					text-align: left;
+	  				font-size: 4.2rem;
+				}
+
+				@include mediaQuery(s) {
+					font-size: 2.625rem;
+				}
+  			}
+
+  			& h2 {
+  				font-size: 1.6875rem;
+  				font-family: 'Montserrat Alternates', sans-serif;
+  				font-weight: 500;
+  				letter-spacing: 0.01em;
+  				text-align: right;
+  				color: var(--#{$siteName}_link-color);
+
+  				@include mediaQuery(m) {
+  					margin-top: 0.5rem;
+  					font-size: 1.5rem;
+  					text-align: left;
+  				}
+
+  				@include mediaQuery(s) {
+  					ont-size: 1.2rem;
+  				}
+  			}
+  		}
+
+  		&_top {
+			position: absolute;
+			z-index: 1001;
+
+			@include mediaQuery(m) {
+				position: relative;
+			}
+  		}
+
+  		&_middle {
+  			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			z-index: 1001;
+
+			@include mediaQuery(m) {
+				position: relative;
+			}
+  		}
+
+  		&_center {
+  			position: relative;
+  			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+  			width: calc((100% - 2rem * 2) / 3);
+
+  			@include mediaQuery(m) {
+  				align-items: center;
+  				width: 100%;
+	  		}
+
+  			&::before {
+  				position: absolute;
+		  		display: block;
+		  		content: "";
+		  		left: calc(50% - 150vw);
+		  		bottom: 50%;
+		  		width: 300vw;
+		  		height: 150vw;
+		  		transform: rotate(-45deg);
+		  		transform-origin: bottom;
+		  		background-color: var(--#{$siteName}_main-color);
+		  		z-index: 10;
+		  	}
+  		}
+
+  		&_right {
+  			display: flex;
+  			flex-direction: column;
+  			justify-content: flex-end;
+  			width: calc((100% - 2rem * 2) / 3);
+
+  			@include mediaQuery(m) {
+  				display: block;
+  				width: 100%;
+  				margin-top: 2.5rem;
+  				margin-bottom: 3.75rem;
+	  		}
+
+  			& p {
+  				position: relative;
+  				margin-left: 1.75rem;
+  				font-size: 1.375rem;
+  				font-family: 'Montserrat Alternates', sans-serif;
+  				font-weight: 500;
+  				letter-spacing: 0.02em;
+  				line-height: 1.6;
+  				z-index: 100;
+
+  				@include mediaQuery(m) {
+  					margin-left: 1rem;
+  					font-size: 1.2rem;
+  				}
+
+  				@include mediaQuery(s) {
+  					font-size: 1rem;
+  				}
+
+	  			&::before {
+	  				position: absolute;
+	  				left: -1.75rem;
+	  				content: "";
+	  				display: inline-block;
+	  				height: 100%;
+	  				width: 1.75rem;
+	  				background-size: contain;
+	  				background-image: url(../assets/wave-h.svg);
+				    background-repeat: no-repeat;
+
+				    @include mediaQuery(m) {
+				    	left: -1rem;
+				    }
+	  			}
+  			}
+  		}
+  	}
+
+  	&-language {
+  		position: absolute;
+  		left: calc((100% / 3 * 2) + 1rem);
+  		top: 6vh;
+		color: var(--#{$siteName}_link-color);
+  		z-index: 100;
+
+  		@include mediaQuery(m) {
+  			top: 3rem;
+  			right: 0;
+  			left: unset;
+  		}
+
+  		&_button {
+			font-size: 1.125rem;
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-weight: 500;
+			letter-spacing: 0.07em;
+			color: inherit;
+
+			&--active {
+				color: var(--#{$siteName}_accent-color);
+			}
+  		}
+
+  		& span {
+  			margin: 0 0.1rem;
+  			font-size: 1.125rem;
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-weight: 500;
+			letter-spacing: 0.01em;
+			color: inherit;
+  		}
+  	}
+
+  	&-picture {
+  		position: relative;
+		border-radius: 50%;
+		z-index: 1000;
+
+  		&_wrapper {
+  			position: relative;
+
+			@include mediaQuery(m) {
+				width: calc(((100% - 0.5rem * 5) / 6 * 4) + 2rem);
+			}
+
+  			&::before {
+  				position: absolute;
+  				content: "";
+  				bottom: 44%;
+  				left: 44%;
+  				width: 22vw;
+  				height: 22vw;
+  				border-radius: 50%;
+  				background-color: var(--#{$siteName}_sub-color);
+  				z-index: 100;
+
+  				@include mediaQuery(m) {
+  					width: 44vw;
+	  				height: 44vw;
+  				}
+  			}
+  		}
+  	}
+
+  	&-triangle {
+  		width: 1.6rem;
+  		height: auto;
+
+  		&_wrapper {
+	  		position: absolute;
+	  		left: calc((100% / 3) + 1rem);
+	  		bottom: 1rem;
+	  		z-index: 100;
+
+	  		@include mediaQuery(m) {
+	  			left: calc(50% - 0.8rem);
+	  		}
+  		}
+  	}
+  }
+}

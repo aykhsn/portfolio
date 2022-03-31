@@ -7,13 +7,14 @@ html, body, h1, h2, h3, h4, h5, p, span, a, button {
   font-size: 100%;
   font-family: var(--#{$siteName}_font-family);
   color: var(--#{$siteName}_main-text-color);
+  transition: var(--#{$siteName}_transition);
 
   @include mediaQuery(xl) {
-    font-size: 92%;
+    font-size: 89%;
   }
 
   @include mediaQuery(l) {
-    font-size: 84%;
+    font-size: 78%;
   }
 
   @include mediaQuery(m) {
@@ -22,11 +23,16 @@ html, body, h1, h2, h3, h4, h5, p, span, a, button {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 400;
   font-family: 'BanglaMN', sans-serif;
 
   @include mediaQuery(m) {
-    font-size: 2.8rem;
+    font-size: 4.2rem;
+  }
+
+  @include mediaQuery(s) {
+    font-size: 2.625rem;
   }
 }
 

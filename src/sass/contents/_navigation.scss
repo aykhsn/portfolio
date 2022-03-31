@@ -1,0 +1,57 @@
+@import "../setting/breakpoints";
+
+/**********************
+ navigation
+***********************/
+.#{$siteName} {
+  &_navigation {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 10000;
+
+  	&-logo {
+  		position: absolute;
+  		left: 2rem;
+  		top: 2rem;
+  		width: 7.75rem;
+  		height: 7.75rem;
+  		transition: var(--#{$siteName}_transition);
+
+  		@include mediaQuery(m) {
+  			left: 1rem;
+  			width: 5.5rem;
+	  		height: 5.5rem;
+  		}
+
+  		&:hover {
+  			transform: rotate(10deg);
+  		}
+  	}
+
+  	&-items {
+  		position: absolute;
+  		left: calc(100vw - 2rem);
+  		top: 4rem;
+  		display: flex;
+  		justify-content: space-between;
+  		width: 50vh;
+  		transform: rotate(90deg);
+  		transform-origin: top left;
+
+  		@include mediaQuery(m) {
+  			display: none;
+  		}
+
+  		& a {
+  			display: block;
+  			font-size: 1rem;
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-weight: 500;
+			letter-spacing: 0.02em;
+			color: var(--#{$siteName}_link-color);
+  		}
+  	}
+  }
+}

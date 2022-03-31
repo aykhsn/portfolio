@@ -1,8 +1,13 @@
-<nav>
-	<ul>
+<nav id="mv"class="ah_navigation">
+	<div class="ah_navigation-logo_wrapper">
+		<a href="/">
+			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
+		</a>
+	</div>
+	<ul class="ah_navigation-items">
 		<% var ary = ['About', 'Skills', 'Works', 'Other', 'Contact']; %>
 		<% ary.forEach(function (value, key) { %>
-		<li>
+		<li class="ah_navigation-item">
 			<a href="#<%= value %>"><%= value %></a>
 		</li>
 		<% }); %>
