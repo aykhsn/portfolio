@@ -1,0 +1,22 @@
+@import "../setting/breakpoints";
+
+/**********************
+ modifier
+***********************/
+.#{$siteName} {
+  &_sp--view {
+    display: none;
+
+    @include mediaQuery(m) {
+		display: block;
+    }
+  }
+
+  &_pc--view {
+  	display: block;
+
+    @include mediaQuery(m) {
+	    display: none;
+    }
+  }
+}

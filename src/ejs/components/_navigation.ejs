@@ -1,0 +1,10 @@
+<nav>
+	<ul>
+		<% var ary = ['About', 'Skills', 'Works', 'Other', 'Contact']; %>
+		<% ary.forEach(function (value, key) { %>
+		<li>
+			<a href="#<%= value %>"><%= value %></a>
+		</li>
+		<% }); %>
+	</ul>
+</nav>

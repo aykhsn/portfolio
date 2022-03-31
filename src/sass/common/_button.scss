@@ -1,0 +1,14 @@
+/**********************
+ button
+***********************/
+.#{$siteName} {
+  &_button {
+    @include mediaQuery(m) {
+    
+    }
+
+    &::hover {
+
+    }
+  }
+}

@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/**********************
+ Import fonts
+***********************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "BanglaMN";
+  src: url("dist/assets/BanglaMN.ttf") format("truetype");
+}
+/**********************
+ Sass setting
+***********************/
+:root {
+  --ah_full-width: 90rem;
+  --ah_font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  --ah_main-text-color: #0e1112;
+  --ah_white-text-color: #e5e5e5;
+  --ah_main-color: #0e1112;
+  --ah_border-color: #f3f6f8;
+  --ah_icon-color: #aaaeb0;
+  --ah_button-color: #071f2c;
+  --ah_bg-gray-color: #f7f7f7;
+  --ah_bg-black-color: #202021;
+  --ah_transition: all 0.25s ease-in-out;
+}
+
+/**********************
+ Style
+***********************/
+body {
+  overflow-x: hidden;
+}
+
+/**********************
+ reset
+***********************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  border: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+button, input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: unset;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**********************
+ block
+***********************/
+.ah_block {
+  width: 100%;
+}
+.ah_block img {
+  width: 100%;
+  height: auto;
+}
+.ah_block-inner {
+  max-width: var(--ah_full-width);
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .ah_block-inner {
+    padding: 1rem 0;
+  }
+}
+
+/**********************
+ button
+***********************/
+/**********************
+ font
+***********************/
+html, body, h1, h2, h3, h4, h5, p, span, a, button {
+  font-size: 100%;
+  font-family: var(--ah_font-family);
+  color: var(--ah_main-text-color);
+}
+@media screen and (max-width: 1200px) {
+  html, body, h1, h2, h3, h4, h5, p, span, a, button {
+    font-size: 92%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html, body, h1, h2, h3, h4, h5, p, span, a, button {
+    font-size: 84%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html, body, h1, h2, h3, h4, h5, p, span, a, button {
+    font-size: 100%;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "BanglaMN", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+/**********************
+ modifier
+***********************/
+.ah_sp--view {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .ah_sp--view {
+    display: block;
+  }
+}
+.ah_pc--view {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .ah_pc--view {
+    display: none;
+  }
+}
+
+/**********************
+ footer
+***********************/
+/**********************
+ header
+***********************/

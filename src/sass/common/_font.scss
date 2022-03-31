@@ -1,0 +1,55 @@
+@import "../setting/breakpoints";
+
+/**********************
+ font
+***********************/
+html, body, h1, h2, h3, h4, h5, p, span, a, button {
+  font-size: 100%;
+  font-family: var(--#{$siteName}_font-family);
+  color: var(--#{$siteName}_main-text-color);
+
+  @include mediaQuery(xl) {
+    font-size: 92%;
+  }
+
+  @include mediaQuery(l) {
+    font-size: 84%;
+  }
+
+  @include mediaQuery(m) {
+    font-size: 100%;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'BanglaMN', sans-serif;
+
+  @include mediaQuery(m) {
+    font-size: 2.8rem;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+
+  @include mediaQuery(m) {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+
+  @include mediaQuery(m) {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+
+  @include mediaQuery(m) {
+    font-size: 1rem;
+  }
+}

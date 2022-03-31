@@ -1,0 +1,39 @@
+/**********************
+ Import fonts
+***********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import 'setting/fonts';
+
+@include font-face('BanglaMN', 'dist/assets/BanglaMN.ttf', null, null, ttf);
+
+/**********************
+ Sass setting
+***********************/
+$siteName: 'ah';
+
+:root {
+	--#{$siteName}_full-width: 90rem;
+	--#{$siteName}_font-family: 'Montserrat', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+	--#{$siteName}_main-text-color: #0e1112;
+	--#{$siteName}_white-text-color: #e5e5e5;
+	--#{$siteName}_main-color: #0e1112;
+	--#{$siteName}_border-color: #f3f6f8;
+	--#{$siteName}_icon-color: #aaaeb0;
+	--#{$siteName}_button-color: #071f2c;
+	--#{$siteName}_bg-gray-color: #f7f7f7;
+	--#{$siteName}_bg-black-color: #202021;
+	--#{$siteName}_transition: all 0.25s ease-in-out;
+}
+
+/**********************
+ Style
+***********************/
+body {
+	overflow-x: hidden;
+}
+
+@import "reset";
+@import "setting/**";
+@import "common/**";
+@import "contents/**";
