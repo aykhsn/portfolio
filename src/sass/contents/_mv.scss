@@ -216,10 +216,15 @@
 			font-weight: 500;
 			letter-spacing: 0.07em;
 			color: inherit;
+			transition: var(--#{$siteName}_transition);
 
 			&--active {
 				color: var(--#{$siteName}_accent-color);
 			}
+
+	        &:hover {
+	          color: var(--#{$siteName}_accent-color);
+	        }
   		}
 
   		& span {
