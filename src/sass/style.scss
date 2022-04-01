@@ -28,6 +28,11 @@ $siteName: 'ah';
 /**********************
  Style
 ***********************/
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	overflow-x: hidden;
 	background-color: var(--#{$siteName}_bg-color);

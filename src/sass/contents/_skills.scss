@@ -64,6 +64,11 @@
 	  			font-weight: 600;
           line-height: 1.5;
 	  			letter-spacing: 0.01em;
+
+          @include mediaQuery(m) {
+            font-size: 1.1rem;
+            letter-spacing: 0.008em;
+          }
   			}
   		}
 
@@ -76,7 +81,7 @@
         @include mediaQuery(m) {
           width: 80%;
           min-width: unset;
-          max-width: 16rem;
+          max-width: 12.5rem;
         }
 
   			&--90 {
@@ -115,6 +120,11 @@
   				height: 1.125rem;
   				border-radius: 50%;
   				background-color: #D8D2CF;
+
+          @include mediaQuery(m) {
+            width: 0.9rem;
+          height: 0.9rem;
+          }
   			}
   		}
 
@@ -124,6 +134,7 @@
         @include mediaQuery(m) {
           width: 20%;
           padding-left: 1rem;
+          text-align: center;
         }
 
   			& span {
@@ -131,6 +142,10 @@
   				font-weight: 600;
   				letter-spacing: 0.01em;
   				color: var(--#{$siteName}_sub-color);
+
+          @include mediaQuery(m) {
+            font-size: 1rem;
+          }
   			}
   		}
   	}
