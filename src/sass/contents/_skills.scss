@@ -5,8 +5,26 @@
 ***********************/
 .#{$siteName} {
   &_skills {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 150vw;
+      height: 80vw;
+      transform: rotate(-15deg);
+      transform-origin: bottom right;
+      background-color: var(--#{$siteName}_bg-color);
+      z-index: 1;
+    }
+
   	&-content {
+      position: relative;
   		margin-left: calc(((100% - 2rem * 2) / 3 ) + 2rem);
+      z-index: 100;
 
       @include mediaQuery(m) {
         margin-left: 0;
@@ -21,6 +39,10 @@
   			justify-content: space-between;
   			align-items: center;
   			margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         @include mediaQuery(m) {
           flex-wrap: wrap;

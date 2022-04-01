@@ -102,9 +102,9 @@
 			position: absolute;
 			z-index: 1001;
 
-			@include mediaQuery(m) {
-				position: relative;
-			}
+  			@include mediaQuery(m) {
+  				position: relative;
+  			}
   		}
 
   		&_middle {
@@ -114,9 +114,9 @@
 			transform: translateY(-50%);
 			z-index: 1001;
 
-			@include mediaQuery(m) {
-				position: relative;
-			}
+  			@include mediaQuery(m) {
+  				position: relative;
+  			}
   		}
 
   		&_center {
@@ -201,7 +201,7 @@
   		position: absolute;
   		left: calc((100% / 3 * 2) + 1rem);
   		top: 6vh;
-		color: var(--#{$siteName}_link-color);
+  		color: var(--#{$siteName}_link-color);
   		z-index: 100;
 
   		@include mediaQuery(m) {
@@ -218,22 +218,22 @@
 			color: inherit;
 			transition: var(--#{$siteName}_transition);
 
-			&--active {
-				color: var(--#{$siteName}_accent-color);
-			}
+  			&--active {
+  				color: var(--#{$siteName}_accent-color);
+  			}
 
-	        &:hover {
-	          color: var(--#{$siteName}_accent-color);
-	        }
+        &:hover {
+          color: var(--#{$siteName}_accent-color);
+        }
   		}
 
   		& span {
   			margin: 0 0.1rem;
   			font-size: 1.125rem;
-			font-family: 'Montserrat Alternates', sans-serif;
-			font-weight: 500;
-			letter-spacing: 0.01em;
-			color: inherit;
+  			font-family: 'Montserrat Alternates', sans-serif;
+  			font-weight: 500;
+  			letter-spacing: 0.01em;
+  			color: inherit;
   		}
   	}
 

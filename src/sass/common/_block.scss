@@ -19,11 +19,11 @@
 
     &-header {
       position: relative;
-      padding: 7.5rem 0 0;
+      padding: 10rem 0 0;
       z-index: 100;
 
       @include mediaQuery(m) {
-        padding: 3.75rem 0 0;
+        padding: 7.5rem 0 0;
       }
 
       & h2 {

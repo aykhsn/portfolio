@@ -1,0 +1,239 @@
+@import "../setting/breakpoints";
+
+/**********************
+ works
+***********************/
+.#{$siteName} {
+  &_works {
+  	position: relative;
+  	background-color: var(--#{$siteName}_bg-sub-color);
+
+  	&::after {
+      position: absolute;
+      display: block;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 150vw;
+      height: 80vw;
+      transform: rotate(-15deg);
+      transform-origin: bottom right;
+      background-color: var(--#{$siteName}_bg-sub-color);
+      z-index: 1;
+    }
+
+  	&-content {
+  		&_item {
+  			position: relative;
+  			margin-top: 7.5rem;
+  			z-index: 100;
+
+  			&:first-child {
+  				@include mediaQuery(m) {
+	  				margin-top: 3rem;
+	  			}
+  			}
+
+  			&-no-image {
+  				& .#{$siteName}_works-content_block-right {
+  					position: relative;
+  					margin-top: 2.875rem;
+
+  					@include mediaQuery(m) {
+  						margin-top: 1.5rem;
+  					}
+
+  					&::before {
+		  				content: "";
+		  				position: absolute;
+		  				display: inline-block;
+		  				top: 0;
+		  				left: calc(-1 * ((100% / 3) + 2rem));
+		  				height: 8.75rem;
+		  				width: 1rem;
+		  				background-size: contain;
+		  				background-image: url(../assets/wave-h.svg);
+					    background-repeat: no-repeat;
+
+					    @include mediaQuery(m) {
+					    	display: none;
+					    }
+		  			}
+  				}
+
+  				& .#{$siteName}_works-content_title {
+  						position: relative;
+
+					&:first-child {
+						&::before {
+						    @include mediaQuery(m) {
+				  				content: "";
+				  				position: absolute;
+				  				display: inline-block;
+				  				top: calc(100% + 1.8rem);
+				  				left: 0;
+				  				height: 6.5rem;
+				  				width: 1rem;
+				  				background-size: contain;
+				  				background-image: url(../assets/wave-h.svg);
+							    background-repeat: no-repeat;
+						    }
+			  			}
+					}
+  				}
+
+  				& .#{$siteName}_works-content_description {
+  					@include mediaQuery(m) {
+		  				margin-left: 1.5rem;
+  					}
+  				}
+  			}
+  		}
+
+  		&_block {
+  			display: flex;
+  			justify-content: space-between;
+  			align-items: flex-start;
+
+  			@include mediaQuery(m) {
+  				display: block;
+  			}
+
+  			&-left {
+  				width: calc((100% - 2rem) / 2);
+
+  				@include mediaQuery(m) {
+  					width: 100%;
+  				}
+  			}
+
+  			&-right {
+  				width: calc((100% - 2rem) / 2);
+  				margin-top: 7rem;
+
+  				@include mediaQuery(m) {
+  					width: 100%;
+  					margin-top: 2rem;
+  				}
+  			}
+  		}
+
+  		&_year {
+  			text-align: right;
+
+  			@include mediaQuery(m) {
+  				text-align: left;
+  			}
+
+  			& span {
+  				font-size: 1.5rem;
+  				font-weight: 600;
+  				letter-spacing: 0.01em;
+  				font-family: 'Montserrat Alternates', sans-serif;
+  			}
+  		}
+
+  		&_image {
+			position: relative;
+  			margin-top: 1.5rem;
+  			width: calc((100% - 2rem * 2) / 3 * 2);
+  			float: right;
+
+  			@include mediaQuery(m) {
+  				float: unset;
+  				width: 100%;
+  			}
+
+			&::before {
+				position: absolute;
+				display: block;
+				content: "";
+				left: -2rem;
+				bottom: -2rem;
+				width: 12rem;
+				height: 12rem;
+				background-color: #FFBD99;
+				z-index: 0;
+
+				@include mediaQuery(m) {
+					left: -1rem;
+					bottom: -3rem;
+				}
+			}
+
+			& a {
+				display: block;
+			}
+
+  			& img {
+  				position: relative;
+  				width: 100%;
+  				height: auto;
+  				z-index: 100;
+  			}
+  		}
+
+  		&_title {
+  			margin-bottom: 2rem;
+
+  			@include mediaQuery(m) {
+  				margin-bottom: 1.5rem;
+  			}
+
+  			& h3 {
+  				position: relative;
+  				font-size: 2rem;
+  				font-weight: 600;
+  				letter-spacing: 0.02em;
+  				line-height: 1.5;
+  				font-family: 'Montserrat Alternates', sans-serif;
+  				z-index: 100;
+
+  				@include mediaQuery(m) {
+  					font-size: 1.8rem;
+  				}
+  			}
+  		}
+
+  		&_description {
+  			margin-bottom: 1.5rem;
+
+  			@include mediaQuery(m) {
+  				margin-bottom: 1rem;
+  			}
+
+  			& h4 {
+  				margin-bottom: 0.5rem;
+  				font-size: 1.25rem;
+  				font-weight: 600;
+  				line-height: 1.5;
+  				letter-spacing: 0.02em;
+
+  				@include mediaQuery(m) {
+  					font-size: 1.2rem;
+  				}
+  			}
+
+  			& li {
+  				position: relative;
+
+  				&::before {
+  					position: absolute;
+  					display: inline-block;
+  					content: "";
+  					width: 0.24rem;
+  					height: 0.24rem;
+  					top: 0.8rem;
+  					left: 0;
+  					border-radius: 50%;
+  					background-color: var(--#{$siteName}_main-text-color);
+  				}
+  			}
+
+  			& p {
+  				margin-left: 1rem;
+  			}
+  		}
+  	}
+  }
+}
