@@ -20,7 +20,7 @@
   --ah_bg-color: #FEF0E8;
   --ah_bg-sub-color: #FFE5D7;
   --ah_link-color: rgba(79, 79, 79, 0.8);
-  --ah_transition: all 0.25s ease-in-out;
+  --ah_transition: all 0.2s ease-in-out;
 }
 
 /**********************
@@ -266,6 +266,60 @@ p {
 /**********************
  footer
 ***********************/
+.ah_footer {
+  background-color: var(--ah_main-color);
+}
+.ah_footer-content {
+  padding: 24rem 0 16rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .ah_footer-content {
+    padding: 12rem 0 10rem;
+  }
+}
+.ah_footer-content span {
+  position: relative;
+  display: block;
+  padding: 3.375rem 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: var(--ah_accent-color);
+}
+@media screen and (max-width: 768px) {
+  .ah_footer-content span {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+}
+.ah_footer-content span::before {
+  position: absolute;
+  display: inline-block;
+  bottom: 100%;
+  left: calc(50% - 3.5rem);
+  content: "";
+  height: 1rem;
+  width: 7rem;
+  background-size: contain;
+  background-image: url(../assets/wave-v.svg);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .ah_footer-content span::before {
+    width: 5rem;
+    left: calc(50% - 2.5rem);
+  }
+}
+.ah_footer-content a {
+  display: block;
+}
+.ah_footer-content img {
+  width: 2rem;
+  height: 2rem;
+}
+
 /**********************
  mv
 ***********************/
@@ -654,6 +708,66 @@ p {
 }
 
 /**********************
+ other
+***********************/
+.ah_other {
+  position: relative;
+  background-color: #ffffff;
+}
+.ah_other::after {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 150vw;
+  height: 50vw;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.ah_other-content {
+  position: relative;
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .ah_other-content {
+    margin-top: 3rem;
+  }
+}
+.ah_other-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: calc((100% - 4rem) / 3 + 2rem);
+  width: calc((100% - 2rem) / 2);
+}
+@media screen and (max-width: 768px) {
+  .ah_other-content ul {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.ah_other-content li {
+  width: 25%;
+}
+
+/**********************
  skills
 ***********************/
 .ah_skills {
@@ -666,7 +780,7 @@ p {
   right: 0;
   bottom: 0;
   width: 150vw;
-  height: 80vw;
+  height: 50vw;
   -webkit-transform: rotate(-15deg);
       -ms-transform: rotate(-15deg);
           transform: rotate(-15deg);
@@ -798,7 +912,7 @@ p {
   right: 0;
   bottom: 0;
   width: 150vw;
-  height: 80vw;
+  height: 50vw;
   -webkit-transform: rotate(-15deg);
       -ms-transform: rotate(-15deg);
           transform: rotate(-15deg);

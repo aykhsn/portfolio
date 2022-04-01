@@ -1,0 +1,54 @@
+@import "../setting/breakpoints";
+
+/**********************
+ other
+***********************/
+.#{$siteName} {
+  &_other {
+  	position: relative;
+  	background-color: #ffffff;
+
+  	&::after {
+      position: absolute;
+      display: block;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 150vw;
+      height: 50vw;
+      transform: rotate(-15deg);
+      transform-origin: bottom right;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
+  	&-content {
+  		position: relative;
+  		margin-top: 5rem;
+  		padding-bottom: 2rem;
+  		z-index: 100;
+
+  		@include mediaQuery(m) {
+  			margin-top: 3rem;
+  		}
+
+  		& ul {
+  			display: flex;
+  			flex-wrap: wrap;
+  			justify-content: space-between;
+  			align-items: center;
+  			margin-left: calc((100% - 4rem) / 3 + 2rem);
+  			width: calc((100% - 2rem) / 2);
+
+  			@include mediaQuery(m) {
+  				margin-left: 0;
+  				width: 100%;
+  			}
+  		}
+
+  		& li {
+  			width: 25%;
+  		}
+  	}
+  }
+}
