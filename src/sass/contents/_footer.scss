@@ -1,67 +1,78 @@
 @import "../setting/breakpoints";
 
 /**********************
- footer
+footer
 ***********************/
 .#{$siteName} {
-  &_footer {
-  	background-color: var(--#{$siteName}_main-color);
+	&_footer {
+		background-color: var(--#{$siteName}_main-color);
 
-  	&-content {
-  		padding: 24rem 0 16rem;
-  		text-align: center;
+		&-content {
+			padding: 24rem 0 16rem;
+			text-align: center;
 
-  		@include mediaQuery(m) {
-  			padding: 12rem 0 10rem;
-  		}
+			@include mediaQuery(m) {
+				padding: 12rem 0 10rem;
+			}
 
-  		& span {
-	  		position: relative;
-  			display: block;
-  			padding: 3.375rem 0;
-  			font-size: 1.375rem;
-			font-weight: 600;
-			letter-spacing: 0.02em;
-			font-family: 'Montserrat Alternates', sans-serif;
-  			color: var(--#{$siteName}_accent-color);
-
-  			@include mediaQuery(m) {
-  				padding: 1.5rem 0;
-  				font-size: 0.8rem;
-  			}
-
-	  		&::before {
-				position: absolute;
-				display: inline-block;
-				bottom: 100%;
-				left: calc(50% - (7rem / 2));
-				content: "";
-				height: 1rem;
-				width: 7rem;
-				background-size: contain;
-				background-image: url(../assets/wave-v.svg);
-				background-repeat: no-repeat;
+			& span {
+				position: relative;
+				display: block;
+				padding: 3.375rem 0;
+				font-size: 1.375rem;
+				font-weight: 600;
+				letter-spacing: 0.02em;
+				font-family: 'Montserrat Alternates', sans-serif;
+				color: var(--#{$siteName}_accent-color);
 
 				@include mediaQuery(m) {
-					width: 5rem;
-					left: calc(50% - (5rem / 2));
+					padding: 1.5rem 0;
+					font-size: 0.8rem;
 				}
-	        }
-  		}
 
-  		& a {
-  			display: block;
-  		}
+				&::before {
+					position: absolute;
+					display: inline-block;
+					bottom: 100%;
+					left: calc(50% - (7rem / 2));
+					content: "";
+					height: 1rem;
+					width: 7rem;
+					background-size: contain;
+					background-image: url(../assets/wave-v.svg);
+					background-repeat: no-repeat;
 
-  		& img {
-  			width: 2rem;
-  			height: 2rem;
+					@include mediaQuery(m) {
+						width: 5rem;
+						left: calc(50% - (5rem / 2));
+					}
+				}
+			}
 
-  			@include mediaQuery(m) {
-  				width: 1.5rem;
-	  			height: 1.5rem;
-  			}
-  		}
-  	}
-  }
+			& a {
+				display: block;
+			}
+
+			& img {
+				width: 2rem;
+				height: 2rem;
+
+				@include mediaQuery(m) {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+		}
+
+		&-license {
+			font-size: 8px;
+			line-height: 2;
+			color: #ffa371;
+			text-align: center;
+
+			& a {
+				color: inherit;
+			}
+		}
+	}
 }

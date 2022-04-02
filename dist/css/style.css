@@ -4,8 +4,8 @@
 ***********************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
 @font-face {
-  font-family: "BanglaMN";
-  src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg") format("svg");
+  font-family: "Bangla MN";
+  src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
   /*IE og iOS earlier than version 5*/
 }
 /**********************
@@ -268,7 +268,7 @@ p {
 }
 
 /**********************
- footer
+footer
 ***********************/
 .ah_footer {
   background-color: var(--ah_main-color);
@@ -328,6 +328,15 @@ p {
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+.ah_footer-license {
+  font-size: 8px;
+  line-height: 2;
+  color: #ffa371;
+  text-align: center;
+}
+.ah_footer-license a {
+  color: inherit;
 }
 
 /**********************
@@ -416,7 +425,7 @@ p {
 .ah_mv-block_left h1 {
   font-size: 5rem;
   font-weight: 400;
-  font-family: "BanglaMN", sans-serif;
+  font-family: "Bangla MN", sans-serif;
   line-height: 1.325;
   letter-spacing: 0.08em;
   text-align: right;
