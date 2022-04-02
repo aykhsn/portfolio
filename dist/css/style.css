@@ -28,7 +28,7 @@
  Style
 ***********************/
 body {
-  background-color: var(--ah_bg-color);
+  background-color: var(--ah_main-color);
 }
 
 .ah_wrapper {
@@ -349,6 +349,7 @@ footer
 .ah_mv {
   height: 100vh;
   width: 100vw;
+  background-color: var(--ah_bg-color);
 }
 @media screen and (max-width: 768px) {
   .ah_mv {
@@ -798,6 +799,7 @@ footer
 }
 .ah_skills {
   position: relative;
+  background-color: var(--ah_bg-color);
 }
 .ah_skills::after {
   position: absolute;
