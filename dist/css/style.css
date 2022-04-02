@@ -428,22 +428,16 @@ footer
   }
 }
 .ah_mv-block_left h1 {
-  font-size: 5rem;
-  font-weight: 400;
-  font-family: "Bangla MN", sans-serif;
-  line-height: 1.325;
-  letter-spacing: 0.08em;
+  width: 100%;
   text-align: right;
+}
+.ah_mv-block_left h1 img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h1 {
+    width: 65%;
     text-align: left;
-    font-size: 3.2rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .ah_mv-block_left h1 {
-    font-size: 2.5rem;
   }
 }
 .ah_mv-block_left h2 {
@@ -451,29 +445,24 @@ footer
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.01em;
+  white-space: nowrap;
   text-align: right;
   color: var(--ah_link-color);
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h2 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 400px) {
   .ah_mv-block_left h2 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 }
 .ah_mv-block_top {
-  position: absolute;
+  position: relative;
   z-index: 1001;
-}
-@media screen and (max-width: 768px) {
-  .ah_mv-block_top {
-    position: relative;
-  }
 }
 .ah_mv-block_middle {
   position: absolute;
@@ -487,6 +476,10 @@ footer
 @media screen and (max-width: 768px) {
   .ah_mv-block_middle {
     position: relative;
+    margin-top: 1rem;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
   }
 }
 .ah_mv-block_center {

@@ -66,20 +66,16 @@
 	  		}
 
   			& h1 {
-  				font-size: 5rem;
-  				font-weight: 400;
-  				font-family: 'Bangla MN', sans-serif;
-  				line-height: 1.325;
-  				letter-spacing: 0.08em;
+          width: 100%;
   				text-align: right;
 
-  				@include mediaQuery(m) {
-  					text-align: left;
-	  				font-size: 3.2rem;
-  				}
+          & img {
+            width: 100%;
+          }
 
-  				@include mediaQuery(s) {
-  					font-size: 2.5rem;
+  				@include mediaQuery(m) {
+            width: 65%;
+  					text-align: left;
   				}
   			}
 
@@ -88,39 +84,37 @@
   				font-family: 'Montserrat Alternates', sans-serif;
   				font-weight: 500;
   				letter-spacing: 0.01em;
+          white-space: nowrap;
   				text-align: right;
   				color: var(--#{$siteName}_link-color);
 
   				@include mediaQuery(m) {
-  					margin-top: 1rem;
-  					font-size: 1.5rem;
+  					font-size: 1.45rem;
   					text-align: left;
   				}
 
   				@include mediaQuery(s) {
-  					font-size: 1.2rem;
+  					font-size: 1.35rem;
   				}
   			}
   		}
 
   		&_top {
-			position: absolute;
-			z-index: 1001;
-
-  			@include mediaQuery(m) {
-  				position: relative;
-  			}
+  			position: relative;
+  			z-index: 1001;
   		}
 
   		&_middle {
   			position: absolute;
-			top: 50%;
-			right: 0;
-			transform: translateY(-50%);
-			z-index: 1001;
+  			top: 50%;
+  			right: 0;
+  			transform: translateY(-50%);
+  			z-index: 1001;
 
   			@include mediaQuery(m) {
   				position: relative;
+          margin-top: 1rem;
+          transform: unset;
   			}
   		}
 
