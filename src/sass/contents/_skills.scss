@@ -4,7 +4,9 @@
  skills
 ***********************/
 .#{$siteName} {
-  &_aboutus {
+  &_about {
+    background-color: var(--#{$siteName}_bg-color);
+
     .#{$siteName}_block-header {
       padding: 4rem 0 0 0;
     }
@@ -12,6 +14,7 @@
 
   &_skills {
     position: relative;
+    background-color: var(--#{$siteName}_bg-color);
 
     &::after {
       position: absolute;
