@@ -27,10 +27,6 @@
 /**********************
  Style
 ***********************/
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--ah_bg-color);
 }
