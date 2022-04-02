@@ -2,12 +2,7 @@
 /**********************
  Import fonts
 ***********************/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
-@font-face {
-  font-family: "Bangla MN";
-  src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
-  /*IE og iOS earlier than version 5*/
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Tenor+Sans&display=swap");
 @font-face {
   font-family: "Bangla MN";
   src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
@@ -222,7 +217,7 @@ h2 {
   font-size: 3.25rem;
   letter-spacing: 0.01em;
   line-height: 1.8;
-  font-family: "Bangla MN", sans-serif;
+  font-family: "Bangla MN", "Tenor Sans", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
@@ -798,6 +793,9 @@ footer
 /**********************
  skills
 ***********************/
+.ah_aboutus .ah_block-header {
+  padding: 4rem 0 0 0;
+}
 .ah_skills {
   position: relative;
 }
@@ -867,7 +865,7 @@ footer
 }
 .ah_skills-content_name span {
   font-size: 1.375rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.01em;
 }
