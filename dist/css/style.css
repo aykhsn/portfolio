@@ -31,8 +31,11 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   background-color: var(--ah_bg-color);
+}
+
+.ah_wrapper {
+  overflow-x: hidden;
 }
 
 /**********************

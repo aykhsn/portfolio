@@ -34,8 +34,13 @@ html {
 }
 
 body {
-	overflow-x: hidden;
 	background-color: var(--#{$siteName}_bg-color);
+}
+
+.#{$siteName} {
+	&_wrapper {
+		overflow-x: hidden;
+	}
 }
 
 @import "reset";
