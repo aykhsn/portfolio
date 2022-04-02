@@ -21,8 +21,9 @@
 
   		@include mediaQuery(m) {
   			left: 1rem;
-  			width: 5.5rem;
-	  		height: 5.5rem;
+        top: 1rem;
+  			width: 4rem;
+	  		height: 4rem;
   		}
 
   		&:hover {

@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "BanglaMN";
-  src: url("dist/assets/BanglaMN.ttf") format("truetype");
+  src: url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
 /**********************
  Sass setting
@@ -143,7 +144,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .ah_block-header {
-    padding: 7.5rem 0 0;
+    padding: 5.5rem 0 0;
   }
 }
 .ah_block-header h2 {
@@ -224,7 +225,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -245,7 +246,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.4;
   }
 }
@@ -298,7 +299,7 @@ p {
 @media screen and (max-width: 768px) {
   .ah_footer-content span {
     padding: 1.5rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .ah_footer-content span::before {
@@ -325,6 +326,12 @@ p {
 .ah_footer-content img {
   width: 2rem;
   height: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .ah_footer-content img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 /**********************
@@ -367,7 +374,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_mv-header {
-    height: 10rem;
+    height: 6.5rem;
   }
 }
 .ah_mv-footer {
@@ -376,6 +383,11 @@ p {
       -ms-flex: auto;
           flex: auto;
   height: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .ah_mv-footer {
+    height: 2rem;
+  }
 }
 .ah_mv-block {
   display: -webkit-box;
@@ -416,12 +428,12 @@ p {
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h1 {
     text-align: left;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
   }
 }
 @media screen and (max-width: 400px) {
   .ah_mv-block_left h1 {
-    font-size: 2.625rem;
+    font-size: 2.5rem;
   }
 }
 .ah_mv-block_left h2 {
@@ -434,14 +446,14 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h2 {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 400px) {
   .ah_mv-block_left h2 {
-    ont-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 .ah_mv-block_top {
@@ -523,7 +535,7 @@ p {
   .ah_mv-block_right {
     display: block;
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 3.75rem;
   }
 }
@@ -545,7 +557,7 @@ p {
 }
 @media screen and (max-width: 400px) {
   .ah_mv-block_right p {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 .ah_mv-block_right p::before {
@@ -573,7 +585,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_mv-language {
-    top: 3rem;
+    top: 1rem;
     right: 0;
     left: unset;
   }
@@ -669,8 +681,9 @@ p {
 @media screen and (max-width: 768px) {
   .ah_navigation-logo {
     left: 1rem;
-    width: 5.5rem;
-    height: 5.5rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 .ah_navigation-logo:hover {
@@ -853,8 +866,8 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_skills-content_name span {
-    font-size: 1.1rem;
-    letter-spacing: 0.008em;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
   }
 }
 .ah_skills-content_bar {
@@ -871,7 +884,7 @@ p {
   .ah_skills-content_bar {
     width: 80%;
     min-width: unset;
-    max-width: 12.5rem;
+    max-width: 11rem;
   }
 }
 .ah_skills-content_bar--90 span:nth-child(-n+9) {
@@ -898,8 +911,8 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_skills-content_bar span {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 0.7rem;
+    height: 0.7rem;
   }
 }
 .ah_skills-content_value {
@@ -952,6 +965,11 @@ p {
   position: relative;
   margin-top: 7.5rem;
   z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .ah_works-content_item {
+    margin-top: 5.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_item:first-child {
@@ -1037,7 +1055,7 @@ p {
 @media screen and (max-width: 768px) {
   .ah_works-content_block-right {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 .ah_works-content_year {
@@ -1080,7 +1098,7 @@ p {
 @media screen and (max-width: 768px) {
   .ah_works-content_image::before {
     left: -1rem;
-    bottom: -3rem;
+    bottom: -2rem;
   }
 }
 .ah_works-content_image a {
@@ -1097,7 +1115,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 .ah_works-content_title h3 {
@@ -1111,7 +1129,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_title h3 {
-    font-size: 1.8rem;
+    font-size: 1.375rem;
   }
 }
 .ah_works-content_description {
@@ -1131,7 +1149,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_description h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .ah_works-content_description li {

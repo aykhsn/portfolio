@@ -31,7 +31,7 @@
   		width: 100%;
 
   		@include mediaQuery(m) {
-  			height: 10rem;
+  			height: 6.5rem;
   		}
   	}
 
@@ -39,6 +39,10 @@
   		position: relative;
   		flex: auto;
   		height: 4rem;
+
+      @include mediaQuery(m) {
+        height: 2rem;
+      }
   	}
 
   	&-block {
@@ -63,20 +67,20 @@
 
   			& h1 {
   				font-size: 5rem;
-				font-weight: 400;
-				font-family: 'BanglaMN', sans-serif;
+  				font-weight: 400;
+  				font-family: 'BanglaMN', sans-serif;
   				line-height: 1.325;
   				letter-spacing: 0.08em;
   				text-align: right;
 
   				@include mediaQuery(m) {
   					text-align: left;
-	  				font-size: 4.2rem;
-				}
+	  				font-size: 3.2rem;
+  				}
 
-				@include mediaQuery(s) {
-					font-size: 2.625rem;
-				}
+  				@include mediaQuery(s) {
+  					font-size: 2.5rem;
+  				}
   			}
 
   			& h2 {
@@ -88,13 +92,13 @@
   				color: var(--#{$siteName}_link-color);
 
   				@include mediaQuery(m) {
-  					margin-top: 0.5rem;
+  					margin-top: 1rem;
   					font-size: 1.5rem;
   					text-align: left;
   				}
 
   				@include mediaQuery(s) {
-  					ont-size: 1.2rem;
+  					font-size: 1.2rem;
   				}
   			}
   		}
@@ -156,7 +160,7 @@
   			@include mediaQuery(m) {
   				display: block;
   				width: 100%;
-  				margin-top: 2.5rem;
+  				margin-top: 2rem;
   				margin-bottom: 3.75rem;
 	  		}
 
@@ -176,7 +180,7 @@
   				}
 
   				@include mediaQuery(s) {
-  					font-size: 1rem;
+  					font-size: 0.875rem;
   				}
 
 	  			&::before {
@@ -206,7 +210,7 @@
   		z-index: 100;
 
   		@include mediaQuery(m) {
-  			top: 3rem;
+  			top: 1rem;
   			right: 0;
   			left: unset;
   		}

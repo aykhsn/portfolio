@@ -66,8 +66,8 @@
 	  			letter-spacing: 0.01em;
 
           @include mediaQuery(m) {
-            font-size: 1.1rem;
-            letter-spacing: 0.008em;
+            font-size: 1rem;
+            letter-spacing: 0.01em;
           }
   			}
   		}
@@ -81,7 +81,7 @@
         @include mediaQuery(m) {
           width: 80%;
           min-width: unset;
-          max-width: 12.5rem;
+          max-width: 11rem;
         }
 
   			&--90 {
@@ -122,8 +122,8 @@
   				background-color: #D8D2CF;
 
           @include mediaQuery(m) {
-            width: 0.9rem;
-          height: 0.9rem;
+            width: 0.7rem;
+            height: 0.7rem;
           }
   			}
   		}

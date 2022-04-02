@@ -3,9 +3,12 @@
 ***********************/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
-@import 'setting/fonts';
 
-@include font-face('BanglaMN', 'dist/assets/BanglaMN.ttf', null, null, ttf);
+@font-face{
+    font-family:'BanglaMN';
+    src:url('dist/assets/BanglaMN.woff') format('woff'), /* Modern Browsers */
+    url('dist/assets/BanglaMN.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 
 /**********************
  Sass setting
