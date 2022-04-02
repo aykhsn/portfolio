@@ -8,6 +8,11 @@
   src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
   /*IE og iOS earlier than version 5*/
 }
+@font-face {
+  font-family: "Bangla MN";
+  src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
+  /* iOS 4.1- */
+}
 /**********************
  Sass setting
 ***********************/
