@@ -47,7 +47,14 @@
 		left: calc(50% - 8rem / 2);
 		width: 8rem;
 		height: 8rem;
-		animation: rotate 1.4s infinite cubic-bezier(0.77,0,0.18,1);
+		animation: rotate 2.4s infinite cubic-bezier(0.77,0,0.18,1);
+
+		@include mediaQuery(m) {
+			top: calc(50% - 6rem / 2);
+			left: calc(50% - 6rem / 2);
+			width: 6rem;
+			height: 6rem;
+		}
 	}
 
 	&-wave {

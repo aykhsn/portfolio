@@ -123,6 +123,7 @@ a {
 ***********************/
 .ah_block {
   width: 100%;
+  padding-bottom: 2rem;
 }
 .ah_block-inner {
   max-width: var(--ah_full-width);
@@ -136,7 +137,7 @@ a {
 }
 .ah_block-header {
   position: relative;
-  padding: 10rem 0 0;
+  padding: 8rem 0 0;
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
@@ -392,8 +393,16 @@ footer
   left: calc(50% - 4rem);
   width: 8rem;
   height: 8rem;
-  -webkit-animation: rotate 1.4s infinite cubic-bezier(0.77, 0, 0.18, 1);
-          animation: rotate 1.4s infinite cubic-bezier(0.77, 0, 0.18, 1);
+  -webkit-animation: rotate 2.4s infinite cubic-bezier(0.77, 0, 0.18, 1);
+          animation: rotate 2.4s infinite cubic-bezier(0.77, 0, 0.18, 1);
+}
+@media screen and (max-width: 768px) {
+  .ah_loading-logo {
+    top: calc(50% - 3rem);
+    left: calc(50% - 3rem);
+    width: 6rem;
+    height: 6rem;
+  }
 }
 .ah_loading-wave {
   display: inline-block;
@@ -789,6 +798,11 @@ footer
   width: 100%;
   z-index: 1001;
 }
+@media screen and (max-width: 768px) {
+  .ah_navigation {
+    position: relative;
+  }
+}
 .ah_navigation-logo {
   position: absolute;
   left: 2rem;
@@ -804,6 +818,7 @@ footer
     top: 1rem;
     width: 4rem;
     height: 4rem;
+    pointer-events: none;
   }
 }
 .ah_navigation-logo:hover {
@@ -834,7 +849,7 @@ footer
     display: none;
   }
 }
-.ah_navigation-items a {
+.ah_navigation-items button {
   display: block;
   font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
@@ -844,7 +859,7 @@ footer
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
 }
-.ah_navigation-items a:hover {
+.ah_navigation-items button:hover {
   color: var(--ah_accent-color);
 }
 
@@ -875,7 +890,6 @@ footer
 .ah_other-content {
   position: relative;
   margin-top: 5rem;
-  padding-bottom: 2rem;
   z-index: 100;
 }
 @media screen and (max-width: 768px) {

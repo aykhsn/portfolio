@@ -11,6 +11,10 @@
   	width: 100%;
   	z-index: 1001;
 
+    @include mediaQuery(m) {
+      position: relative;
+    }
+
   	&-logo {
   		position: absolute;
   		left: 2rem;
@@ -24,6 +28,7 @@
         top: 1rem;
   			width: 4rem;
 	  		height: 4rem;
+        pointer-events: none;
   		}
 
   		&:hover {
@@ -45,7 +50,7 @@
   			display: none;
   		}
 
-  		& a {
+  		& button {
   			display: block;
   			font-size: 1rem;
   			font-family: 'Montserrat Alternates', sans-serif;

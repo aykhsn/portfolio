@@ -32,25 +32,25 @@
 </div>
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
-		<a href="#mv">
+		<button type="button" value="mv" class="scrollButton">
 			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
-		</a>
+		</button>
 	</div>
 	<ul class="ah_navigation-items">
 		<li class="ah_navigation-item">
-			<a href="#About">About</a>
+			<button value="About" type="button" class="scrollButton">About</button>
 		</li>
 		<li class="ah_navigation-item">
-			<a href="#Skills">Skills</a>
+			<button value="Skills" type="button" class="scrollButton">Skills</button>
 		</li>
 		<li class="ah_navigation-item">
-			<a href="#Works">Works</a>
+			<button value="Works" type="button" class="scrollButton">Works</button>
 		</li>
 		<li class="ah_navigation-item">
-			<a href="#Other">Other</a>
+			<button value="Other" type="button" class="scrollButton">Other</button>
 		</li>
 		<li class="ah_navigation-item">
-			<a href="#Contact">Contact</a>
+			<button value="Contact" type="button" class="scrollButton">Contact</button>
 		</li>
 	</ul>
 </nav>
@@ -629,27 +629,32 @@
 </footer>
 </div>
 <script type="text/javascript">
+/**********************
+ Loading
+***********************/
 window.onload = () => {
 	const loading = document.getElementById('loading');
 	loading.classList.add('ah_loading--loaded');
 }
 /**********************
- smooth scroll
+ Smooth scroll
 ***********************/
-const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
+const smoothScrollTrigger = document.querySelectorAll('.scrollButton');
+const scrollToTarget = (target) => {
+	window.scrollTo({
+		top: target,
+		behavior: 'smooth',
+	});
+};
 for (let i = 0; i < smoothScrollTrigger.length; i++) {
 	smoothScrollTrigger[i].addEventListener('click', (e) => {
 		e.preventDefault();
-		let href = smoothScrollTrigger[i].getAttribute('href');
-		let targetElement = document.getElementById(href.replace('#', ''));
+		let value = smoothScrollTrigger[i].getAttribute('value');
+		let targetElement = document.getElementById(value);
 		const rect = targetElement.getBoundingClientRect().top;
 		const offset = window.pageYOffset;
-		const gap = 0;
-		const target = rect + offset - gap;
-		window.scrollTo({
-			top: target,
-			behavior: 'smooth',
-		});
+		const target = rect + offset;
+		scrollToTarget(target);
 	});
 }
 </script>

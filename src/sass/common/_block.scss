@@ -6,6 +6,7 @@
 .#{$siteName} {
   &_block {
     width: 100%;
+    padding-bottom: 2rem;
 
     &-inner {
       max-width: var(--#{$siteName}_full-width);
@@ -19,7 +20,7 @@
 
     &-header {
       position: relative;
-      padding: 10rem 0 0;
+      padding: 8rem 0 0;
       z-index: 100;
 
       @include mediaQuery(m) {

@@ -25,7 +25,6 @@
   	&-content {
   		position: relative;
   		margin-top: 5rem;
-  		padding-bottom: 2rem;
   		z-index: 100;
 
   		@include mediaQuery(m) {
