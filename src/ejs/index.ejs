@@ -21,6 +21,24 @@ window.onload = () => {
 }
 
 /**********************
+ Scroll Animation
+***********************/
+const slideAnimationTrigger = document.getElementById('slideAnimation');
+
+window.addEventListener('DOMContentLoaded', () => {
+	window.addEventListener('scroll', () => {
+		let scrollTopPosition = window.scrollY;
+		let triggerPosition = slideAnimationTrigger.getBoundingClientRect().top;
+		let windowYOffset = window.pageYOffset;
+		let windowHeight = window.innerHeight;
+
+		if (scrollTopPosition + windowHeight > triggerPosition + windowYOffset ) {
+			slideAnimationTrigger.classList.add('slideIn');
+		}
+	});
+});
+
+/**********************
  Smooth scroll
 ***********************/
 const smoothScrollTrigger = document.querySelectorAll('.scrollButton');

@@ -106,21 +106,12 @@
 			<p>These are the main technologies I use to realise most of my works.</p>
 		</div>
 		<div class="ah_skills-content">
-			<ul>
+			<ul id="slideAnimation">
 				<li>
 					<div class="ah_skills-content_name">
 						<span>HTML5 / CSS3</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--90">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
@@ -133,15 +124,6 @@
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--80">
 						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
 						<span>80%</span>
@@ -152,15 +134,6 @@
 						<span>Vue.js</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--80">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
@@ -173,15 +146,6 @@
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--50">
 						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
 						<span>50%</span>
@@ -192,15 +156,6 @@
 						<span>Wordpress</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--70">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
@@ -213,15 +168,6 @@
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--70">
 						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
 						<span>70%</span>
@@ -229,18 +175,9 @@
 				</li>
 				<li>
 					<div class="ah_skills-content_name">
-						<span>Sketch / InVision / Figma</span>
+						<span>Figma</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--60">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
 						<span></span>
 					</div>
 					<div class="ah_skills-content_value">
@@ -328,7 +265,7 @@
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I used</h4>
-								<p>Gulp / Sass / EJS / Javascript / Vue.js</p>
+								<p>Figma / Gulp / Sass / EJS / Javascript / Vue.js</p>
 							</div>
 						</div>
 					</div>
@@ -636,6 +573,21 @@ window.onload = () => {
 	const loading = document.getElementById('loading');
 	loading.classList.add('ah_loading--loaded');
 }
+/**********************
+ Scroll Animation
+***********************/
+const slideAnimationTrigger = document.getElementById('slideAnimation');
+window.addEventListener('DOMContentLoaded', () => {
+	window.addEventListener('scroll', () => {
+		let scrollTopPosition = window.scrollY;
+		let triggerPosition = slideAnimationTrigger.getBoundingClientRect().top;
+		let windowYOffset = window.pageYOffset;
+		let windowHeight = window.innerHeight;
+		if (scrollTopPosition + windowHeight > triggerPosition + windowYOffset ) {
+			slideAnimationTrigger.classList.add('slideIn');
+		}
+	});
+});
 /**********************
  Smooth scroll
 ***********************/
