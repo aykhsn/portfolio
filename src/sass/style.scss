@@ -34,7 +34,7 @@ $siteName: 'ah';
 ***********************/
 
 body {
-	background-color: var(--#{$siteName}_main-color);
+	background-color: var(--#{$siteName}_bg-color);
 }
 
 .#{$siteName} {

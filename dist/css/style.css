@@ -28,7 +28,7 @@
  Style
 ***********************/
 body {
-  background-color: var(--ah_main-color);
+  background-color: var(--ah_bg-color);
 }
 
 .ah_wrapper {
@@ -225,7 +225,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -349,7 +349,6 @@ footer
 .ah_mv {
   height: 100vh;
   width: 100vw;
-  background-color: var(--ah_bg-color);
 }
 @media screen and (max-width: 768px) {
   .ah_mv {
@@ -799,7 +798,6 @@ footer
 }
 .ah_skills {
   position: relative;
-  background-color: var(--ah_bg-color);
 }
 .ah_skills::after {
   position: absolute;
@@ -989,7 +987,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_item-no-image .ah_works-content_block-right {
-    margin-top: 1.5rem;
+    margin-top: 4rem;
   }
 }
 .ah_works-content_item-no-image .ah_works-content_block-right::before {
@@ -1006,29 +1004,13 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_item-no-image .ah_works-content_block-right::before {
-    display: none;
-  }
-}
-.ah_works-content_item-no-image .ah_works-content_title {
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .ah_works-content_item-no-image .ah_works-content_title:first-child::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top: calc(100% + 1.2rem);
-    left: 0;
-    height: 6.5rem;
+    right: 0;
+    left: calc(50% - 0.5rem);
+    bottom: calc(100% + 1rem);
+    top: unset;
+    height: 4rem;
     width: 1rem;
-    background-size: contain;
-    background-image: url(../assets/wave-h.svg);
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (max-width: 768px) {
-  .ah_works-content_item-no-image .ah_works-content_description {
-    margin-left: 1.5rem;
+    text-align: center;
   }
 }
 .ah_works-content_block {

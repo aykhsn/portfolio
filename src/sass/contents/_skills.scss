@@ -12,7 +12,6 @@
 
   &_skills {
     position: relative;
-    background-color: var(--#{$siteName}_bg-color);
 
     &::after {
       position: absolute;
