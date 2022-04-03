@@ -19,6 +19,17 @@
 </head>
 <body>
 <div class="ah_wrapper">
+<div id="loading" class="ah_loading">
+	<div class="ah_loading-triangle">
+		<img class="ah_mv-triangle" src="dist/assets/triangle.svg">
+	</div>
+	<div class="ah_loading-logo">
+		<img src="dist/assets/logo.svg">
+	</div>
+	<div class="ah_loading-wave">
+		<img src="dist/assets/wave-h.svg">
+	</div>
+</div>
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
 		<a href="#mv">
@@ -618,6 +629,10 @@
 </footer>
 </div>
 <script type="text/javascript">
+window.onload = () => {
+	const loading = document.getElementById('loading');
+	loading.classList.add('ah_loading--loaded');
+}
 /**********************
  smooth scroll
 ***********************/

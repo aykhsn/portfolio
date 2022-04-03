@@ -39,6 +39,7 @@ body {
 
 .#{$siteName} {
 	&_wrapper {
+		position: relative;
 		overflow-x: hidden;
 	}
 }

@@ -2,6 +2,7 @@
 <%- include( 'components/_head' ); %>
 <body>
 <div class="ah_wrapper">
+<%- include( 'components/_loading' ); %>
 <%- include( 'components/_navigation' ); %>
 <%- include( 'components/_mv' ); %>
 <%- include( 'components/_about' ); %>
@@ -11,6 +12,10 @@
 <%- include( 'components/_footer' ); %>
 </div>
 <script type="text/javascript">
+window.onload = () => {
+	const loading = document.getElementById('loading');
+	loading.classList.add('ah_loading--loaded');
+}
 /**********************
  smooth scroll
 ***********************/

@@ -1,0 +1,100 @@
+@import "../setting/breakpoints";
+
+/**********************
+ loading
+***********************/
+.#{$siteName} {
+  &_loading {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100vw;
+	height: 100vh;
+	transition: var(--#{$siteName}_transition);
+	background-color: var(--#{$siteName}_bg-color);
+	z-index: 9999;
+
+	&--loaded {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	& img {
+		width: 100%;
+	    height: 100%;
+	}
+
+	&-triangle {
+		display: inline-block;
+		position: absolute;
+		left: calc(100% / 3);
+		bottom: calc(100% / 4);
+		width: 1.4rem;
+		height: 1.4rem;
+		transform-origin: center;
+		animation: rotate 1.4s infinite cubic-bezier(0.77,0,0.18,1);
+
+		@include mediaQuery(m) {
+			left: calc(100% / 4);
+			bottom: calc(100% / 5);
+		}
+	}
+
+	&-logo {
+		display: inline-block;
+		position: absolute;
+		top: calc(50% - 8rem / 2);
+		left: calc(50% - 8rem / 2);
+		width: 8rem;
+		height: 8rem;
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: var(--#{$siteName}_bg-color);
+			top: 50%;
+			left: 50%;
+			transform-origin: left top;
+			animation: rotate 1.4s infinite cubic-bezier(0.77,0,0.18,1);
+		}
+	}
+
+	&-wave {
+		display: inline-block;
+		position: absolute;
+		right: calc(100% / 3);
+		top: calc(100% / 4);
+		width: 1rem;
+		height: 6.5rem;
+		animation: bounce 1.4s infinite cubic-bezier(0.77,0,0.18,1);
+
+		@include mediaQuery(m) {
+			right: calc(100% / 4);
+			top: calc(100% / 5);
+		}
+	}
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2,0.9);
+	}
+	90% {
+		transform: scale(1);
+	}
+}
