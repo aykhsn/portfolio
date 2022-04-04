@@ -35,6 +35,7 @@ $siteName: 'ah';
 
 body {
 	background-color: var(--#{$siteName}_bg-color);
+	overflow: hidden;
 }
 
 .#{$siteName} {
