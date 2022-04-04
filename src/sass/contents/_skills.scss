@@ -6,7 +6,7 @@
 .#{$siteName} {
   &_about {
     .#{$siteName}_block-header {
-      padding: 4rem 0 0 0;
+      padding: 1rem 0 0 0;
     }
   }
 
@@ -161,6 +161,7 @@
           & span {
             &::after {
               animation: slide 2s ease-in-out;
+              animation-fill-mode: forwards;
             }
           }
         }
@@ -171,9 +172,6 @@
 
 @keyframes slide {
   0% {
-    transform: scaleX(0);
-  }
-  50% {
     transform: scaleX(0);
   }
   100% {

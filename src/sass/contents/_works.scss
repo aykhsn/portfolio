@@ -44,7 +44,7 @@
   					margin-top: 2.875rem;
 
   					@include mediaQuery(m) {
-  						margin-top: 4rem;
+  						margin-top: 2rem;
   					}
 
   					&::before {
@@ -62,7 +62,7 @@
 					    @include mediaQuery(m) {
 			  				right: 0;
 			  				left: calc(50% - 0.5rem);
-						    bottom: calc(100% + 1rem);
+						    bottom: calc(100% + 2.5rem);
 						    top: unset;
 			  				height: 4.5rem;
 			  				width: 1rem;

@@ -142,7 +142,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .ah_block-header {
-    padding: 5.5rem 0 0;
+    padding: 4rem 0 0;
   }
 }
 .ah_block-header h2 {
@@ -926,7 +926,7 @@ footer
  skills
 ***********************/
 .ah_about .ah_block-header {
-  padding: 4rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 .ah_skills {
   position: relative;
@@ -1068,14 +1068,12 @@ footer
 #slideAnimation.slideIn .ah_skills-content_bar span::after {
   -webkit-animation: slide 2s ease-in-out;
           animation: slide 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
   }
@@ -1087,10 +1085,6 @@ footer
 
 @keyframes slide {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
   }
@@ -1144,7 +1138,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_item-no-image .ah_works-content_block-right {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 .ah_works-content_item-no-image .ah_works-content_block-right::before {
@@ -1163,7 +1157,7 @@ footer
   .ah_works-content_item-no-image .ah_works-content_block-right::before {
     right: 0;
     left: calc(50% - 0.5rem);
-    bottom: calc(100% + 1rem);
+    bottom: calc(100% + 2.5rem);
     top: unset;
     height: 4.5rem;
     width: 1rem;
