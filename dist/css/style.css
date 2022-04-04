@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Tenor+Sans&display=swap");
 @font-face {
   font-family: "Bangla MN";
-  src: url("dist/assets/BanglaMN.woff2") format("woff2"), url("dist/assets/BanglaMN.woff") format("woff"), url("dist/assets/BanglaMN.ttf") format("truetype"), url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
+  src: url("dist/assets/BanglaMN.svg#Bangla MN") format("svg");
   /* iOS 4.1- */
 }
 /**********************

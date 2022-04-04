@@ -5,10 +5,7 @@
 
 @font-face {
 	font-family: 'Bangla MN';
-	src: url('dist/assets/BanglaMN.woff2') format('woff2'), /* chrome、firefox */
-	url('dist/assets/BanglaMN.woff') format('woff'), /* chrome、firefox */
-	url('dist/assets/BanglaMN.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-	url('dist/assets/BanglaMN.svg#Bangla MN') format('svg'); /* iOS 4.1- */
+	src: url('dist/assets/BanglaMN.svg#Bangla MN') format('svg'); /* iOS 4.1- */
 }
 
 /**********************
