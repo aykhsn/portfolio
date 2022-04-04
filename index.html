@@ -18,7 +18,7 @@
   <meta property="og:locale" content="ja_JP">
 </head>
 <body>
-<div class="ah_wrapper">
+<div id="vm" class="ah_wrapper">
 <div id="loading" class="ah_loading">
 	<div class="ah_loading-triangle">
 		<img class="ah_mv-triangle" src="dist/assets/triangle.svg">
@@ -58,9 +58,9 @@
 	<div class="ah_block-inner ah_mv-inner">
 		<div class="ah_mv-header">
 			<div class="ah_mv-language">
-				<button type="button" class="ah_mv-language_button ah_mv-language_button--active disabled">EN</button>
+				<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
 				<span>/</span>
-				<button type="button" class="ah_mv-language_button">JA</button>
+				<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JA</button>
 			</div>
 		</div>
 		<div class="ah_mv-block">
@@ -81,7 +81,8 @@
 				</div>
 			</div>
 			<div class="ah_mv-block_right">
-				<p>Hello! I’m a Front End Developer based in Tokyo and enjoy trying Web Design and drawing Illustrations.</p>
+				<p v-if="isEn">Hello! I’m a Front End Developer / Web Designer based in Tokyo. I also like to draw illustrations.</p>
+				<p v-else>東京を拠点にフロントエンドエンジニア・WEBデザイナーとして活動しています。イラストを描くことも好きです。</p>
 			</div>
 		</div>
 		<div class="ah_mv-footer">
@@ -95,7 +96,8 @@
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>About me</h2>
-			<p>I have been working as a front-end developer since 2015.<br>After working for an owned media site at an internet advertising company for 4 years, I became independent as a freelancer.<br>Currently, I am involved in the development of shopping sites and landing pages, with a design perspective that focuses on layout and color schemes.</p>
+			<p v-if="isEn">I have been working as a front-end developer since 2015.<br>After working for an owned media site at an internet advertising company for 4 years, I became independent as a freelancer.<br>Currently, I am involved in the development of shopping sites and landing pages, with a design perspective that focuses on layout and color schemes.</p>
+			<p v-else>2015年に事業会社のインハウスエンジニアとして就職。オウンドメディアサイトのフロントエンド開発を中心に約5年間勤めました。その後、フリーランスとして独立し、近年はECサイトやランディングページの制作に携わっています。レイアウトや配色におけるデザインの視点を大切にしています。</p>
 		</div>
 	</div>
 </section>
@@ -565,6 +567,7 @@
 	</div>
 </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="text/javascript" src="dist/js/main.js"></script>
 </body>
 </html>

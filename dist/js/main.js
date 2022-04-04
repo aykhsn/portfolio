@@ -53,3 +53,20 @@ for (let i = 0; i < smoothScrollTriggerEl.length; i++) {
 		scrollToTarget(target);
 	});
 }
+
+/**********************
+ Vue.js
+***********************/
+const vm = new Vue ({
+  el : '#vm',
+
+  data: {
+    isEn : true
+  },
+
+  methods: {
+  	switchLang: function(isEn) {
+  		this.isEn = isEn;
+  	}
+  }
+});
