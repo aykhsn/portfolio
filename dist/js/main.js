@@ -29,31 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-/**********************
- Smooth scroll
-***********************/
-const smoothScrollTriggerEl = document.querySelectorAll('.scrollButton');
-
-const scrollToTarget = (target) => {
-	window.scrollTo({
-		top: target,
-		behavior: 'smooth',
-	});
-};
-
-for (let i = 0; i < smoothScrollTriggerEl.length; i++) {
-	smoothScrollTriggerEl[i].addEventListener('click', (e) => {
-		e.preventDefault();
-
-		let value = smoothScrollTriggerEl[i].getAttribute('value');
-		let targetElement = document.getElementById(value);
-		const rect = targetElement.getBoundingClientRect().top;
-		const offset = window.pageYOffset;
-		const target = rect + offset;
-
-		scrollToTarget(target);
-	});
-}
 
 /**********************
  Vue.js

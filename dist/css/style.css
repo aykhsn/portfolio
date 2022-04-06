@@ -27,6 +27,10 @@
 /**********************
  Style
 ***********************/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--ah_bg-color);
   overflow: hidden;
@@ -849,7 +853,7 @@ footer
     display: none;
   }
 }
-.ah_navigation-items button {
+.ah_navigation-items a {
   display: block;
   font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
@@ -859,7 +863,7 @@ footer
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
 }
-.ah_navigation-items button:hover {
+.ah_navigation-items a:hover {
   color: var(--ah_accent-color);
 }
 

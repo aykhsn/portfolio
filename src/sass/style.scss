@@ -29,6 +29,9 @@ $siteName: 'ah';
 /**********************
  Style
 ***********************/
+html{
+  scroll-behavior: smooth;
+}
 
 body {
 	background-color: var(--#{$siteName}_bg-color);
