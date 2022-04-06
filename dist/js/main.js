@@ -13,16 +13,17 @@ window.onload = () => {
 /**********************
  Scroll Animation
 ***********************/
-const slideAnimationTriggerEl = document.getElementById('slideAnimation');
-
 window.addEventListener('DOMContentLoaded', () => {
+	const slideAnimationTriggerEl = document.getElementById('slideAnimation');
+	const triggerRect = slideAnimationTriggerEl.getBoundingClientRect();
+	const triggerPosition = triggerRect.top;
+
 	window.addEventListener('scroll', () => {
 		let scrollTopPosition = window.scrollY;
-		let triggerPosition = slideAnimationTriggerEl.getBoundingClientRect().top;
 		let windowYOffset = window.pageYOffset;
 		let windowHeight = window.innerHeight;
 
-		if (scrollTopPosition + windowHeight > triggerPosition + windowYOffset ) {
+		if (scrollTopPosition + windowHeight > triggerPosition ) {
 			slideAnimationTriggerEl.classList.add('slideIn');
 		}
 	});
