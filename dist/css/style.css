@@ -250,7 +250,6 @@ p {
 @media screen and (max-width: 768px) {
   p {
     font-size: 0.875rem;
-    line-height: 1.4;
   }
 }
 
