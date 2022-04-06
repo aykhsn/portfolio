@@ -832,15 +832,18 @@ footer
 }
 .ah_navigation-items {
   position: absolute;
-  left: calc(100vw - 2rem);
-  top: 4rem;
+  left: calc(100vw - 1rem);
+  top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vh;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -865,6 +868,18 @@ footer
 }
 .ah_navigation-items a:hover {
   color: var(--ah_accent-color);
+}
+.ah_navigation-items a:hover svg {
+  fill: var(--ah_accent-color);
+}
+.ah_navigation-items a svg {
+  width: 1rem;
+  fill: var(--ah_main-text-color);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: var(--ah_transition);
+  transition: var(--ah_transition);
 }
 
 /**********************

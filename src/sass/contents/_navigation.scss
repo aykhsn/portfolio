@@ -38,11 +38,12 @@
 
   	&-items {
   		position: absolute;
-  		left: calc(100vw - 2rem);
-  		top: 4rem;
+  		left: calc(100vw - 1rem);
+  		top: 2rem;
   		display: flex;
   		justify-content: space-between;
-  		width: 50vh;
+      align-items: center;
+  		width: 60vh;
   		transform: rotate(90deg);
   		transform-origin: top left;
 
@@ -61,6 +62,17 @@
 
         &:hover {
           color: var(--#{$siteName}_accent-color);
+
+          & svg {
+            fill: var(--#{$siteName}_accent-color);
+          }
+        }
+
+        & svg {
+          width: 1rem;
+          fill: var(--#{$siteName}_main-text-color);
+          transform: rotate(-90deg);
+          transition: var(--#{$siteName}_transition);
         }
   		}
   	}
