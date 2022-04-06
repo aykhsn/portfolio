@@ -97,7 +97,7 @@
 		<div class="ah_block-header">
 			<h2>About me</h2>
 			<p v-if="isEn">I have been working as a front-end developer since 2015.<br>After working for an owned media site at an internet advertising company for 4 years, I became independent as a freelancer.<br>Currently, I am involved in the development of shopping sites and landing pages, with a design perspective that focuses on layout and color schemes.</p>
-			<p v-else>愛知県生まれ、東京都在住。<br>大学時代に位相幾何学と3DCGアニメーションを学ぶ。2015年、事業会社のWEBデザイナー・フロントエンドエンジニアとして、主にオウンドメディアの新規開発に携わる。同時に、働きながら芸術の学位を取得し、2019年に現代アートのECサイト運営会社へ転職。展示の企画運営やWEBコンテンツの企画制作に約2年間従事した後、2021年にフリーランスとして独立。</p>
+			<p v-else>愛知県生まれ、東京都在住。<br>大学時代に位相幾何学と3DCGアニメーションを学ぶ。2015年事業会社のWEBデザイナー・フロントエンドエンジニアとして、主にオウンドメディアの新規開発に携わる。同時に働きながら芸術の学位を取得し、2019年に現代アートのECサイト運営会社へ転職。展示の企画運営やWEBコンテンツの企画制作に約2年間従事した後、2021年にフリーランスとして独立。</p>
 		</div>
 	</div>
 </section>
@@ -105,7 +105,8 @@
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>Skills</h2>
-			<p>These are the main technologies I use to realise most of my works.</p>
+			<p v-if="isEn">These are the main technologies I use to realise most of my works.</p>
+			<p v-else>WEBサイト制作に使用している主なスキルと経験値です。</p>
 		</div>
 		<div class="ah_skills-content">
 			<ul id="slideAnimation">
@@ -194,7 +195,8 @@
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>Works</h2>
-			<p>These are the main my works I have developed from 2015 to recent.</p>
+			<p v-if="isEn">These are the main my works I have developed from 2015 to recent.</p>
+			<p v-else>これまでの主な仕事です。オウンドメディアのフロントエンド開発を経て、現在は企業のコーポレイトサイトやECサイトを制作しています。</p>
 		</div>
 		<div class="ah_works-content">
 			<ul>
@@ -511,48 +513,51 @@
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>Other</h2>
-			<p>I love character design. Many of these are sold as stickers for use on LINE.</p>
+			<p v-if="isEn">I love character design. Many of these are sold as LINE Stickers.</p>
+			<p v-else>イラストを描くこと、特にキャラクターデザインが好きです。LINEスタンプ発売中！</p>
 		</div>
 	</div>
 	<div class="ah_other-content">
-		<ul>
-			<li>
-				<img src="dist/assets/other_baby-1.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_baby-2.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_baby-3.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_baby-4.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_candy-1.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_candy-2.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_candy-3.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_candy-4.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_line-1.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_line-2.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_line-3.png">
-			</li>
-			<li>
-				<img src="dist/assets/other_line-4.png">
-			</li>
-		</ul>
+		<a href="https://store.line.me/stickershop/author/208490/" target="_blank">
+			<ul>
+				<li>
+					<img src="dist/assets/other_baby-1.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_baby-2.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_baby-3.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_baby-4.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_candy-1.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_candy-2.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_candy-3.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_candy-4.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_line-1.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_line-2.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_line-3.png">
+				</li>
+				<li>
+					<img src="dist/assets/other_line-4.png">
+				</li>
+			</ul>
+		</a>
 	</div>
 </section>
 <footer id="Contact" class="ah_footer">

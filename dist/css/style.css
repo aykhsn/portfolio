@@ -901,6 +901,9 @@ footer
     margin-top: 3rem;
   }
 }
+.ah_other-content a {
+  display: block;
+}
 .ah_other-content ul {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2,26 +2,29 @@
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>Other</h2>
-			<p>I love character design. Many of these are sold as stickers for use on LINE.</p>
+			<p v-if="isEn">I love character design. Many of these are sold as LINE Stickers.</p>
+			<p v-else>イラストを描くこと、特にキャラクターデザインが好きです。LINEスタンプ発売中！</p>
 		</div>
 	</div>
 	<div class="ah_other-content">
-		<ul>
-			<% for (var i = 0; i < 4; i++) { %>
-			<li>
-				<img src="dist/assets/other_baby-<%= i + 1 %>.png">
-			</li>
-			<% } %>
-			<% for (var i = 0; i < 4; i++) { %>
-			<li>
-				<img src="dist/assets/other_candy-<%= i + 1 %>.png">
-			</li>
-			<% } %>
-			<% for (var i = 0; i < 4; i++) { %>
-			<li>
-				<img src="dist/assets/other_line-<%= i + 1 %>.png">
-			</li>
-			<% } %>
-		</ul>
+		<a href="https://store.line.me/stickershop/author/208490/" target="_blank">
+			<ul>
+				<% for (var i = 0; i < 4; i++) { %>
+				<li>
+					<img src="dist/assets/other_baby-<%= i + 1 %>.png">
+				</li>
+				<% } %>
+				<% for (var i = 0; i < 4; i++) { %>
+				<li>
+					<img src="dist/assets/other_candy-<%= i + 1 %>.png">
+				</li>
+				<% } %>
+				<% for (var i = 0; i < 4; i++) { %>
+				<li>
+					<img src="dist/assets/other_line-<%= i + 1 %>.png">
+				</li>
+				<% } %>
+			</ul>
+		</a>
 	</div>
 </section>
