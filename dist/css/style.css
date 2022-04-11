@@ -625,6 +625,7 @@ footer
       -ms-flex-pack: center;
           justify-content: center;
   width: calc((100% - 4rem) / 3);
+  z-index: 0;
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_center {
@@ -833,7 +834,7 @@ footer
 .ah_navigation-items {
   position: absolute;
   left: calc(100vw - 1rem);
-  top: 2rem;
+  top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,7 +844,7 @@ footer
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60vh;
+  width: 50vh;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -858,7 +859,7 @@ footer
 }
 .ah_navigation-items a {
   display: block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.02em;

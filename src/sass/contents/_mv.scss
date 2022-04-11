@@ -124,7 +124,8 @@
   			flex-direction: column;
   			justify-content: center;
   			width: calc((100% - 2rem * 2) / 3);
-
+        z-index: 0;
+        
   			@include mediaQuery(m) {
   				align-items: center;
   				width: 100%;
