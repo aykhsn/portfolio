@@ -198,25 +198,15 @@ a {
  font
 ***********************/
 html, body, h1, h2, h3, h4, h5, p, span, a, button {
-  font-size: 100%;
+  font-size: calc(0.7rem + 0.2vw);
   font-family: var(--ah_font-family);
   color: var(--ah_main-text-color);
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
 }
-@media screen and (max-width: 1200px) {
-  html, body, h1, h2, h3, h4, h5, p, span, a, button {
-    font-size: 89%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  html, body, h1, h2, h3, h4, h5, p, span, a, button {
-    font-size: 78%;
-  }
-}
 @media screen and (max-width: 768px) {
   html, body, h1, h2, h3, h4, h5, p, span, a, button {
-    font-size: 100%;
+    font-size: calc(1rem + 0.2vw);
   }
 }
 
@@ -859,7 +849,7 @@ footer
 }
 .ah_navigation-items a {
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.02em;

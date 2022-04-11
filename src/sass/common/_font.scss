@@ -4,21 +4,13 @@
  font
 ***********************/
 html, body, h1, h2, h3, h4, h5, p, span, a, button {
-  font-size: 100%;
+  font-size: calc(0.7rem + 0.2vw);
   font-family: var(--#{$siteName}_font-family);
   color: var(--#{$siteName}_main-text-color);
   transition: var(--#{$siteName}_transition);
 
-  @include mediaQuery(xl) {
-    font-size: 89%;
-  }
-
-  @include mediaQuery(l) {
-    font-size: 78%;
-  }
-
   @include mediaQuery(m) {
-    font-size: 100%;
+    font-size: calc(1rem + 0.2vw);
   }
 }
 
