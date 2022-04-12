@@ -37,7 +37,7 @@ const vm = new Vue ({
   el : '#vm',
 
   data: {
-    isEn : false
+    isEn : true
   },
 
   methods: {
