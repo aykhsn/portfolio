@@ -97,7 +97,7 @@
 		<div class="ah_block-header">
 			<h2>About me</h2>
 			<p v-if="isEn">I have been working as a front-end developer since 2015.<br>After working for an owned media site at an internet advertising company for 4 years, I became independent as a freelancer.<br>Currently, I am involved in the development of shopping sites and landing pages, with a design perspective that focuses on layout and color schemes.</p>
-			<p v-else>愛知県生まれ、東京都在住。<br>大学時代に位相幾何学と3DCGアニメーションを学ぶ。2015年事業会社のWEBデザイナー・フロントエンドエンジニアとして、主にオウンドメディアの新規開発に携わる。同時に働きながら芸術の学位を取得し、2019年に現代アートのECサイト運営会社へ転職。展示の企画運営やWEBコンテンツの企画制作に約2年間従事した後、2021年にフリーランスとして独立。</p>
+			<p v-else>愛知県生まれ、東京都在住。<br>大学時代に位相幾何学と3DCGアニメーションを学ぶ。2015年に事業会社のWEBデザイナー・フロントエンドエンジニアとして、主にオウンドメディアの新規開発に携わる。働きながら芸術の学位を取得し、2019年に現代アートのECサイト運営会社へ転職。作品展示の企画運営やWEBコンテンツの企画編集に従事した後、2021年にフリーランスとして独立。</p>
 		</div>
 	</div>
 </section>
@@ -123,7 +123,7 @@
 				</li>
 				<li>
 					<div class="ah_skills-content_name">
-						<span>Javascript</span>
+						<span>JavaScript（ES2021）</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--90">
 						<span></span>
@@ -145,7 +145,18 @@
 				</li>
 				<li>
 					<div class="ah_skills-content_name">
-						<span>React Native / Redux</span>
+						<span>TypeScript</span>
+					</div>
+					<div class="ah_skills-content_bar ah_skills-content_bar--90">
+						<span></span>
+					</div>
+					<div class="ah_skills-content_value">
+						<span>60%</span>
+					</div>
+				</li>
+				<li>
+					<div class="ah_skills-content_name">
+						<span>ReactNative / Redux</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--50">
 						<span></span>
@@ -156,18 +167,7 @@
 				</li>
 				<li>
 					<div class="ah_skills-content_name">
-						<span>Wordpress</span>
-					</div>
-					<div class="ah_skills-content_bar ah_skills-content_bar--70">
-						<span></span>
-					</div>
-					<div class="ah_skills-content_value">
-						<span>70%</span>
-					</div>
-				</li>
-				<li>
-					<div class="ah_skills-content_name">
-						<span>Shopify</span>
+						<span>Wordpress / Shopify</span>
 					</div>
 					<div class="ah_skills-content_bar ah_skills-content_bar--70">
 						<span></span>
@@ -214,28 +214,28 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>Modernity (E-Commerce store)</h3>
+								<h3>Modernity</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development by customizing shopify</p>
+										<p v-if="isEn">Front-end development by Shopify customization</p>
+										<p v-else>Shopify のカスタマイズによるフロントエンド新規開発</p>
 									</li>
 									<li>
-										<p>Creating of automatic reservation system</p>
+										<p v-if="isEn">Creating of campaign setting function by Liquid</p>
+										<p v-else>Liquid 言語によるキャンペーン設定機能の作成</p>
 									</li>
 									<li>
-										<p>Customization of automatic reply mail</p>
-									</li>
-									<li>
-										<p>Customization of product color selection function</p>
+										<p v-if="isEn">Customization of product color selection function</p>
+										<p v-else>Liquid 言語による商品カラー選択機能の作成</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I used</h4>
-								<p>Shopify / Gulp / Sass / EJS / Javascript / jQuery</p>
+								<p>Shopify / Liquid / Gulp / Sass / EJS / Javascript / jQuery</p>
 							</div>
 						</div>
 					</div>
@@ -260,16 +260,18 @@
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Web Design and Front-end development from scratch</p>
+										<p v-if="isEn">Design and Front-end development from scratch</p>
+										<p v-else>デザインとフロントエンド開発</p>
 									</li>
 									<li>
-										<p>Illustration the main visual</p>
+										<p v-if="isEn">Illustration the main visual</p>
+										<p v-else>メインビジュアルのイラスト制作</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I used</h4>
-								<p>Figma / Gulp / Sass / EJS / Javascript / Vue.js</p>
+								<p>Figma / Gulp / Sass / EJS / ES2021 / Vue.js</p>
 							</div>
 						</div>
 					</div>
@@ -281,26 +283,29 @@
 								<span>2021</span>
 							</div>
 							<div class="ah_works-content_image">
-								<a href="https://lp.and-art.jp/campaigns/4/">
+								<a href="https://lp.and-art.jp/campaigns/4/" target="_blank">
 									<img src="dist/assets/works_andart-lp.png" alt="andart website">
 								</a>
 							</div>
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>AND ART (Landing page)</h3>
+								<h3>ANDART</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development from scratch</p>
+										<p v-if="isEn">Front-end development of Landing page</p>
+										<p v-else>ランディングページのフロントエンド開発</p>
 									</li>
 									<li>
-										<p>Creating slider using swiper.js plugin</p>
+										<p v-if="isEn">Creating slider using Swiper.js plugin</p>
+										<p v-else>Swiper.js を使用したスライダーの作成</p>
 									</li>
 									<li>
-										<p>Creating accordion menu using javascript</p>
+										<p v-if="isEn">Creating accordion menu using JavaScript</p>
+										<p v-else>JavaScript によるアコーディオンメニューの作成</p>
 									</li>
 								<ul>
 							</div>
@@ -318,26 +323,30 @@
 								<span>2021</span>
 							</div>
 							<div class="ah_works-content_image">
-								<a href="https://and-art.co.jp/">
+								<a href="https://and-art.co.jp/" target="_blank">
 									<img src="dist/assets/works_andart.png" alt="andart website">
 								</a>
 							</div>
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>AND ART (Corporate Site)</h3>
+								<h3 v-if="isEn">ANDART Co., Ltd.</h3>
+								<h3 v-else>株式会社ANDART</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development for top page renewal</p>
+										<p v-if="isEn">Front-end development of corporate site for top page renewal</p>
+										<p v-else>コーポレイトサイトのトップページリニューアルにおけるフロントエンド開発</p>
 									</li>
 									<li>
-										<p>Creating a wordpress theme</p>
+										<p v-if="isEn">Creating a new wordpress theme</p>
+										<p v-else>新規ワードプレステーマの作成</p>
 									</li>
 									<li>
-										<p>Creating a parallax scrolling effect</p>
+										<p v-if="isEn">Creating a parallax scrolling effect</p>
+										<p v-else>背景パララックス効果の実装</p>
 									</li>
 								<ul>
 							</div>
@@ -357,22 +366,27 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>AU Game (Landing Page)</h3>
+								<h3 v-if="isEn">auGame</h3>
+								<h3 v-else>auゲーム</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development for operation and maintenance</p>
+										<p v-if="isEn">Front-end development of landing page for operation and maintenance</p>
+										<p v-else>ランディングページの運営保守におけるフロントエンド開発</p>
 									</li>
 									<li>
-										<p>Introducing Web Components to componentize the UI</p>
+										<p v-if="isEn">Introducing Web Components to componentize the UI</p>
+										<p v-else>UI コンポーネント化のための Web Components の導入</p>
 									</li>
 									<li>
-										<p>Introducing Utility CSS to reuse components</p>
+										<p v-if="isEn">Introducing Utility CSS to reuse components</p>
+										<p v-else>コンポーネント再利用のための Utility CSS の導入</p>
 									</li>
 									<li>
-										<p>Introducing Tailwind CSS for rapidly building custom UI</p>
+										<p v-if="isEn">Introducing Tailwind CSS for CSS framework</p>
+										<p v-else>CSSフレームワークに Tailwind CSS の導入</p>
 									</li>
 								<ul>
 							</div>
@@ -392,25 +406,27 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>Library manager (Mobile App)</h3>
+								<h3 v-if="isEn">Library manager</h3>
+								<h3 v-else>社内図書管理システム</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>UI design with Atomic Design</p>
+										<p v-if="isEn">UI design with Atomic Design</p>
+										<p v-else>アトミックデザインによる UI デザイン</p>
 									</li>
 									<li>
-										<p>Development of View + ViewModel</p>
+										<p v-if="isEn">Development of Mobile App　in View + ViewModel</p>
+										<p v-else>モバイルアプリ開発において View + ViewModel を担当</p>
 									</li>
 									<li>
-										<p>Introducing React Native for cross-platform development</p>
+										<p v-if="isEn">Introducing ReactNative and Redux for cross-platform development</p>
+										<p v-else>クロスプラットフォーム開発のために React Native, Redux を導入</p>
 									</li>
 									<li>
-										<p>Introducing Redux for data flow management</p>
-									</li>
-									<li>
-										<p>Teamwork in agile without a director</p>
+										<p v-if="isEn">Teamwork in agile without a director</p>
+										<p v-else>ディレクターを配置しないアジャイル開発でのチームワーク</p>
 									</li>
 								<ul>
 							</div>
@@ -430,13 +446,15 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>Tsuretette (Information Site)</h3>
+								<h3 v-if="isEn">Tsuretette</h3>
+								<h3 v-else>つれてって</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Web design and Front-end development for launch new site</p>
+										<p v-if="isEn">Design and Front-end development of information site for launch new site</p>
+										<p v-else>情報サイトのデザイン制作とフロントエンドの新規開発</p>
 									</li>
 								<ul>
 							</div>
@@ -456,16 +474,19 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>Advertisement Posting System</h3>
+								<h3 v-if="isEn">Advertisement Posting System</h3>
+								<h3 v-else>広告配信システムSDK</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development from scratch for launch new system</p>
+										<p v-if="isEn">Front-end development from scratch for launch new system</p>
+										<p v-else>フロントエンドのスクラッチによる新規開発</p>
 									</li>
 									<li>
-										<p>Customizing text editor plugins</p>
+										<p v-if="isEn">Customizing text editor plugins</p>
+										<p v-else>テキストエディターのプラグインのカスタマイズ</p>
 									</li>
 								<ul>
 							</div>
@@ -485,16 +506,18 @@
 						</div>
 						<div class="ah_works-content_block-right">
 							<div class="ah_works-content_title">
-								<h3>Camily (Information site)</h3>
+								<h3>Camily</h3>
 							</div>
 							<div class="ah_works-content_description">
 								<h4>What I did</h4>
 								<ul>
 									<li>
-										<p>Front-end development from scratch for launch new site</p>
+										<p v-if="isEn">Front-end development of information site for launch new site</p>
+										<p v-else>情報サイトのフロントエンド新規開発</p>
 									</li>
 									<li>
 										<p>Introducing AMP for creating user-first experiences</p>
+										<p v-if="isEn">ユーザー体験向上に向けた AMP の導入</p>
 									</li>
 								<ul>
 							</div>
