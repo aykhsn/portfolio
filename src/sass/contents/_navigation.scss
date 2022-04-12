@@ -24,10 +24,10 @@
   		transition: var(--#{$siteName}_transition);
 
   		@include mediaQuery(m) {
-  			left: 1rem;
-        top: 1rem;
-  			width: 4rem;
-	  		height: 4rem;
+  			left: 0.5rem;
+        top: 0.5rem;
+        width: 5rem;
+        height: 5rem;
         pointer-events: none;
   		}
 
