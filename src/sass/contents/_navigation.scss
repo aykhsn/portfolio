@@ -63,7 +63,9 @@
   		}
 
       &.ah_navigation--show {
-        bottom: 0;
+        @include mediaQuery(m) {
+          bottom: 0;
+        }
       }
 
   		& a {

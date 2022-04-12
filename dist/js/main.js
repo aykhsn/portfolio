@@ -2,29 +2,39 @@
  Loading
 ***********************/
 window.onload = () => {
-	const loadingEl = document.getElementById('loading');
-	const bodyEl = document.querySelector('body');
+	const element = {
+		loading: document.getElementById('loading'),
+		body: document.querySelector('body')
+	};
 
-	bodyEl.style.overflow = 'auto';
+	element.body.style.overflow = 'auto';
 
-	loadingEl.classList.add('ah_loading--loaded');
+	element.loading.classList.add('ah_loading--loaded');
 }
 
 /**********************
  Scroll Animation
 ***********************/
 window.addEventListener('DOMContentLoaded', () => {
-	const slideAnimationTriggerEl = document.getElementById('slideAnimation');
-	const triggerRect = slideAnimationTriggerEl.getBoundingClientRect();
-	const triggerPosition = triggerRect.top;
+	const element = {
+		trigger: document.getElementById('slideAnimation')
+	};
 
 	window.addEventListener('scroll', () => {
-		let scrollTopPosition = window.scrollY;
-		let windowYOffset = window.pageYOffset;
-		let windowHeight = window.innerHeight;
+		let position = {
+			trigger: {
+				rect: element.trigger.getBoundingClientRect()
+			},
+			scroll: {
+				top: window.scrollY
+			},
+			window: {
+				height: window.innerHeight
+			}
+		};
 
-		if (scrollTopPosition + windowHeight > triggerPosition ) {
-			slideAnimationTriggerEl.classList.add('slideIn');
+		if (position.scroll.top + position.window.height > position.trigger.rect.top ) {
+			element.trigger.classList.add('slideIn');
 		}
 	});
 });
@@ -33,17 +43,24 @@ window.addEventListener('DOMContentLoaded', () => {
  Navigation
 ***********************/
 window.addEventListener('scroll', () => {
-	const navigationEl = document.getElementById('Navigation');
-	const triggerEl = document.getElementById('About');
-	const triggerRect = triggerEl.getBoundingClientRect();
-	const triggerPosition = triggerRect.top;
+	const element = {
+		navigation: document.getElementById('Navigation'),
+		trigger: document.getElementById('About')
+	};
 
-	let scrollTopPosition = window.scrollY;
+	let position = {
+		trigger: {
+			rect: element.trigger.getBoundingClientRect()
+		},
+		scroll: {
+			top: window.scrollY
+		}
+	};
 
-	if (scrollTopPosition > triggerPosition) {
-		navigationEl.classList.add('ah_navigation--show');
-	} else if(scrollTopPosition < triggerPosition) {
-		navigationEl.classList.remove('ah_navigation--show');
+	if (position.scroll.top > position.trigger.rect.top) {
+		element.navigation.classList.add('ah_navigation--show');
+	} else {
+		element.navigation.classList.remove('ah_navigation--show');
 	}
 });
 

@@ -862,8 +862,10 @@ footer
     transition: var(--ah_transition);
   }
 }
-.ah_navigation-items.ah_navigation--show {
-  bottom: 0;
+@media screen and (max-width: 768px) {
+  .ah_navigation-items.ah_navigation--show {
+    bottom: 0;
+  }
 }
 .ah_navigation-items a {
   display: block;
