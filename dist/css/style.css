@@ -17,10 +17,10 @@
   --ah_main-color: #FDCCB1;
   --ah_accent-color: #EE864C;
   --ah_sub-color: #94AAF6;
-  --ah_main-text-color: #4F4F4F;
-  --ah_bg-color: #FEF0E8;
+  --ah_main-text-color: #464646;
+  --ah_bg-color: #fcf3ee;
   --ah_bg-sub-color: #FFE5D7;
-  --ah_link-color: rgba(79, 79, 79, 0.8);
+  --ah_link-color: rgba(70, 70, 70, 0.8);
   --ah_transition: all 0.2s ease-in-out;
 }
 
@@ -330,13 +330,13 @@ footer
   }
 }
 .ah_footer-license {
-  font-size: 8px;
-  line-height: 2;
-  color: #ffa371;
   text-align: center;
 }
 .ah_footer-license a {
   color: inherit;
+  font-size: 8px;
+  line-height: 2;
+  color: #ffa371;
 }
 
 /**********************
@@ -563,7 +563,7 @@ footer
 .ah_mv-block_left h2 {
   font-size: 1.6875rem;
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.01em;
   white-space: nowrap;
   text-align: right;
@@ -1136,13 +1136,8 @@ footer
   z-index: 100;
 }
 @media screen and (max-width: 768px) {
-  .ah_works-content_item {
-    margin-top: 5.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
   .ah_works-content_item:first-child {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 .ah_works-content_item-no-image .ah_works-content_block-right {

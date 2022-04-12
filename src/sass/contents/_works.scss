@@ -28,13 +28,9 @@
   			margin-top: 7.5rem;
   			z-index: 100;
 
-  			@include mediaQuery(m) {
-  				margin-top: 5.5rem;
-  			}
-
   			&:first-child {
   				@include mediaQuery(m) {
-	  				margin-top: 3rem;
+	  				margin-top: 4rem;
 	  			}
   			}
 
