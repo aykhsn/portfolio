@@ -29,6 +29,23 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
+/**********************
+ Navigation
+***********************/
+window.addEventListener('scroll', () => {
+	const navigationEl = document.getElementById('Navigation');
+	const triggerEl = document.getElementById('About');
+	const triggerRect = triggerEl.getBoundingClientRect();
+	const triggerPosition = triggerRect.top;
+
+	let scrollTopPosition = window.scrollY;
+
+	if (scrollTopPosition > triggerPosition) {
+		navigationEl.classList.add('ah_navigation--show');
+	} else if(scrollTopPosition < triggerPosition) {
+		navigationEl.classList.remove('ah_navigation--show');
+	}
+});
 
 /**********************
  Vue.js

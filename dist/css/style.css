@@ -844,8 +844,26 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-items {
-    display: none;
+    /*display: none;*/
+    position: fixed;
+    top: unset;
+    left: 0;
+    bottom: -5rem;
+    width: 100%;
+    padding: 0 1rem;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    background-color: rgba(254, 173, 129, 0.95);
+    -webkit-box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
+            box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
+    z-index: 10000;
+    -webkit-transition: var(--ah_transition);
+    transition: var(--ah_transition);
   }
+}
+.ah_navigation-items.ah_navigation--show {
+  bottom: 0;
 }
 .ah_navigation-items a {
   display: block;
@@ -857,20 +875,15 @@ footer
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
 }
+@media screen and (max-width: 768px) {
+  .ah_navigation-items a {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+}
 .ah_navigation-items a:hover {
   color: var(--ah_accent-color);
-}
-.ah_navigation-items a:hover svg {
-  fill: var(--ah_accent-color);
-}
-.ah_navigation-items a svg {
-  width: 1rem;
-  fill: var(--ah_main-text-color);
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: var(--ah_transition);
-  transition: var(--ah_transition);
 }
 
 /**********************

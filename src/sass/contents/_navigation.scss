@@ -48,8 +48,23 @@
   		transform-origin: top left;
 
   		@include mediaQuery(m) {
-  			display: none;
+  			/*display: none;*/
+        position: fixed;
+        top: unset;
+        left: 0;
+        bottom: -5rem;
+        width: 100%;
+        padding: 0 1rem;
+        transform: unset;
+        background-color: rgba(254, 173, 129, 0.95);
+        box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
+        z-index: 10000;
+        transition: var(--#{$siteName}_transition);
   		}
+
+      &.ah_navigation--show {
+        bottom: 0;
+      }
 
   		& a {
   			display: block;
@@ -60,19 +75,14 @@
   			color: var(--#{$siteName}_link-color);
         transition: var(--#{$siteName}_transition);
 
-        &:hover {
-          color: var(--#{$siteName}_accent-color);
-
-          & svg {
-            fill: var(--#{$siteName}_accent-color);
-          }
+        @include mediaQuery(m) {
+          padding: 1rem 0;
+          font-size: 0.9rem;
+          color: #ffffff;
         }
 
-        & svg {
-          width: 1rem;
-          fill: var(--#{$siteName}_main-text-color);
-          transform: rotate(-90deg);
-          transition: var(--#{$siteName}_transition);
+        &:hover {
+          color: var(--#{$siteName}_accent-color);
         }
   		}
   	}
