@@ -39,6 +39,7 @@ window.onload = () => {
 		switchMobileNavigation(mobileNavigationTriggerRect);
 
 		// ナビゲーションの現在位置を切り替える
+		setCurrentPosition();
 		switchNavigationButton(navigation.current);
 	});
 };
@@ -48,6 +49,7 @@ window.addEventListener('resize', () => {
 	setElementPosition();
 
 	// ナビゲーションの現在位置を切り替える
+	setCurrentPosition();
 	switchNavigationButton(navigation.current);
 });	
 
@@ -98,13 +100,11 @@ const setCurrentPosition = () => {
 };
 
 const switchNavigationButton = (currentId) => {
-	setCurrentPosition();
-
 	element.navigationButton.forEach(function (element) {
 	    element.classList.remove('active');
 	});
 
-	document.getElementsByName(currentId)[0].classList.add('active');
+	document.getElementsByName(currentId)[0] && document.getElementsByName(currentId)[0].classList.add('active');
 }
 
 /**********************

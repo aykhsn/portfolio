@@ -1212,7 +1212,7 @@ footer
 @media screen and (max-width: 768px) {
   .ah_works-content_block-right {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 .ah_works-content_year {
@@ -1260,7 +1260,7 @@ footer
 @media screen and (max-width: 768px) {
   .ah_works-content_image::before {
     left: -1rem;
-    bottom: -2rem;
+    bottom: -2.5rem;
   }
 }
 .ah_works-content_image a {
@@ -1273,7 +1273,7 @@ footer
   z-index: 100;
 }
 .ah_works-content_title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_title {
@@ -1290,8 +1290,44 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_title h3 {
-    font-size: 1.375rem;
+    font-size: 1.7rem;
   }
+}
+.ah_works-content_member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .ah_works-content_member {
+    margin-bottom: 1.5rem;
+  }
+}
+.ah_works-content_member > p + p {
+  margin-left: 1em;
+}
+.ah_works-content_member p {
+  position: relative;
+  padding-left: 1.3em;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  .ah_works-content_member p {
+    font-size: 0.7rem;
+  }
+}
+.ah_works-content_member p::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 0.4em);
+  left: 0;
+  height: 0.8em;
+  width: 0.8em;
+  background-size: contain;
+  background-image: url(../assets/member.svg);
+  background-repeat: no-repeat;
 }
 .ah_works-content_description {
   margin-bottom: 1.5rem;
@@ -1302,7 +1338,7 @@ footer
   }
 }
 .ah_works-content_description h4 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5;
@@ -1310,12 +1346,12 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_description h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .ah_works-content_description li {
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .ah_works-content_description li::before {
   position: absolute;
@@ -1323,13 +1359,19 @@ footer
   content: "";
   width: 0.24rem;
   height: 0.24rem;
-  top: calc(50% - 0.12rem);
+  top: 0.72375rem;
   left: 0;
   border-radius: 50%;
   background-color: var(--ah_main-text-color);
 }
+@media screen and (max-width: 768px) {
+  .ah_works-content_description li::before {
+    top: 0.53625rem;
+  }
+}
 .ah_works-content_description p {
   margin-left: 1rem;
+  line-height: 1.5;
 }
 
 .slideInLeftToRight {
