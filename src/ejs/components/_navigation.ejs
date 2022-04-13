@@ -1,15 +1,12 @@
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
-		<a href="/">
+		<button @click="scrollToTarget('Top')">
 			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
-		</a>
+		</button>
 	</div>
 	<ul id="Navigation" class="ah_navigation-items">
-		<% var ary = ['About', 'Skills', 'Works', 'Other', 'Contact']; %>
-		<% ary.forEach(function (value, key) { %>
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#<%= value %>" class="scrollButton"><%= value %></a>
+		<li v-for="item in navigationItems" class="ah_navigation-item">
+			<button class="scrollButton" @click="scrollToTarget(item)">{{ item }}</button>
 		</li>
-		<% }); %>
 	</ul>
 </nav>

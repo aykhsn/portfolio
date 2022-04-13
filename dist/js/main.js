@@ -57,15 +57,28 @@ const switchMobileNavigation = (triggerRect) => {
  Vue.js
 ***********************/
 const vm = new Vue ({
-  el : '#vm',
+	el : '#vm',
 
-  data: {
-    isEn : true
-  },
+	data: {
+		isEn : true,
+		navigationItems : ['About', 'Skills', 'Works', 'Other', 'Contact']
+	},
 
-  methods: {
-  	switchLang: function(isEn) {
-  		this.isEn = isEn;
-  	}
-  }
+	methods: {
+		switchLang: function(isEn) {
+			this.isEn = isEn;
+		},
+
+		scrollToTarget: function(id) {
+			const targetElement = document.getElementById(id);
+			const targetElementRect = targetElement.getBoundingClientRect();
+			const offset = window.innerWidth > 768 ? 0 : 36; 
+			const targePositionTop = targetElementRect.top + window.pageYOffset - offset;
+
+			window.scrollTo({
+				top: targePositionTop,
+				behavior: 'smooth',
+			});
+		}
+	}
 });

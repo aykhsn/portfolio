@@ -32,25 +32,13 @@
 </div>
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
-		<a href="/">
+		<button @click="scrollToTarget('Top')">
 			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
-		</a>
+		</button>
 	</div>
 	<ul id="Navigation" class="ah_navigation-items">
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#About" class="scrollButton">About</a>
-		</li>
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#Skills" class="scrollButton">Skills</a>
-		</li>
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#Works" class="scrollButton">Works</a>
-		</li>
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#Other" class="scrollButton">Other</a>
-		</li>
-		<li class="ah_navigation-item">
-			<a href="/portfolio/#Contact" class="scrollButton">Contact</a>
+		<li v-for="item in navigationItems" class="ah_navigation-item">
+			<button class="scrollButton" @click="scrollToTarget(item)">{{ item }}</button>
 		</li>
 	</ul>
 </nav>
@@ -85,14 +73,14 @@
 				<p v-else>東京を拠点にフロントエンドエンジニア・WEBデザイナーとして活動しています。イラストを描くことも好きです。</p>
 			</div>
 		</div>
-		<div class="ah_mv-footer">
+		<div id="About" class="ah_mv-footer">
 			<div class="ah_mv-triangle_wrapper">
 				<img class="ah_mv-triangle" src="dist/assets/triangle.svg">
 			</div>
 		</div>
 	</div>
 </section>
-<section id="About" class="ah_block ah_about">
+<section class="ah_block ah_about">
 	<div class="ah_block-inner">
 		<div class="ah_block-header">
 			<h2>About me</h2>

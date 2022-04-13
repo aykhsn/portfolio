@@ -795,7 +795,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_navigation {
-    position: relative;
+    /*position: relative;*/
   }
 }
 .ah_navigation-logo {
@@ -813,7 +813,7 @@ footer
     top: 0.5rem;
     width: 5rem;
     height: 5rem;
-    pointer-events: none;
+    /*pointer-events: none;*/
   }
 }
 .ah_navigation-logo:hover {
@@ -866,7 +866,7 @@ footer
     bottom: 0;
   }
 }
-.ah_navigation-items a {
+.ah_navigation-items button {
   display: block;
   font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
@@ -877,13 +877,13 @@ footer
   transition: var(--ah_transition);
 }
 @media screen and (max-width: 768px) {
-  .ah_navigation-items a {
+  .ah_navigation-items button {
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #ffffff;
   }
 }
-.ah_navigation-items a:hover {
+.ah_navigation-items button:hover {
   color: var(--ah_accent-color);
 }
 
