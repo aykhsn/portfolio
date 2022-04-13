@@ -118,9 +118,14 @@ const vm = new Vue ({
 		navigationItems : navigation.items
 	},
 
+	created : function() {
+		this.isEn = JSON.parse(localStorage.getItem('isEn')) ?? 'true';
+	},
+
 	methods: {
 		switchLang: function(isEn) {
 			this.isEn = isEn;
+			localStorage.setItem('isEn', isEn);
 		},
 
 		/**********************
