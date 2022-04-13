@@ -1,68 +1,57 @@
-/**********************
- Loading
-***********************/
-window.onload = () => {
-	const element = {
-		loading: document.getElementById('loading'),
-		body: document.querySelector('body')
-	};
-
-	element.body.style.overflow = 'auto';
-
-	element.loading.classList.add('ah_loading--loaded');
-}
+let element = {};
+let position = {};
 
 /**********************
- Scroll Animation
+ Event
 ***********************/
 window.addEventListener('DOMContentLoaded', () => {
-	const element = {
-		trigger: document.getElementById('slideAnimation')
-	};
+	element.loading = document.getElementById('loading');
+	element.body = document.querySelector('body');
+	element.barGraph = document.getElementById('barGraph');
+	element.navigation = document.getElementById('Navigation');
+	element.about = document.getElementById('About');
+});
 
-	window.addEventListener('scroll', () => {
-		let position = {
-			trigger: {
-				rect: element.trigger.getBoundingClientRect()
-			},
-			scroll: {
-				top: window.scrollY
-			},
-			window: {
-				height: window.innerHeight
-			}
-		};
+window.onload = () => {
+	// 読み込み完了後にローディング画面を閉じる
+	closeLoadingScreen();
+}
 
-		if (position.scroll.top + position.window.height > position.trigger.rect.top ) {
-			element.trigger.classList.add('slideIn');
-		}
-	});
+window.addEventListener('scroll', () => {
+	position.scrollTop = window.scrollY;
+	position.windowHeight = window.innerHeight;
+
+	// グラフが画面に入ったらアニメーションを開始する
+	const slideAnimationTriggerRect = element.barGraph.getBoundingClientRect();
+	startSlideAnimation(slideAnimationTriggerRect);
+
+	// Aboutが画面に入る位置でナビゲーション表示を切り替える
+	const mobileNavigationTriggerRect = element.about.getBoundingClientRect();
+	switchMobileNavigation(mobileNavigationTriggerRect);
 });
 
 /**********************
- Navigation
+ Loading Screen
 ***********************/
-window.addEventListener('scroll', () => {
-	const element = {
-		navigation: document.getElementById('Navigation'),
-		trigger: document.getElementById('About')
-	};
+const closeLoadingScreen = () => {
+	element.body.style.overflow = 'auto';
+	element.loading.classList.add('loaded');
+};
 
-	let position = {
-		trigger: {
-			rect: element.trigger.getBoundingClientRect()
-		},
-		scroll: {
-			top: window.scrollY
-		}
-	};
+/**********************
+ Slide Animation
+***********************/
+const startSlideAnimation = (triggerRect) => {
+	const startPosition = position.scrollTop + position.windowHeight;
+	startPosition > triggerRect.top && element.barGraph.classList.add('slideIn');
+};
 
-	if (position.scroll.top > position.trigger.rect.top) {
-		element.navigation.classList.add('ah_navigation--show');
-	} else {
-		element.navigation.classList.remove('ah_navigation--show');
-	}
-});
+/**********************
+ Mobile Navigation
+***********************/
+const switchMobileNavigation = (triggerRect) => {
+	position.scrollTop > triggerRect.top ? element.navigation.classList.add('show') : element.navigation.classList.remove('show');
+};
 
 /**********************
  Vue.js
