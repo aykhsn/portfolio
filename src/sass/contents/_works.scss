@@ -192,10 +192,10 @@
         & p {
           position: relative;
           padding-left: 1.3em;
-          font-size: 0.9rem;
+          font-size: 1rem;
 
           @include mediaQuery(m) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
           }
 
           &::before {

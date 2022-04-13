@@ -1310,11 +1310,11 @@ footer
 .ah_works-content_member p {
   position: relative;
   padding-left: 1.3em;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_member p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 .ah_works-content_member p::before {
