@@ -8,11 +8,11 @@ footer
 		background-color: var(--#{$siteName}_main-color);
 
 		&-content {
-			padding: 24rem 0 16rem;
+			padding: 28rem 0 20rem;
 			text-align: center;
 
 			@include mediaQuery(m) {
-				padding: 12rem 0 10rem;
+				padding: 16rem 0 14rem;
 			}
 
 			& span {

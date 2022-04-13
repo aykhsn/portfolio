@@ -38,7 +38,7 @@
 	</div>
 	<ul id="Navigation" class="ah_navigation-items">
 		<li v-for="item in navigationItems" class="ah_navigation-item">
-			<button class="scrollButton" @click="scrollToTarget(item)">{{ item }}</button>
+			<button :name="item" @click="scrollToTarget(item)">{{ item }}</button>
 		</li>
 	</ul>
 </nav>
