@@ -35,6 +35,10 @@
   			}
 
   			&-no-image {
+          & .#{$siteName}_works-content_member {
+            margin-left: 0;
+          }
+
   				& .#{$siteName}_works-content_block-right {
   					position: relative;
   					margin-top: 2.875rem;
@@ -157,10 +161,10 @@
   		}
 
   		&_title {
-  			margin-bottom: 1.5rem;
+  			margin-bottom: 1.25rem;
 
   			@include mediaQuery(m) {
-  				margin-bottom: 1rem;
+  				margin-bottom: 1.25rem;
   			}
 
   			& h3 {
@@ -179,50 +183,56 @@
 
       &_member {
         display: flex;
-        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 0.5em;
+        margin-left: -2rem;
+        margin-bottom: 0.5rem;
+        border-top: 1px solid #737272;
 
         @include mediaQuery(m) {
+          justify-content: flex-start;
+          padding-bottom: 0.5em;
           margin-bottom: 1.5rem;
+          margin-left: 0;
+          border-bottom: 1px solid #737272;
         }
 
-        & > p + p {
-          margin-left: 1em;
+        &-icon {
+          @include mediaQuery(m) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 2rem;
+          }
+        }
+
+        & img {
+          width: 0.8rem;
+          height: auto;
+          margin: 0.1rem;
+
+          @include mediaQuery(m) {
+            width: 0.7rem;
+          }
         }
 
         & p {
-          position: relative;
-          padding-left: 1.3em;
+          margin-left: 0.5em;
           font-size: 1rem;
+          font-weight: 600;
 
           @include mediaQuery(m) {
-            font-size: 0.8rem;
-          }
-
-          &::before {
-            content: "";
-            position: absolute;
-            display: inline-block;
-            top: calc(50% - 0.8em / 2);
-            left: 0;
-            height: 0.8em;
-            width: 0.8em;
-            background-size: contain;
-            background-image: url(../assets/member.svg);
-            background-repeat: no-repeat;
+            font-size: 0.875rem;
           }
         }
-
       }
 
   		&_description {
-  			margin-bottom: 1.5rem;
-
-  			@include mediaQuery(m) {
-  				margin-bottom: 1rem;
-  			}
+        margin-bottom: 1rem;
 
   			& h4 {
-  				margin-bottom: 1rem;
+  				margin-bottom: 0.5rem;
   				font-size: 1.25rem;
   				font-weight: 600;
   				line-height: 1.5;
@@ -235,7 +245,10 @@
 
   			& li {
   				position: relative;
-  				margin-bottom: 1rem;
+
+          & + li {
+    				margin-top: 0.5rem;
+          }
 
   				&::before {
   					position: absolute;
