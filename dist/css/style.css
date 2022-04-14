@@ -550,7 +550,7 @@ footer
 @media screen and (max-width: 768px) {
   .ah_mv-block_left {
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 .ah_mv-block_left h1 {
@@ -562,7 +562,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h1 {
-    width: 65%;
+    width: 66.6666666667%;
     text-align: left;
   }
 }
@@ -577,7 +577,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h2 {
-    font-size: calc(0.9rem + 1.2vw);
+    font-size: calc(0.7rem + 2.4vw);
     text-align: left;
   }
 }
@@ -660,7 +660,7 @@ footer
   .ah_mv-block_right {
     display: block;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 3.75rem;
   }
 }

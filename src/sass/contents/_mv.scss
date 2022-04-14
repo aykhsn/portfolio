@@ -63,7 +63,7 @@
 
   			@include mediaQuery(m) {
   				width: 100%;
-  				margin-bottom: 2.5rem;
+  				margin-bottom: 3rem;
 	  		}
 
   			& h1 {
@@ -75,7 +75,7 @@
           }
 
   				@include mediaQuery(m) {
-            width: 65%;
+            width: calc(100% / 3 * 2);
   					text-align: left;
   				}
   			}
@@ -90,7 +90,7 @@
   				color: var(--#{$siteName}_link-color);
 
   				@include mediaQuery(m) {
-  					font-size: calc(0.9rem + 1.2vw);
+  					font-size: calc(0.7rem + 2.4vw);
   					text-align: left;
   				}
   			}
@@ -152,7 +152,7 @@
   			@include mediaQuery(m) {
   				display: block;
   				width: 100%;
-  				margin-top: 2rem;
+  				margin-top: 1.5rem;
   				margin-bottom: 3.75rem;
 	  		}
 
