@@ -11,6 +11,10 @@
   	width: 100%;
   	z-index: 1001;
 
+    @include mediaQuery(m) {
+      position: relative;
+    }
+
   	&-logo {
   		position: absolute;
   		left: 2rem;
@@ -20,6 +24,7 @@
   		transition: var(--#{$siteName}_transition);
 
   		@include mediaQuery(m) {
+        position: fixed;
   			left: 0.5rem;
         top: 0.5rem;
         width: 5rem;

@@ -799,6 +799,11 @@ footer
   width: 100%;
   z-index: 1001;
 }
+@media screen and (max-width: 768px) {
+  .ah_navigation {
+    position: relative;
+  }
+}
 .ah_navigation-logo {
   position: absolute;
   left: 2rem;
@@ -810,6 +815,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-logo {
+    position: fixed;
     left: 0.5rem;
     top: 0.5rem;
     width: 5rem;
