@@ -570,20 +570,15 @@ footer
   font-size: 1.6875rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   white-space: nowrap;
   text-align: right;
   color: var(--ah_link-color);
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h2 {
-    font-size: 1.45rem;
+    font-size: calc(0.9rem + 1.2vw);
     text-align: left;
-  }
-}
-@media screen and (max-width: 400px) {
-  .ah_mv-block_left h2 {
-    font-size: 1.25rem;
   }
 }
 .ah_mv-block_top {

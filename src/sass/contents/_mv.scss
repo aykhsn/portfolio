@@ -84,18 +84,14 @@
   				font-size: 1.6875rem;
   				font-family: 'Montserrat Alternates', sans-serif;
   				font-weight: 400;
-  				letter-spacing: 0.01em;
+  				letter-spacing: 0.02em;
           white-space: nowrap;
   				text-align: right;
   				color: var(--#{$siteName}_link-color);
 
   				@include mediaQuery(m) {
-  					font-size: 1.45rem;
+  					font-size: calc(0.9rem + 1.2vw);
   					text-align: left;
-  				}
-
-  				@include mediaQuery(s) {
-  					font-size: 1.25rem;
   				}
   			}
   		}
