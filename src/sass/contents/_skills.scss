@@ -4,12 +4,6 @@
  skills
 ***********************/
 .#{$siteName} {
-  &_about {
-    .#{$siteName}_block-header {
-      padding: 1rem 0 0 0;
-    }
-  }
-
   &_skills {
     position: relative;
 

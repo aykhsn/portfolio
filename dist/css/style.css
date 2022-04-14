@@ -130,6 +130,11 @@ a {
   width: 100%;
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .ah_block {
+    padding-bottom: 4rem;
+  }
+}
 .ah_block-inner {
   max-width: var(--ah_full-width);
   padding: 0 4rem;
@@ -470,6 +475,7 @@ footer
 .ah_mv {
   height: 100vh;
   width: 100vw;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   .ah_mv {
@@ -947,9 +953,6 @@ footer
 /**********************
  skills
 ***********************/
-.ah_about .ah_block-header {
-  padding: 1rem 0 0 0;
-}
 .ah_skills {
   position: relative;
 }
@@ -1311,7 +1314,7 @@ footer
 }
 @media screen and (max-width: 768px) {
   .ah_works-content_member {
-    margin-top: 1rem;
+    margin-top: 1.75rem;
   }
 }
 .ah_works-content_member-icon {
