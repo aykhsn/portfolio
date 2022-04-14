@@ -184,46 +184,33 @@
       &_member {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        padding-top: 0.5em;
-        margin-left: -2rem;
-        margin-bottom: 0.5rem;
-        border-top: 1px solid #737272;
+        margin-top: 1.5rem;
 
         @include mediaQuery(m) {
-          justify-content: flex-start;
-          padding-bottom: 0.5em;
-          margin-bottom: 1.5rem;
-          margin-left: 0;
-          border-bottom: 1px solid #737272;
+          margin-top: 1rem;
         }
 
         &-icon {
-          @include mediaQuery(m) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 2rem;
-          }
+          display: flex;
         }
 
         & img {
-          width: 0.8rem;
+          width: 0.7rem;
           height: auto;
-          margin: 0.1rem;
+          margin: 0.05rem;
 
           @include mediaQuery(m) {
-            width: 0.7rem;
+            width: 0.6rem;
           }
         }
 
         & p {
           margin-left: 0.5em;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 600;
 
           @include mediaQuery(m) {
-            font-size: 0.875rem;
+            font-size: 0.8rem;
           }
         }
       }
