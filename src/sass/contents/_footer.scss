@@ -8,11 +8,11 @@ footer
 		background-color: var(--#{$siteName}_main-color);
 
 		&-content {
-			padding: 28rem 0 20rem;
+			padding: 28rem 0 16rem;
 			text-align: center;
 
 			@include mediaQuery(m) {
-				padding: 16rem 0 14rem;
+				padding: 16rem 0 10rem;
 			}
 
 			& span {
@@ -65,13 +65,18 @@ footer
 		}
 
 		&-license {
+			padding-bottom: 4rem;
 			text-align: center;
+
+			& p {
+				font-size: 0.6rem;
+				line-height: 2;
+				color: var(--#{$siteName}_accent-color);
+			}
 
 			& a {
 				color: inherit;
-				font-size: 8px;
-				line-height: 2;
-				color: #ffa371;
+				font-size: inherit;
 			}
 		}
 	}

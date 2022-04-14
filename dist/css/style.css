@@ -279,12 +279,12 @@ footer
   background-color: var(--ah_main-color);
 }
 .ah_footer-content {
-  padding: 28rem 0 20rem;
+  padding: 28rem 0 16rem;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .ah_footer-content {
-    padding: 16rem 0 14rem;
+    padding: 16rem 0 10rem;
   }
 }
 .ah_footer-content span {
@@ -335,13 +335,17 @@ footer
   }
 }
 .ah_footer-license {
+  padding-bottom: 4rem;
   text-align: center;
+}
+.ah_footer-license p {
+  font-size: 0.6rem;
+  line-height: 2;
+  color: var(--ah_accent-color);
 }
 .ah_footer-license a {
   color: inherit;
-  font-size: 8px;
-  line-height: 2;
-  color: #ffa371;
+  font-size: inherit;
 }
 
 /**********************
