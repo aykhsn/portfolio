@@ -5,10 +5,10 @@
 ***********************/
 .#{$siteName} {
   &_other {
-  	position: relative;
-  	background-color: #ffffff;
+    position: relative;
+    background-color: #ffffff;
 
-  	&::after {
+    &::after {
       position: absolute;
       display: block;
       content: "";
@@ -22,37 +22,37 @@
       z-index: 1;
     }
 
-  	&-content {
-  		position: relative;
-  		margin-top: 5rem;
+    &-content {
+      position: relative;
+      margin-top: 5rem;
       padding-bottom: 3rem;
-  		z-index: 100;
+      z-index: 100;
 
-  		@include mediaQuery(m) {
-  			margin-top: 3rem;
-  		}
+      @include mediaQuery(m) {
+        margin-top: 3rem;
+      }
 
-  		& a {
-  			display: block;
-  		}
+      & a {
+        display: block;
+      }
 
-  		& ul {
-  			display: flex;
-  			flex-wrap: wrap;
-  			justify-content: space-between;
-  			align-items: center;
-  			margin-left: calc((100% - 4rem) / 3 + 2rem);
-  			width: calc((100% - 2rem) / 2);
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: calc((100% - 4rem) / 3 + 2rem);
+        width: calc((100% - 2rem) / 2);
 
-  			@include mediaQuery(m) {
-  				margin-left: 0;
-  				width: 100%;
-  			}
-  		}
+        @include mediaQuery(m) {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
 
-  		& li {
-  			width: 25%;
-  		}
-  	}
+      & li {
+        width: 25%;
+      }
+    }
   }
 }

@@ -5,10 +5,10 @@
 ***********************/
 .#{$siteName} {
   &_works {
-  	position: relative;
-  	background-color: var(--#{$siteName}_bg-sub-color);
+    position: relative;
+    background-color: var(--#{$siteName}_bg-sub-color);
 
-  	&::after {
+    &::after {
       position: absolute;
       display: block;
       content: "";
@@ -22,168 +22,168 @@
       z-index: 1;
     }
 
-  	&-content {
-  		&_item {
-  			position: relative;
-  			margin-top: 7.5rem;
-  			z-index: 100;
+    &-content {
+      &_item {
+        position: relative;
+        margin-top: 7.5rem;
+        z-index: 100;
 
-  			&:first-child {
-  				@include mediaQuery(m) {
-	  				margin-top: 4rem;
-	  			}
-  			}
+        &:first-child {
+          @include mediaQuery(m) {
+            margin-top: 4rem;
+          }
+        }
 
-  			&-no-image {
+        &-no-image {
           & .#{$siteName}_works-content_member {
             margin-left: 0;
           }
 
-  				& .#{$siteName}_works-content_block-right {
-  					position: relative;
-  					margin-top: 2.875rem;
+          & .#{$siteName}_works-content_block-right {
+            position: relative;
+            margin-top: 2.875rem;
 
-  					@include mediaQuery(m) {
-  						margin-top: 2rem;
-  					}
+            @include mediaQuery(m) {
+              margin-top: 2rem;
+            }
 
-  					&::before {
-		  				content: "";
-		  				position: absolute;
-		  				display: inline-block;
-		  				top: 0;
-		  				left: calc(-1 * ((100% / 3) + 2rem));
-		  				height: 8.75rem;
-		  				width: 1rem;
-		  				background-size: contain;
-		  				background-image: url(../assets/wave-h.svg);
-					    background-repeat: no-repeat;
+            &::before {
+              content: "";
+              position: absolute;
+              display: inline-block;
+              top: 0;
+              left: calc(-1 * ((100% / 3) + 2rem));
+              height: 8.75rem;
+              width: 1rem;
+              background-size: contain;
+              background-image: url(../assets/wave-h.svg);
+              background-repeat: no-repeat;
 
-					    @include mediaQuery(m) {
-			  				right: 0;
-			  				left: calc(50% - 0.5rem);
-						    bottom: calc(100% + 2.5rem);
-						    top: unset;
-			  				height: 4.5rem;
-			  				width: 1rem;
-			  				text-align: center;
-					    }
-		  			}
-  				}
-  			}
-  		}
+              @include mediaQuery(m) {
+                right: 0;
+                left: calc(50% - 0.5rem);
+                bottom: calc(100% + 2.5rem);
+                top: unset;
+                height: 4.5rem;
+                width: 1rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
 
-  		&_block {
-  			display: flex;
-  			justify-content: space-between;
-  			align-items: flex-start;
+      &_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
-  			@include mediaQuery(m) {
-  				display: block;
-  			}
+        @include mediaQuery(m) {
+          display: block;
+        }
 
-  			&-left {
-  				width: calc((100% - 2rem) / 2);
+        &-left {
+          width: calc((100% - 2rem) / 2);
 
-  				@include mediaQuery(m) {
-  					width: 100%;
-  				}
-  			}
+          @include mediaQuery(m) {
+            width: 100%;
+          }
+        }
 
-  			&-right {
-  				width: calc((100% - 2rem) / 2);
-  				margin-top: 7rem;
+        &-right {
+          width: calc((100% - 2rem) / 2);
+          margin-top: 7rem;
 
-  				@include mediaQuery(m) {
-  					width: 100%;
-  					margin-top: 1.5rem;
-  				}
-  			}
-  		}
+          @include mediaQuery(m) {
+            width: 100%;
+            margin-top: 1.5rem;
+          }
+        }
+      }
 
-  		&_year {
-  			text-align: right;
+      &_year {
+        text-align: right;
 
-  			@include mediaQuery(m) {
-  				text-align: left;
-  			}
+        @include mediaQuery(m) {
+          text-align: left;
+        }
 
-  			& span {
-  				font-size: 1.5rem;
-  				font-weight: 600;
-  				letter-spacing: 0.01em;
-  				font-family: 'Montserrat Alternates', sans-serif;
+        & span {
+          font-size: 1.5rem;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+          font-family: 'Montserrat Alternates', sans-serif;
 
-  				@include mediaQuery(m) {
-  					font-size: 1.2rem;
-  				}
-  			}
-  		}
+          @include mediaQuery(m) {
+            font-size: 1.2rem;
+          }
+        }
+      }
 
-  		&_image {
-  			position: relative;
-  			margin-top: 1.5rem;
+      &_image {
+        position: relative;
+        margin-top: 1.5rem;
         padding: 0 0 2rem 2rem;
-  			width: calc(24rem + 5vw);
-  			float: right;
+        width: calc(24rem + 5vw);
+        float: right;
 
-  			@include mediaQuery(m) {
+        @include mediaQuery(m) {
           padding: 0;
-  				float: unset;
-  				width: 100%;
-  			}
+          float: unset;
+          width: 100%;
+        }
 
-			&::before {
-				position: absolute;
-				display: block;
-				content: "";
-				left: 0;
-				bottom: 0;
-				width: calc((24rem + 5vw) / 2);
-				height: calc((24rem + 5vw) / 2);
-				background-color: #FFBD99;
-				z-index: 0;
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: calc((24rem + 5vw) / 2);
+          height: calc((24rem + 5vw) / 2);
+          background-color: #FFBD99;
+          z-index: 0;
 
-				@include mediaQuery(m) {
-					left: -1rem;
-					bottom: -2.5rem;
-          width: 50vw;
-          height: 50vw;
-				}
-			}
+          @include mediaQuery(m) {
+            left: -1rem;
+            bottom: -2.5rem;
+            width: 50vw;
+            height: 50vw;
+          }
+        }
 
-			& a {
-				display: block;
-			}
+        & a {
+          display: block;
+        }
 
-  			& img {
-  				position: relative;
-  				width: 100%;
-  				height: auto;
-  				z-index: 100;
-  			}
-  		}
+        & img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: 100;
+        }
+      }
 
-  		&_title {
-  			margin-bottom: 1.25rem;
+      &_title {
+        margin-bottom: 1.25rem;
 
-  			@include mediaQuery(m) {
-  				margin-bottom: 1.25rem;
-  			}
+        @include mediaQuery(m) {
+          margin-bottom: 1.25rem;
+        }
 
-  			& h3 {
-  				position: relative;
-  				font-size: 2rem;
-  				font-weight: 600;
-  				letter-spacing: 0.02em;
-  				line-height: 1.5;
-  				z-index: 100;
+        & h3 {
+          position: relative;
+          font-size: 2rem;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          line-height: 1.5;
+          z-index: 100;
 
-  				@include mediaQuery(m) {
-  					font-size: 1.7rem;
-  				}
-  			}
-  		}
+          @include mediaQuery(m) {
+            font-size: 1.7rem;
+          }
+        }
+      }
 
       &_member {
         display: flex;
@@ -233,50 +233,50 @@
         }
       }
 
-  		&_description {
+      &_description {
         margin-bottom: 1rem;
 
-  			& h4 {
-  				margin-bottom: 0.5rem;
-  				font-size: 1.25rem;
-  				font-weight: 600;
-  				line-height: 1.5;
-  				letter-spacing: 0.02em;
+        & h4 {
+          margin-bottom: 0.5rem;
+          font-size: 1.25rem;
+          font-weight: 600;
+          line-height: 1.5;
+          letter-spacing: 0.02em;
 
-  				@include mediaQuery(m) {
-  					font-size: 1.1rem;
-  				}
-  			}
+          @include mediaQuery(m) {
+            font-size: 1.1rem;
+          }
+        }
 
-  			& li {
-  				position: relative;
+        & li {
+          position: relative;
 
           & + li {
-    				margin-top: 0.5rem;
+            margin-top: 0.5rem;
           }
 
-  				&::before {
-  					position: absolute;
-  					display: inline-block;
-  					content: "";
-  					width: 0.24rem;
-  					height: 0.24rem;
-  					top: calc((1.125rem * 1.5 / 2) - (0.24rem / 2));
-  					left: 0;
-  					border-radius: 50%;
-  					background-color: var(--#{$siteName}_main-text-color);
+          &::before {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            width: 0.24rem;
+            height: 0.24rem;
+            top: calc((1.125rem * 1.5 / 2) - (0.24rem / 2));
+            left: 0;
+            border-radius: 50%;
+            background-color: var(--#{$siteName}_main-text-color);
 
             @include mediaQuery(m) {
               top: calc((0.875rem * 1.5 / 2) - (0.24rem / 2));
             }
-  				}
-  			}
+          }
+        }
 
-  			& p {
-  				margin-left: 1rem;
+        & p {
+          margin-left: 1rem;
           line-height: 1.5;
-  			}
-  		}
-  	}
+        }
+      }
+    }
   }
 }

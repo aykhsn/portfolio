@@ -21,49 +21,49 @@
       z-index: 1;
     }
 
-  	&-content {
+    &-content {
       position: relative;
-  		margin-left: calc(((100% - 2rem * 2) / 3 ) + 2rem);
+      margin-left: calc(((100% - 2rem * 2) / 3 ) + 2rem);
       z-index: 100;
 
       @include mediaQuery(m) {
         margin-left: 0;
       }
 
-  		& ul {
-  			margin-top: 2.5rem;
-  		}
+      & ul {
+        margin-top: 2.5rem;
+      }
 
-  		& li {
-  			display: flex;
-  			justify-content: space-between;
-  			align-items: center;
-  			margin-bottom: 1rem;
+      & li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
 
         &:last-child {
           margin-bottom: 0;
         }
-  		}
+      }
 
-  		&_name {
+      &_name {
         width: 30rem;
 
-  			& span {
-	  			font-size: 1.375rem;
-	  			font-weight: 500;
+        & span {
+          font-size: 1.375rem;
+          font-weight: 500;
           line-height: 1.5;
-	  			letter-spacing: 0.01em;
+          letter-spacing: 0.01em;
 
           @include mediaQuery(m) {
             font-size: 1rem;
             letter-spacing: 0.01em;
           }
-  			}
-  		}
+        }
+      }
 
-  		&_bar {
-  			display: flex;
-  			justify-content: space-between;
+      &_bar {
+        display: flex;
+        justify-content: space-between;
         padding: 0 1rem;
         width: 100%;
 
@@ -71,42 +71,42 @@
           padding: 0 0.5rem;
         }
 
-  			&--90 {
-  				& span::after {
+        &--90 {
+          & span::after {
             width: 90%;
-  				}
-  			}
+          }
+        }
 
-  			&--80 {
-  				& span::after {
+        &--80 {
+          & span::after {
             width: 80%;
-  				}
-  			}
+          }
+        }
 
-  			&--70 {
-  				& span::after {
+        &--70 {
+          & span::after {
             width: 70%;
-  				}
-  			}
+          }
+        }
 
-  			&--60 {
-  				& span::after {
+        &--60 {
+          & span::after {
             width: 60%;
-  				}
-  			}
+          }
+        }
 
-  			&--50 {
-  				& span::after {
+        &--50 {
+          & span::after {
             width: 50%;
-  				}
-  			}
+          }
+        }
 
-  			& span {
+        & span {
           position: relative;
           display: block;
-  				width: 100%;
+          width: 100%;
           height: 1.375rem;
-  				background-color: #D8D2CF;
+          background-color: #D8D2CF;
 
           @include mediaQuery(m) {
             height: 1rem;
@@ -122,28 +122,28 @@
             background-color: var(--#{$siteName}_sub-color);
             transform-origin: left;
           }
-  			}
-  		}
+        }
+      }
 
-  		&_value {
+      &_value {
         width: 6rem;
 
         @include mediaQuery(m) {
           width: 2.4rem;
         }
 
-  			& span {
-    			font-size: 1.25rem;
-  				font-weight: 600;
-  				letter-spacing: 0.01em;
-  				color: var(--#{$siteName}_sub-color);
+        & span {
+          font-size: 1.25rem;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+          color: var(--#{$siteName}_sub-color);
 
           @include mediaQuery(m) {
             font-size: 1rem;
           }
-  			}
-  		}
-  	}
+        }
+      }
+    }
   }
 }
 

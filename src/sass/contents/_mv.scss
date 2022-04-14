@@ -5,280 +5,280 @@
 ***********************/
 .#{$siteName} {
   &_mv {
-  	height: 100vh;
+    height: 100vh;
     width: 100vw;
     padding-bottom: 0;
 
-  	@include mediaQuery(m) {
-  		height: auto;
-  	}
+    @include mediaQuery(m) {
+      height: auto;
+    }
 
-  	&-inner {
-	  	display: flex;
-	  	flex-direction: column;
-	  	justify-content: space-between;
-	  	height: 100%;
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
 
-	  	@include mediaQuery(m) {
-	  		display: block;
-	  		height: auto;
-	  	}
-	  }
+      @include mediaQuery(m) {
+        display: block;
+        height: auto;
+      }
+    }
 
-  	&-header {
-  		position: relative;
-  		flex-shrink: 0;
-  		height: 19vh;
-  		width: 100%;
+    &-header {
+      position: relative;
+      flex-shrink: 0;
+      height: 19vh;
+      width: 100%;
 
-  		@include mediaQuery(m) {
-  			height: 6.5rem;
-  		}
-  	}
+      @include mediaQuery(m) {
+        height: 6.5rem;
+      }
+    }
 
-  	&-footer {
-  		position: relative;
-  		flex: auto;
-  		height: 4rem;
+    &-footer {
+      position: relative;
+      flex: auto;
+      height: 4rem;
 
       @include mediaQuery(m) {
         height: 2rem;
       }
-  	}
+    }
 
-  	&-block {
-  		display: flex;
-  		justify-content: space-between;
-  		flex: auto;
-  		height: 38rem;
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      flex: auto;
+      height: 38rem;
 
-  		@include mediaQuery(m) {
-  			display: block;
-  			height: auto;
-  		}
+      @include mediaQuery(m) {
+        display: block;
+        height: auto;
+      }
 
-  		&_left {
-  			position: relative;
-  			width: calc((100% - 2rem * 2) / 3);
+      &_left {
+        position: relative;
+        width: calc((100% - 2rem * 2) / 3);
 
-  			@include mediaQuery(m) {
-  				width: 100%;
-  				margin-bottom: 3rem;
-	  		}
-
-  			& h1 {
+        @include mediaQuery(m) {
           width: 100%;
-  				text-align: right;
+          margin-bottom: 3rem;
+        }
+
+        & h1 {
+          width: 100%;
+          text-align: right;
 
           & img {
             width: 100%;
           }
 
-  				@include mediaQuery(m) {
+          @include mediaQuery(m) {
             width: calc(100% / 3 * 2);
-  					text-align: left;
-  				}
-  			}
+            text-align: left;
+          }
+        }
 
-  			& h2 {
-  				font-size: 1.6875rem;
-  				font-family: 'Montserrat Alternates', sans-serif;
-  				font-weight: 400;
-  				letter-spacing: 0.02em;
+        & h2 {
+          font-size: 1.6875rem;
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.02em;
           white-space: nowrap;
-  				text-align: right;
-  				color: var(--#{$siteName}_link-color);
+          text-align: right;
+          color: var(--#{$siteName}_link-color);
 
-  				@include mediaQuery(m) {
-  					font-size: calc(0.7rem + 2.4vw);
-  					text-align: left;
-  				}
-  			}
-  		}
+          @include mediaQuery(m) {
+            font-size: calc(0.7rem + 2.4vw);
+            text-align: left;
+          }
+        }
+      }
 
-  		&_top {
-  			position: relative;
-  			z-index: 1001;
-  		}
+      &_top {
+        position: relative;
+        z-index: 1001;
+      }
 
-  		&_middle {
-  			position: absolute;
-  			top: 50%;
-  			right: 0;
-  			transform: translateY(-50%);
-  			z-index: 1001;
+      &_middle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 1001;
 
-  			@include mediaQuery(m) {
-  				position: relative;
+        @include mediaQuery(m) {
+          position: relative;
           margin-top: 1rem;
           transform: unset;
-  			}
-  		}
+        }
+      }
 
-  		&_center {
-  			position: relative;
-  			display: flex;
-  			flex-direction: column;
-  			justify-content: center;
-  			width: calc((100% - 2rem * 2) / 3);
+      &_center {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc((100% - 2rem * 2) / 3);
         z-index: 0;
-        
-  			@include mediaQuery(m) {
-  				align-items: center;
-  				width: 100%;
-	  		}
 
-  			&::before {
-  				position: absolute;
-		  		display: block;
-		  		content: "";
-		  		left: calc(50% - 150vw);
-		  		bottom: 50%;
-		  		width: 300vw;
-		  		height: 150vw;
-		  		transform: rotate(-45deg);
-		  		transform-origin: bottom;
-		  		background-color: var(--#{$siteName}_main-color);
-		  		z-index: 10;
-		  	}
-  		}
+        @include mediaQuery(m) {
+          align-items: center;
+          width: 100%;
+        }
 
-  		&_right {
-  			display: flex;
-  			flex-direction: column;
-  			justify-content: flex-end;
-  			width: calc((100% - 2rem * 2) / 3);
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          left: calc(50% - 150vw);
+          bottom: 50%;
+          width: 300vw;
+          height: 150vw;
+          transform: rotate(-45deg);
+          transform-origin: bottom;
+          background-color: var(--#{$siteName}_main-color);
+          z-index: 10;
+        }
+      }
 
-  			@include mediaQuery(m) {
-  				display: block;
-  				width: 100%;
-  				margin-top: 1.5rem;
-  				margin-bottom: 3.75rem;
-	  		}
+      &_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: calc((100% - 2rem * 2) / 3);
 
-  			& p {
-  				position: relative;
-  				margin-left: 1.75rem;
-  				font-size: 1.2rem;
-  				font-family: 'Montserrat Alternates', sans-serif;
-  				font-weight: 500;
-  				letter-spacing: 0.02em;
-  				line-height: 1.6;
-  				z-index: 100;
+        @include mediaQuery(m) {
+          display: block;
+          width: 100%;
+          margin-top: 1.5rem;
+          margin-bottom: 3.75rem;
+        }
 
-  				@include mediaQuery(m) {
-  					margin-left: 1rem;
-  					font-size: 1.2rem;
-  				}
+        & p {
+          position: relative;
+          margin-left: 1.75rem;
+          font-size: 1.2rem;
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          line-height: 1.6;
+          z-index: 100;
 
-  				@include mediaQuery(s) {
-  					font-size: 0.875rem;
-  				}
+          @include mediaQuery(m) {
+            margin-left: 1rem;
+            font-size: 1.2rem;
+          }
 
-	  			&::before {
-	  				position: absolute;
-	  				left: -1.75rem;
-	  				content: "";
-	  				display: inline-block;
-	  				height: 100%;
-	  				width: 1.75rem;
-	  				background-size: contain;
-	  				background-image: url(../assets/wave-h.svg);
-				    background-repeat: no-repeat;
+          @include mediaQuery(s) {
+            font-size: 0.875rem;
+          }
 
-				    @include mediaQuery(m) {
-				    	left: -1rem;
-				    }
-	  			}
-  			}
-  		}
-  	}
+          &::before {
+            position: absolute;
+            left: -1.75rem;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 1.75rem;
+            background-size: contain;
+            background-image: url(../assets/wave-h.svg);
+            background-repeat: no-repeat;
 
-  	&-language {
-  		position: absolute;
-  		left: calc((100% / 3 * 2) + 1rem);
-  		top: 6vh;
-  		color: var(--#{$siteName}_link-color);
-  		z-index: 100;
+            @include mediaQuery(m) {
+              left: -1rem;
+            }
+          }
+        }
+      }
+    }
 
-  		@include mediaQuery(m) {
-  			top: 1rem;
-  			right: 0;
-  			left: unset;
-  		}
+    &-language {
+      position: absolute;
+      left: calc((100% / 3 * 2) + 1rem);
+      top: 6vh;
+      color: var(--#{$siteName}_link-color);
+      z-index: 100;
 
-  		&_button {
-			font-size: 1.125rem;
-			font-family: 'Montserrat Alternates', sans-serif;
-			font-weight: 500;
-			letter-spacing: 0.07em;
-			color: inherit;
-			transition: var(--#{$siteName}_transition);
+      @include mediaQuery(m) {
+        top: 1rem;
+        right: 0;
+        left: unset;
+      }
 
-  			&--active {
-  				color: var(--#{$siteName}_accent-color);
-  			}
+      &_button {
+        font-size: 1.125rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        color: inherit;
+        transition: var(--#{$siteName}_transition);
+
+        &--active {
+          color: var(--#{$siteName}_accent-color);
+        }
 
         &:hover {
           color: var(--#{$siteName}_accent-color);
         }
-  		}
+      }
 
-  		& span {
-  			margin: 0 0.1rem;
-  			font-size: 1.125rem;
-  			font-family: 'Montserrat Alternates', sans-serif;
-  			font-weight: 500;
-  			letter-spacing: 0.01em;
-  			color: inherit;
-  		}
-  	}
+      & span {
+        margin: 0 0.1rem;
+        font-size: 1.125rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        color: inherit;
+      }
+    }
 
-  	&-picture {
-  		position: relative;
-  		border-radius: 50%;
-  		z-index: 1000;
+    &-picture {
+      position: relative;
+      border-radius: 50%;
+      z-index: 1000;
 
-  		&_wrapper {
-  			position: relative;
+      &_wrapper {
+        position: relative;
 
-			@include mediaQuery(m) {
-				width: calc(((100% - 0.5rem * 5) / 6 * 4) + 2rem);
-			}
+        @include mediaQuery(m) {
+          width: calc(((100% - 0.5rem * 5) / 6 * 4) + 2rem);
+        }
 
-  			&::before {
-  				position: absolute;
-  				content: "";
-  				bottom: 44%;
-  				left: 44%;
-  				width: 22vw;
-  				height: 22vw;
-  				border-radius: 50%;
-  				background-color: var(--#{$siteName}_sub-color);
-  				z-index: 100;
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: 44%;
+          left: 44%;
+          width: 22vw;
+          height: 22vw;
+          border-radius: 50%;
+          background-color: var(--#{$siteName}_sub-color);
+          z-index: 100;
 
-  				@include mediaQuery(m) {
-  					width: 44vw;
-	  				height: 44vw;
-  				}
-  			}
-  		}
-  	}
+          @include mediaQuery(m) {
+            width: 44vw;
+            height: 44vw;
+          }
+        }
+      }
+    }
 
-  	&-triangle {
-  		width: 1.6rem;
-  		height: auto;
+    &-triangle {
+      width: 1.6rem;
+      height: auto;
 
-  		&_wrapper {
-	  		position: absolute;
-	  		left: calc(((100% - 2rem * 2) / 3) + 2rem);
-	  		bottom: 1rem;
-	  		z-index: 100;
+      &_wrapper {
+        position: absolute;
+        left: calc(((100% - 2rem * 2) / 3) + 2rem);
+        bottom: 1rem;
+        z-index: 100;
 
-	  		@include mediaQuery(m) {
-	  			left: calc(50% - 0.8rem);
-	  		}
-  		}
-  	}
+        @include mediaQuery(m) {
+          left: calc(50% - 0.8rem);
+        }
+      }
+    }
   }
 }

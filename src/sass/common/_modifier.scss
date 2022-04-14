@@ -8,15 +8,15 @@
     display: none;
 
     @include mediaQuery(m) {
-		display: block;
+      display: block;
     }
   }
 
   &_pc--view {
-  	display: block;
+    display: block;
 
     @include mediaQuery(m) {
-	    display: none;
+      display: none;
     }
   }
 }
