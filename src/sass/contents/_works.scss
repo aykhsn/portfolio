@@ -121,12 +121,14 @@
   		}
 
   		&_image {
-			position: relative;
+  			position: relative;
   			margin-top: 1.5rem;
-  			width: calc((100% - 2rem * 2) / 3 * 2);
+        padding: 0 0 2rem 2rem;
+  			width: calc(24rem + 5vw);
   			float: right;
 
   			@include mediaQuery(m) {
+          padding: 0;
   				float: unset;
   				width: 100%;
   			}
@@ -135,16 +137,18 @@
 				position: absolute;
 				display: block;
 				content: "";
-				left: -2rem;
-				bottom: -2rem;
-				width: 12rem;
-				height: 12rem;
+				left: 0;
+				bottom: 0;
+				width: calc((24rem + 5vw) / 2);
+				height: calc((24rem + 5vw) / 2);
 				background-color: #FFBD99;
 				z-index: 0;
 
 				@include mediaQuery(m) {
 					left: -1rem;
 					bottom: -2.5rem;
+          width: 50vw;
+          height: 50vw;
 				}
 			}
 
@@ -212,6 +216,20 @@
           @include mediaQuery(m) {
             font-size: 0.8rem;
           }
+        }
+      }
+
+      &_sns {
+        margin-top: 1rem;
+
+        & a {
+          display: inline-block;
+        }
+
+        & img {
+          width: 1.5rem;
+          height: auto;
+          margin: 0.05rem;
         }
       }
 
