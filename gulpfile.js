@@ -3,6 +3,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require("gulp-sass-glob");
 const ejs = require('gulp-ejs');
+const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const replace = require('gulp-replace');
@@ -33,6 +34,20 @@ const compileSass = () =>
 
 const watchSassFiles = () =>
 	watch( 'src/sass/**', compileSass );
+
+/**********************
+ Javascript
+***********************/
+const compileJs = () =>
+	src( 'src/js/*.js' )
+		.pipe( uglify() )
+		.pipe(rename({
+            extname: '.min.js'
+        }))
+		.pipe( dest( 'dist/js' ));
+
+const watchJsFiles = () =>
+	watch( 'src/js/**', compileJs );
 
 /**********************
  assets
@@ -66,6 +81,6 @@ const watchFiles = () =>
 /**********************
  exports
 ***********************/
-exports.default = parallel( watchSassFiles, watchEJSFiles, watchAssetsFiles, syncBrowser, watchFiles );
-exports.build = parallel( compileEJS, compileSass, compileAssets );
+exports.default = parallel( watchSassFiles, watchEJSFiles, watchJsFiles, watchAssetsFiles, syncBrowser, watchFiles );
+exports.build = parallel( compileEJS, compileSass, compileJs, compileAssets );
 
