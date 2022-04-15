@@ -209,13 +209,13 @@
       &_button {
         font-size: 1.4rem;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 0.07em;
         color: var(--#{$siteName}_bg-color);
         transition: var(--#{$siteName}_transition);
 
         @include mediaQuery(m) {
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
 
         &--active {
@@ -236,7 +236,7 @@
         color: var(--#{$siteName}_accent-color);
 
         @include mediaQuery(m) {
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
       }
     }

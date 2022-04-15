@@ -289,7 +289,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_footer .ah_mv-language {
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
   }
 }
 .ah_footer-content {
@@ -298,7 +298,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_footer-content {
-    padding: 16rem 0 4rem;
+    padding: 16rem 0 6rem;
   }
 }
 .ah_footer-content span {
@@ -735,7 +735,7 @@ p {
 .ah_mv-language_button {
   font-size: 1.4rem;
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.07em;
   color: var(--ah_bg-color);
   -webkit-transition: var(--ah_transition);
@@ -743,7 +743,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_mv-language_button {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .ah_mv-language_button--active {
@@ -762,7 +762,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_mv-language span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .ah_mv-picture {
