@@ -21,6 +21,11 @@
 	opacity: 0;
 }
 
+.rotate {
+	animation: rotate 16s linear infinite;
+	opacity: 1;
+}
+
 @keyframes slideInLeftToRight {
 	0% {
 		opacity: 0;
@@ -60,5 +65,14 @@
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }

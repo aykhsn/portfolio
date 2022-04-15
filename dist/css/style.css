@@ -845,11 +845,6 @@ p {
     height: 5rem;
   }
 }
-.ah_navigation-logo:hover {
-  -webkit-transform: rotate(10deg);
-      -ms-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
 .ah_navigation-items {
   position: absolute;
   left: calc(100vw - 1rem);
@@ -900,7 +895,7 @@ p {
   font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
   color: var(--ah_link-color);
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
@@ -910,6 +905,7 @@ p {
     padding: 1rem 0;
     font-size: 0.9rem;
     font-weight: 500;
+    letter-spacing: 0.02em;
     color: #ffffff;
   }
 }
@@ -1526,6 +1522,12 @@ p {
   opacity: 0;
 }
 
+.rotate {
+  -webkit-animation: rotate 16s linear infinite;
+          animation: rotate 16s linear infinite;
+  opacity: 1;
+}
+
 @-webkit-keyframes slideInLeftToRight {
   0% {
     opacity: 0;
@@ -1613,5 +1615,15 @@ p {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

@@ -30,10 +30,6 @@
         width: 5rem;
         height: 5rem;
       }
-
-      &:hover {
-        transform: rotate(10deg);
-      }
     }
 
     &-items {
@@ -72,7 +68,7 @@
         font-size: 1rem;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 400;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.1em;
         color: var(--#{$siteName}_link-color);
         transition: var(--#{$siteName}_transition);
 
@@ -80,6 +76,7 @@
           padding: 1rem 0;
           font-size: 0.9rem;
           font-weight: 500;
+          letter-spacing: 0.02em;
           color: #ffffff;
         }
 

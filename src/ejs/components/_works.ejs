@@ -1,15 +1,15 @@
 <section id="Works" class="ah_block ah_works">
 	<div class="ah_block-inner">
-		<div class="ah_block-header fadeInUp">
-			<h2>Works</h2>
-			<p v-if="isEn">This is my main job so far. After developing owned media front-ends, I am currently creating corporate corporate sites and e-commerce sites.</p>
-			<p v-else>これまでの主な仕事です。オウンドメディアのフロントエンド開発を経て、現在は企業のコーポレイトサイトやECサイトを制作しています。</p>
+		<div class="ah_block-header">
+			<h2 class="fadeInUp">Works</h2>
+			<p class="fadeInUp" v-if="isEn">This is my main job so far. After developing owned media front-ends, I am currently creating corporate corporate sites and e-commerce sites.</p>
+			<p class="fadeInUp" v-else>これまでの主な仕事です。オウンドメディアのフロントエンド開発を経て、現在は企業のコーポレイトサイトやECサイトを制作しています。</p>
 		</div>
 		<div class="ah_works-content">
 			<ul>
-				<li class="ah_works-content_item fadeInUp">
+				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2022</span>
 							</div>
@@ -19,7 +19,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3>Modernity</h3>
 							</div>
@@ -55,9 +55,9 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp">
+				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2022</span>
 							</div>
@@ -67,7 +67,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3>My Portfolio</h3>
 							</div>
@@ -102,9 +102,9 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp">
+				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2021</span>
 							</div>
@@ -114,7 +114,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3>ANDART</h3>
 							</div>
@@ -150,9 +150,9 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp show">
+				<li v-if="worksAllShow" class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp show">
 							<div class="ah_works-content_year">
 								<span>2021</span>
 							</div>
@@ -162,7 +162,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp show">
 							<div class="ah_works-content_title">
 								<h3 v-if="isEn">ANDART Co., Ltd.</h3>
 								<h3 v-else>株式会社ANDART</h3>
@@ -199,14 +199,14 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2019</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3 v-if="isEn">auGame</h3>
 								<h3 v-else>auゲーム</h3>
@@ -248,14 +248,14 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2018</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3 v-if="isEn">Library manager</h3>
 								<h3 v-else>社内図書管理システム</h3>
@@ -300,14 +300,14 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2017</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3 v-if="isEn">Tsuretette</h3>
 								<h3 v-else>つれてって</h3>
@@ -337,14 +337,14 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2016</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3 v-if="isEn">Advertisement Posting System</h3>
 								<h3 v-else>広告配信システムSDK</h3>
@@ -380,14 +380,14 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 							<div class="ah_works-content_year">
 								<span>2015</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right">
+						<div class="ah_works-content_block-right fadeInUp">
 							<div class="ah_works-content_title">
 								<h3>Camily</h3>
 							</div>
@@ -422,12 +422,12 @@
 						</div>
 					</div>
 				</li>
-				<li v-if="!worksAllShow" class="ah_works-content_button-wrapper ah_works-content_item fadeInUp">
+				<li v-if="!worksAllShow" class="ah_works-content_button-wrapper ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left">
+						<div class="ah_works-content_block-left fadeInUp">
 						</div>
-						<div class="ah_works-content_block-right">
-							<button type="button" @click="switchWorks" class="ah_works-content_button">
+						<div class="ah_works-content_block-right fadeInUp">
+							<button type="button" @click="switchWorks" class="ah_works-content_button fadeInUp">
 								<span>Read more</span>
 							</button>
 						</div>
@@ -437,4 +437,3 @@
 		</div>
 	</div>
 </section>
-
