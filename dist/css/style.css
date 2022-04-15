@@ -36,6 +36,10 @@ body {
   overflow: hidden;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 .ah_wrapper {
   position: relative;
   overflow-x: hidden;
@@ -733,7 +737,7 @@ p {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   letter-spacing: 0.07em;
-  color: #ffffff;
+  color: var(--ah_bg-color);
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
 }
@@ -1419,6 +1423,74 @@ p {
 .ah_works-content_description p {
   margin-left: 1rem;
   line-height: 1.5;
+}
+.ah_works-content_button {
+  display: block;
+  position: relative;
+  height: 3em;
+  padding: 0 2em;
+  border: 2px solid var(--ah_accent-color);
+  font-size: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: var(--ah_bg-sub-color);
+  -webkit-transition: var(--ah_transition);
+  transition: var(--ah_transition);
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .ah_works-content_button {
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+}
+.ah_works-content_button::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -0.3em;
+  width: calc(100% + 0.5em);
+  height: calc(100% - 1em);
+  background-color: var(--ah_bg-sub-color);
+  -webkit-transition: var(--ah_transition);
+  transition: var(--ah_transition);
+}
+.ah_works-content_button::after {
+  content: "";
+  position: absolute;
+  top: -0.3em;
+  left: 0.5em;
+  width: calc(100% - 1em);
+  height: calc(100% + 0.5em);
+  background-color: var(--ah_bg-sub-color);
+  -webkit-transition: var(--ah_transition);
+  transition: var(--ah_transition);
+}
+.ah_works-content_button:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.ah_works-content_button:hover::before {
+  height: calc(100% - 2em);
+  top: 1em;
+}
+.ah_works-content_button:hover::after {
+  width: calc(100% - 2em);
+  left: 1rem;
+}
+.ah_works-content_button span {
+  position: relative;
+  font-size: 1.25em;
+  font-weight: 600;
+  font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--ah_accent-color);
+  z-index: 100;
+}
+.ah_works-content_button-wrapper {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .slideInLeftToRight {

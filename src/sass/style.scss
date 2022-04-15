@@ -38,6 +38,10 @@ body {
 	overflow: hidden;
 }
 
+a,button {
+	cursor: pointer;
+}
+
 .#{$siteName} {
 	&_wrapper {
 		position: relative;

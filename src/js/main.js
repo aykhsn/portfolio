@@ -144,7 +144,8 @@ const vm = new Vue ({
 
 	data: {
 		isEn : true,
-		navigationItems : navigation.items
+		navigationItems : navigation.items,
+		worksAllShow : false
 	},
 
 	created : function() {
@@ -155,6 +156,19 @@ const vm = new Vue ({
 		switchLang: function(isEn) {
 			this.isEn = isEn;
 			localStorage.setItem('isEn', isEn);
+		},
+
+		switchWorks: function() {
+			this.worksAllShow = !this.worksAllShow;
+
+			this.$nextTick(function () {
+				// 指定要素の位置を判定する
+				setElementPosition();
+
+				// ナビゲーションの現在位置を切り替える
+				setCurrentPosition();
+				switchNavigationButton(navigation.current);
+			});
 		},
 
 		/**********************

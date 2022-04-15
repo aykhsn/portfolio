@@ -150,7 +150,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp show">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -199,7 +199,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -248,7 +248,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -300,7 +300,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -337,7 +337,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -380,7 +380,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
+				<li v-if="worksAllShow" class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -422,7 +422,19 @@
 						</div>
 					</div>
 				</li>
+				<li v-if="!worksAllShow" class="ah_works-content_button-wrapper ah_works-content_item fadeInUp">
+					<div class="ah_works-content_block">
+						<div class="ah_works-content_block-left">
+						</div>
+						<div class="ah_works-content_block-right">
+							<button type="button" @click="switchWorks" class="ah_works-content_button">
+								<span>Read more</span>
+							</button>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
 </section>
+

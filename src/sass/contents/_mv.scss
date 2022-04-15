@@ -211,7 +211,7 @@
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 400;
         letter-spacing: 0.07em;
-        color: #ffffff;
+        color: var(--#{$siteName}_bg-color);
         transition: var(--#{$siteName}_transition);
 
         @include mediaQuery(m) {
