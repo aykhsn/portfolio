@@ -16,8 +16,8 @@
 }
 
 .fadeInUp.show {
-	animation: fadeInUp 1.4s ease-in-out forwards;
-	transform: translateX(10%);
+	animation: fadeInUp 1.8s ease-out forwards;
+	transform: translateX(4rem);
 	opacity: 0;
 }
 
@@ -60,7 +60,7 @@
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
-		transform: translateY(10%);
+		transform: translateY(4rem);
 	}
 	100% {
 		opacity: 1;
