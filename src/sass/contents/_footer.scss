@@ -7,12 +7,22 @@
 	&_footer {
 		background-color: var(--#{$siteName}_main-color);
 
+		& .#{$siteName}_mv-language {
+			position: unset;
+			text-align: center;
+			padding-bottom: 12rem;
+
+			@include mediaQuery(m) {
+				padding-bottom: 10rem;
+			}
+		}
+
 		&-content {
-			padding: 28rem 0 16rem;
+			padding: 28rem 0 4rem;
 			text-align: center;
 
 			@include mediaQuery(m) {
-				padding: 16rem 0 10rem;
+				padding: 16rem 0 4rem;
 			}
 
 			& span {

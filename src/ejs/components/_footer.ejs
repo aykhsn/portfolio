@@ -5,6 +5,11 @@
 			<img src="dist/assets/facebook-icon.svg" alt="facebook icon">
 		</a>
 	</div>
+	<div class="ah_mv-language">
+		<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
+		<span>/</span>
+		<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JP</button>
+	</div>
 	<div class="ah_footer-license">
 		<p>&copy;Ayaka Hoshino</p>
 		<p>WebFont: <a href="http://www.onlinewebfonts.com" target="_blank">ONline Web Fonts</a></p>

@@ -198,7 +198,6 @@
       position: absolute;
       left: calc((100% / 3 * 2) + 1rem);
       top: 6vh;
-      color: var(--#{$siteName}_link-color);
       z-index: 100;
 
       @include mediaQuery(m) {
@@ -208,12 +207,16 @@
       }
 
       &_button {
-        font-size: 1.125rem;
+        font-size: 1.4rem;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 500;
         letter-spacing: 0.07em;
-        color: inherit;
+        color: var(--#{$siteName}_bg-color);
         transition: var(--#{$siteName}_transition);
+
+        @include mediaQuery(m) {
+          font-size: 1rem;
+        }
 
         &--active {
           color: var(--#{$siteName}_accent-color);
@@ -225,12 +228,16 @@
       }
 
       & span {
-        margin: 0 0.1rem;
-        font-size: 1.125rem;
+        margin: 0 0.25em;
+        font-size: 1.4rem;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 500;
         letter-spacing: 0.01em;
-        color: inherit;
+        color: var(--#{$siteName}_accent-color);
+
+        @include mediaQuery(m) {
+          font-size: 1rem;
+        }
       }
     }
 
