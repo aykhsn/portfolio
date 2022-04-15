@@ -155,7 +155,10 @@ const vm = new Vue ({
 	methods: {
 		switchLang: function(isEn) {
 			this.isEn = isEn;
+
 			localStorage.setItem('isEn', isEn);
+			
+			this.scrollToTarget('Top');
 		},
 
 		switchWorks: function() {
