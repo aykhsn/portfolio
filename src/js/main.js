@@ -98,7 +98,7 @@ const setElementPosition = () => {
 	for (let i = 0; i < element.fadeInUp.length; i++) {
 		const targetElement = element.fadeInUp[i];
 		const targetElementRect = targetElement.getBoundingClientRect();
-		const offset = 120;
+		const offset = 30;
 		const targePositionTop = targetElementRect.top + window.pageYOffset - window.innerHeight - offset;
 
 		position.fadeInUp.items[i] = targePositionTop;
