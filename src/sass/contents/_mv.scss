@@ -209,9 +209,9 @@
       &_button {
         font-size: 1.4rem;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0.07em;
-        color: var(--#{$siteName}_bg-color);
+        color: #ffffff;
         transition: var(--#{$siteName}_transition);
 
         @include mediaQuery(m) {

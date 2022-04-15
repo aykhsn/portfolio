@@ -71,7 +71,7 @@
         display: block;
         font-size: 1rem;
         font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0.02em;
         color: var(--#{$siteName}_link-color);
         transition: var(--#{$siteName}_transition);
@@ -79,6 +79,7 @@
         @include mediaQuery(m) {
           padding: 1rem 0;
           font-size: 0.9rem;
+          font-weight: 500;
           color: #ffffff;
         }
 
