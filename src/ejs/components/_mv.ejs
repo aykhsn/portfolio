@@ -1,7 +1,7 @@
 <section id="Top" class="ah_block ah_mv">
 	<div class="ah_block-inner ah_mv-inner">
 		<div class="ah_mv-header">
-			<div class="ah_mv-language">
+			<div class="ah_mv-language fadeIn">
 				<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
 				<span>/</span>
 				<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JP</button>
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="ah_mv-block_center">
-				<div class="ah_mv-picture_wrapper">
+				<div class="ah_mv-picture_wrapper fadeInUp show">
 					<img class="ah_mv-picture" src="dist/assets/mv_picture.png" alt="profile picture">
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="ah_mv-footer">
 			<div class="ah_mv-triangle_wrapper">
-				<img class="ah_mv-triangle" src="dist/assets/triangle.svg">
+				<img class="ah_mv-triangle fadeIn" src="dist/assets/triangle.svg">
 			</div>
 		</div>
 	</div>

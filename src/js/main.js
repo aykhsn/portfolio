@@ -4,7 +4,12 @@ const navigation = {
 };
 let element = {};
 let position = {
-	items: {}
+	navigation: {
+		items: {}
+	},
+	fadeInUp: {
+		items: {}
+	}
 };
 
 /**********************
@@ -17,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	element.barGraph = document.getElementById('barGraph');
 	element.navigation = document.getElementById('Navigation');
 	element.about = document.getElementById('About');
+	element.fadeInUp = document.getElementsByClassName('fadeInUp');
 });
 
 window.onload = () => {
@@ -41,6 +47,9 @@ window.onload = () => {
 		// ナビゲーションの現在位置を切り替える
 		setCurrentPosition();
 		switchNavigationButton(navigation.current);
+
+		// フェードインアニメーションを開始する
+		showFadeInUpAnimation();
 	});
 };
 
@@ -83,13 +92,21 @@ const setElementPosition = () => {
 		const offset = 340;
 		const targePositionTop = targetElementRect.top + window.pageYOffset - window.innerHeight + offset;
 
-		position.items[item] = targePositionTop;
+		position.navigation.items[item] = targePositionTop;
 	}
+
+	for (let i = 0; i < element.fadeInUp.length; i++) {
+		const targetElement = element.fadeInUp[i];
+		const targetElementRect = targetElement.getBoundingClientRect();
+		const targePositionTop = targetElementRect.top + window.pageYOffset - window.innerHeight;
+
+		position.fadeInUp.items[i] = targePositionTop;
+    }	
 };
 
 const setCurrentPosition = () => {
-	for (let key of Object.keys(position.items)) {
-		if(position.scrollTop > position.items[key]) {
+	for (let key of Object.keys(position.navigation.items)) {
+		if(position.scrollTop > position.navigation.items[key]) {
 			navigation.current = key;
 		}
 	}
@@ -105,6 +122,17 @@ const switchNavigationButton = (currentId) => {
 	});
 
 	document.getElementsByName(currentId)[0] && document.getElementsByName(currentId)[0].classList.add('active');
+}
+
+/**********************
+ FadeIn Animation
+***********************/
+const showFadeInUpAnimation = () => {
+	for (let key of Object.keys(position.fadeInUp.items)) {
+		if(position.scrollTop > position.fadeInUp.items[key]) {
+			element.fadeInUp[key].classList.add('show');
+		}
+	}
 }
 
 /**********************

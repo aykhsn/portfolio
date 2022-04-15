@@ -33,10 +33,10 @@
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
 		<button @click="scrollToTarget('Top')">
-			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
+			<img class="ah_navigation-logo fadeIn" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
 		</button>
 	</div>
-	<ul id="Navigation" class="ah_navigation-items">
+	<ul id="Navigation" class="ah_navigation-items fadeIn">
 		<li v-for="item in navigationItems" class="ah_navigation-item">
 			<button :name="item" @click="scrollToTarget(item)">{{ item }}</button>
 		</li>
@@ -45,7 +45,7 @@
 <section id="Top" class="ah_block ah_mv">
 	<div class="ah_block-inner ah_mv-inner">
 		<div class="ah_mv-header">
-			<div class="ah_mv-language">
+			<div class="ah_mv-language fadeIn">
 				<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
 				<span>/</span>
 				<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JP</button>
@@ -64,7 +64,7 @@
 				</div>
 			</div>
 			<div class="ah_mv-block_center">
-				<div class="ah_mv-picture_wrapper">
+				<div class="ah_mv-picture_wrapper fadeInUp show">
 					<img class="ah_mv-picture" src="dist/assets/mv_picture.png" alt="profile picture">
 				</div>
 			</div>
@@ -75,14 +75,14 @@
 		</div>
 		<div class="ah_mv-footer">
 			<div class="ah_mv-triangle_wrapper">
-				<img class="ah_mv-triangle" src="dist/assets/triangle.svg">
+				<img class="ah_mv-triangle fadeIn" src="dist/assets/triangle.svg">
 			</div>
 		</div>
 	</div>
 </section>
 <section id="About" class="ah_block ah_about">
 	<div class="ah_block-inner">
-		<div class="ah_block-header">
+		<div class="ah_block-header fadeInUp">
 			<h2>About me</h2>
 			<p v-if="isEn">I'm from Aichi and live in Tokyo. I studied topology and 3DCG animation in college.<br>In 2015, as a web designer and front-end developer in a business company, I was mainly involved in the new development of owned media. After that, I got a degree in art while working, and in 2019 I changed my job to an e-commerce site management company for contemporary art. Therefore, after engaging in planning and management of art work exhibitions and planning and editing of web contents, I became a freelancer in 2021.</p>
 			<p v-else>愛知県生まれ、東京都在住。<br>大学時代に位相幾何学と3DCGアニメーションを学ぶ。2015年に事業会社のWEBデザイナー・フロントエンドエンジニアとして、主にオウンドメディアの新規開発に携わる。働きながら芸術の学位を取得し、2019年に現代アートのECサイト運営会社へ転職。作品展示の企画運営やWEBコンテンツの企画編集に従事した後、2021年にフリーランスとして独立。</p>
@@ -91,12 +91,12 @@
 </section>
 <section id="Skills" class="ah_block ah_skills">
 	<div class="ah_block-inner">
-		<div class="ah_block-header">
+		<div class="ah_block-header fadeInUp">
 			<h2>Skills</h2>
 			<p v-if="isEn">These are the main skills and experience points I use to create websites.</p>
 			<p v-else>WEBサイト制作に使用している主なスキルと経験値です。</p>
 		</div>
-		<div class="ah_skills-content">
+		<div class="ah_skills-content fadeInUp">
 			<ul id="barGraph">
 				<li>
 					<div class="ah_skills-content_name">
@@ -181,14 +181,14 @@
 </section>
 <section id="Works" class="ah_block ah_works">
 	<div class="ah_block-inner">
-		<div class="ah_block-header">
+		<div class="ah_block-header fadeInUp">
 			<h2>Works</h2>
 			<p v-if="isEn">This is my main job so far. After developing owned media front-ends, I am currently creating corporate corporate sites and e-commerce sites.</p>
 			<p v-else>これまでの主な仕事です。オウンドメディアのフロントエンド開発を経て、現在は企業のコーポレイトサイトやECサイトを制作しています。</p>
 		</div>
 		<div class="ah_works-content">
 			<ul>
-				<li class="ah_works-content_item">
+				<li class="ah_works-content_item fadeInUp">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -236,7 +236,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item">
+				<li class="ah_works-content_item fadeInUp">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -283,7 +283,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item">
+				<li class="ah_works-content_item fadeInUp">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -331,7 +331,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item">
+				<li class="ah_works-content_item fadeInUp">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -380,7 +380,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item ah_works-content_item-no-image">
+				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -429,7 +429,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item ah_works-content_item-no-image">
+				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -481,7 +481,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item ah_works-content_item-no-image">
+				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -518,7 +518,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item ah_works-content_item-no-image">
+				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -561,7 +561,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="ah_works-content_item ah_works-content_item-no-image">
+				<li class="ah_works-content_item fadeInUp ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
 						<div class="ah_works-content_block-left">
 							<div class="ah_works-content_year">
@@ -609,13 +609,13 @@
 </section>
 <section id="Other" class="ah_block ah_other">
 	<div class="ah_block-inner">
-		<div class="ah_block-header">
+		<div class="ah_block-header fadeInUp">
 			<h2>Other</h2>
 			<p v-if="isEn">I like drawing illustrations, especially character design. Some are on sale as LINE stickers!</p>
 			<p v-else>イラストを描くこと、特にキャラクターデザインが好きです。LINEスタンプ発売中！</p>
 		</div>
 	</div>
-	<div class="ah_other-content">
+	<div class="ah_other-content fadeInUp">
 		<a href="https://store.line.me/stickershop/author/208490/" target="_blank">
 			<ul>
 				<li>

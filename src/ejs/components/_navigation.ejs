@@ -1,10 +1,10 @@
 <nav class="ah_navigation">
 	<div class="ah_navigation-logo_wrapper">
 		<button @click="scrollToTarget('Top')">
-			<img class="ah_navigation-logo" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
+			<img class="ah_navigation-logo fadeIn" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
 		</button>
 	</div>
-	<ul id="Navigation" class="ah_navigation-items">
+	<ul id="Navigation" class="ah_navigation-items fadeIn">
 		<li v-for="item in navigationItems" class="ah_navigation-item">
 			<button :name="item" @click="scrollToTarget(item)">{{ item }}</button>
 		</li>

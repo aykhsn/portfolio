@@ -241,6 +241,7 @@
 
       &_wrapper {
         position: relative;
+        z-index: 100;
 
         @include mediaQuery(m) {
           width: calc(((100% - 0.5rem * 5) / 6 * 4) + 2rem);
