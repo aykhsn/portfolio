@@ -345,6 +345,10 @@
         &-wrapper {
           margin-top: 7.5rem;
           margin-bottom: 7.5rem;
+
+          @include mediaQuery(m) {
+            margin-bottom: 1.5rem;
+          }
         }
       }
     }
