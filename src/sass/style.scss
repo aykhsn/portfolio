@@ -16,13 +16,13 @@ $siteName: 'ah';
 :root {
 	--#{$siteName}_full-width: 90rem;
 	--#{$siteName}_font-family: 'Montserrat', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
-	--#{$siteName}_main-color: #FDCCB1;
-	--#{$siteName}_accent-color: #EE864C;
-	--#{$siteName}_sub-color: #94AAF6;
-	--#{$siteName}_main-text-color: #464646;
-	--#{$siteName}_bg-color: #fcf3ee;
+	--#{$siteName}_main-color: #FFBD99;
+	--#{$siteName}_accent-color: #F4732B;
+	--#{$siteName}_sub-color: #829BEF;
+	--#{$siteName}_main-text-color: #3B3937;
+	--#{$siteName}_bg-color: #FEF0E8;
 	--#{$siteName}_bg-sub-color: #FFE5D7;
-	--#{$siteName}_link-color: rgba(70, 70, 70, 0.8);
+	--#{$siteName}_link-color: #4D4A49;
 	--#{$siteName}_transition: all 0.2s ease-in-out;
 }
 

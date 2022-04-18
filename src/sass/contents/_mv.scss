@@ -162,6 +162,7 @@
           font-size: 1.2rem;
           font-family: 'Montserrat Alternates', sans-serif;
           font-weight: 500;
+          color: var(--#{$siteName}_link-color);
           letter-spacing: 0.02em;
           line-height: 1.6;
           z-index: 100;

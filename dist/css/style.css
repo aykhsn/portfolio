@@ -14,13 +14,13 @@
 :root {
   --ah_full-width: 90rem;
   --ah_font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-  --ah_main-color: #FDCCB1;
-  --ah_accent-color: #EE864C;
-  --ah_sub-color: #94AAF6;
-  --ah_main-text-color: #464646;
-  --ah_bg-color: #fcf3ee;
+  --ah_main-color: #FFBD99;
+  --ah_accent-color: #F4732B;
+  --ah_sub-color: #829BEF;
+  --ah_main-text-color: #3B3937;
+  --ah_bg-color: #FEF0E8;
   --ah_bg-sub-color: #FFE5D7;
-  --ah_link-color: rgba(70, 70, 70, 0.8);
+  --ah_link-color: #4D4A49;
   --ah_transition: all 0.2s ease-in-out;
 }
 
@@ -688,6 +688,7 @@ p {
   font-size: 1.2rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
+  color: var(--ah_link-color);
   letter-spacing: 0.02em;
   line-height: 1.6;
   z-index: 100;
@@ -858,7 +859,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vh;
+  width: 60vh;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -894,7 +895,7 @@ p {
   display: block;
   font-size: 1rem;
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--ah_link-color);
   -webkit-transition: var(--ah_transition);
