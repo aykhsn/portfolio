@@ -63,6 +63,9 @@ window.addEventListener('resize', () => {
 	// ナビゲーションの現在位置を切り替える
 	setCurrentPosition();
 	switchNavigationButton(navigation.current);
+
+	// GSAPのスクロール計算を初期化する
+	ScrollTrigger.refresh();
 });	
 
 /**********************
@@ -164,6 +167,16 @@ const showFadeInUpAnimation = () => {
 	}
 }
 
+const showReadmoreAnimation = () => {
+	element.readmoreFadeInUp = document.querySelectorAll('#readmore .fadeInUp');
+
+	for (let i = 0; i < element.readmoreFadeInUp.length; i++) {
+		setTimeout(() => {
+			element.readmoreFadeInUp[i].classList.add('show');
+		}, 40*i);
+	}
+}
+
 /**********************
  Vue.js
 ***********************/
@@ -191,6 +204,13 @@ const vm = new Vue ({
 			this.worksAllShow = !this.worksAllShow;
 
 			this.$nextTick(function () {
+				
+				// 表示部分にアニメーションを適用する
+				showReadmoreAnimation();
+
+				// GSAPのスクロール計算を初期化する
+				ScrollTrigger.refresh();
+
 				// 指定要素の位置を判定する
 				setElementPosition();
 
