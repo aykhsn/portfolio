@@ -31,9 +31,9 @@
 	</div>
 </div>
 <nav class="ah_navigation">
-	<div class="ah_navigation-logo_wrapper">
+	<div class="ah_navigation-logo_wrapper fadeIn">
 		<button type="button" @click="scrollToTarget('Top')">
-			<img class="ah_navigation-logo fadeIn rotate" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
+			<img class="ah_navigation-logo rotate" src="dist/assets/logo.svg" alt="Ayaka Hoshino's Portfolio">
 		</button>
 	</div>
 	<ul id="Navigation" class="ah_navigation-items fadeIn">
@@ -59,13 +59,14 @@
 						<img class="ah_sp--view" src="dist/assets/name-left.svg" alt="Ayaka Hoshino">
 					</h1>
 				</div>
-				<div class="ah_mv-block_middle slideInLeftToRight">
-					<h2>Front End Developer</h2>
+				<div class="ah_mv-block_middle">
+					<h2 class="cssanimation typing">Front End Developer</h2>
 				</div>
 			</div>
 			<div class="ah_mv-block_center">
-				<div class="ah_mv-picture_wrapper fadeInUp show">
-					<img class="ah_mv-picture" src="dist/assets/mv_picture.svg" alt="profile picture">
+				<div class="ah_mv-picture_wrapper">
+					<img class="ah_mv-picture fadeInUp show" src="dist/assets/mv_picture.svg" alt="profile picture">
+					<span class="fadeInUp show"></span>
 				</div>
 			</div>
 			<div class="ah_mv-block_right slideInRightToLeft">
@@ -75,7 +76,7 @@
 		</div>
 		<div class="ah_mv-footer">
 			<div class="ah_mv-triangle_wrapper">
-				<img class="ah_mv-triangle fadeIn" src="dist/assets/triangle.svg">
+				<img class="ah_mv-triangle fadeInUp show" src="dist/assets/triangle.svg">
 			</div>
 		</div>
 	</div>
@@ -190,42 +191,42 @@
 			<ul>
 				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2022</span>
 							</div>
-							<div class="ah_works-content_image">
+							<div class="ah_works-content_image fadeInUp">
 								<a href="https://modernity.jp/" target="_blank">
 									<img srcset="dist/assets/works_modernity-s.png 400w, dist/assets/works_modernity-m.png 768w, dist/assets/works_modernity.png 1200w" src="dist/assets/works_modernity.png" alt="modernity website">
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3>Modernity</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Front-end development by Shopify customization</p>
 										<p v-else>Shopify のカスタマイズによるフロントエンド新規開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Creating of campaign setting function by Liquid</p>
 										<p v-else>Liquid 言語によるキャンペーン設定機能の作成</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Customization of product color selection function</p>
 										<p v-else>Liquid 言語による商品カラー選択機能の作成</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Shopify / Liquid / Gulp / Sass / EJS / ES11 / jQuery</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Shopify / Liquid / Gulp / Sass / EJS / ES11 / jQuery</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -238,44 +239,44 @@
 				</li>
 				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2022</span>
 							</div>
-							<div class="ah_works-content_image">
+							<div class="ah_works-content_image fadeInUp">
 								<a onclick="window.location.reload(true);">
 									<img srcset="dist/assets/works_portfolio-s.png 400w, dist/assets/works_portfolio-m.png 768w, dist/assets/works_portfolio.png 1200w" src="dist/assets/works_portfolio.png" alt="portfolio website">
 								</a>
 							</div>
 						</div>
 						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+							<div class="ah_works-content_title fadeInUp">
 								<h3>My Portfolio</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Design and Front-end development from scratch</p>
 										<p v-else>デザインとフロントエンド開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Illustration the main visual</p>
 										<p v-else>メインビジュアルのイラスト制作</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Figma / Gulp / Sass / EJS / ES11 / Vue.js</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Figma / Gulp / Sass / EJS / ES11 / Vue.js</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 								</div>
 								<p>Design & Front-end × 1</p>
 							</div>
-							<div class="ah_works-content_sns">
+							<div class="ah_works-content_sns fadeInUp">
 								<a href="https://github.com/aykhsn/portfolio" target="_blank">
 									<img src="dist/assets/github.svg">
 								</a>
@@ -285,42 +286,42 @@
 				</li>
 				<li class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2021</span>
 							</div>
-							<div class="ah_works-content_image">
+							<div class="ah_works-content_image fadeInUp">
 								<a href="https://lp.and-art.jp/campaigns/4/" target="_blank">
 									<img srcset="dist/assets/works_andart-lp-s.png 400w, dist/assets/works_andart-lp-m.png 768w, dist/assets/works_andart-lp.png 1200w" src="dist/assets/works_andart-lp.png" alt="andart website">
 								</a>
 							</div>
 						</div>
 						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+							<div class="ah_works-content_title fadeInUp">
 								<h3>ANDART</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Front-end development of Landing page</p>
 										<p v-else>ランディングページのフロントエンド開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Creating slider using Swiper.js plugin</p>
 										<p v-else>Swiper.js を使用したスライダーの作成</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Creating accordion menu using JavaScript</p>
 										<p v-else>JavaScript によるアコーディオンメニューの作成</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Gulp / Sass / EJS / ES11</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Gulp / Sass / EJS / ES11</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -333,43 +334,43 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp show">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp show">
 								<span>2021</span>
 							</div>
-							<div class="ah_works-content_image">
+							<div class="ah_works-content_image fadeInUp show">
 								<a href="https://and-art.co.jp/" target="_blank">
 									<img srcset="dist/assets/works_andart-s.png 400w, dist/assets/works_andart-m.png 768w, dist/assets/works_andart.png 1200w" src="dist/assets/works_andart.png" alt="andart website">
 								</a>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp show">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp show">
 								<h3 v-if="isEn">ANDART Co., Ltd.</h3>
 								<h3 v-else>株式会社ANDART</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp show">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp show">
 										<p v-if="isEn">Front-end development of corporate site for top page renewal</p>
 										<p v-else>コーポレイトサイトのトップページリニューアルにおけるフロントエンド開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp show">
 										<p v-if="isEn">Creating a new wordpress theme</p>
 										<p v-else>新規ワードプレステーマの作成</p>
 									</li>
-									<li>
+									<li class="fadeInUp show">
 										<p v-if="isEn">Creating a parallax scrolling effect</p>
 										<p v-else>背景パララックス効果の実装</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Wordpress / Gulp / Sass / EJS / ES11</p>
+								<h4 class="fadeInUp show">What I used</h4>
+								<p class="fadeInUp show">Wordpress / Gulp / Sass / EJS / ES11</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp show">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -382,42 +383,42 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2019</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3 v-if="isEn">auGame</h3>
 								<h3 v-else>auゲーム</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Front-end development of landing page for operation and maintenance</p>
 										<p v-else>ランディングページの運営保守におけるフロントエンド開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Introducing Web Components to componentize the UI</p>
 										<p v-else>UI コンポーネント化のための Web Components の導入</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Introducing Utility CSS to reuse components</p>
 										<p v-else>コンポーネント再利用のための Utility CSS の導入</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Introducing Tailwind CSS for CSS framework</p>
 										<p v-else>CSSフレームワークに Tailwind CSS の導入</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Tailwind CSS / Webpack / Web Components</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Tailwind CSS / Webpack / Web Components</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -431,42 +432,42 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2018</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3 v-if="isEn">Library manager</h3>
 								<h3 v-else>社内図書管理システム</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">UI design with Atomic Design</p>
 										<p v-else>アトミックデザインによる UI デザイン</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Development of Mobile App　in View + ViewModel</p>
 										<p v-else>モバイルアプリ開発において View + ViewModel を担当</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Introducing ReactNative and Redux for cross-platform development</p>
 										<p v-else>クロスプラットフォーム開発のために React Native, Redux を導入</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Teamwork in agile without a director</p>
 										<p v-else>ディレクターを配置しないアジャイル開発でのチームワーク</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Type Script / React Native / Redux / Firebase / Atomic Design</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Type Script / React Native / Redux / Firebase / Atomic Design</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -483,30 +484,30 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2017</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3 v-if="isEn">Tsuretette</h3>
 								<h3 v-else>つれてって</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Design and Front-end development of information site for launch new site</p>
 										<p v-else>情報サイトのデザイン制作とフロントエンドの新規開発</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Adobe Illustrator / Adobe Photoshop / Sketch / inVision / Gulp / Webpack / FLOCSS / ES6 / jQuery / Vue.js</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Adobe Illustrator / Adobe Photoshop / Sketch / inVision / Gulp / Webpack / FLOCSS / ES6 / jQuery / Vue.js</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -520,34 +521,34 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2016</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3 v-if="isEn">Advertisement Posting System</h3>
 								<h3 v-else>広告配信システムSDK</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Front-end development from scratch for launch new system</p>
 										<p v-else>フロントエンドのスクラッチによる新規開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Customizing text editor plugins</p>
 										<p v-else>テキストエディターのプラグインのカスタマイズ</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Gulp / Webpack / ES6 / jQuery / Vue.js</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Gulp / Webpack / ES6 / jQuery / Vue.js</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">
@@ -563,33 +564,33 @@
 				</li>
 				<li v-if="worksAllShow" class="ah_works-content_item ah_works-content_item-no-image">
 					<div class="ah_works-content_block">
-						<div class="ah_works-content_block-left fadeInUp">
-							<div class="ah_works-content_year">
+						<div class="ah_works-content_block-left">
+							<div class="ah_works-content_year fadeInUp">
 								<span>2015</span>
 							</div>
 						</div>
-						<div class="ah_works-content_block-right fadeInUp">
-							<div class="ah_works-content_title">
+						<div class="ah_works-content_block-right">
+							<div class="ah_works-content_title fadeInUp">
 								<h3>Camily</h3>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I did</h4>
+								<h4 class="fadeInUp">What I did</h4>
 								<ul>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Front-end development of information site for launch new site</p>
 										<p v-else>情報サイトのフロントエンド新規開発</p>
 									</li>
-									<li>
+									<li class="fadeInUp">
 										<p v-if="isEn">Introducing AMP for creating user-first experiences</p>
 										<p v-else>ユーザー体験向上に向けた AMP の導入</p>
 									</li>
 								<ul>
 							</div>
 							<div class="ah_works-content_description">
-								<h4>What I used</h4>
-								<p>Gulp / Webpack / BEM / ES6 / jQuery / Vue.js</p>
+								<h4 class="fadeInUp">What I used</h4>
+								<p class="fadeInUp">Gulp / Webpack / BEM / ES6 / jQuery / Vue.js</p>
 							</div>
-							<div class="ah_works-content_member">
+							<div class="ah_works-content_member fadeInUp">
 								<div class="ah_works-content_member-icon">
 									<img src="dist/assets/member.svg">
 									<img src="dist/assets/member.svg">

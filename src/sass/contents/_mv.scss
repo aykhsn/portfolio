@@ -107,8 +107,10 @@
         right: 0;
         transform: translateY(-50%);
         z-index: 1001;
+        animation-delay: 0.1s;
 
         @include mediaQuery(m) {
+          display: inline-block;
           position: relative;
           margin-top: 1rem;
           transform: unset;
@@ -148,6 +150,7 @@
         flex-direction: column;
         justify-content: flex-end;
         width: calc((100% - 2rem * 2) / 3);
+        animation-delay: 0.3s;
 
         @include mediaQuery(m) {
           display: block;
@@ -197,14 +200,14 @@
 
     &-language {
       position: absolute;
-      left: calc((100% / 3 * 2) + 1rem);
+      right: calc((100vw - 100vh)/2);
       top: 6vh;
       z-index: 100;
+      animation-delay: 0.3s;
 
       @include mediaQuery(m) {
         top: 1rem;
         right: 0;
-        left: unset;
       }
 
       &_button {
@@ -255,9 +258,12 @@
           width: calc(((100% - 0.5rem * 5) / 6 * 4) + 2rem);
         }
 
-        &::before {
+        & img {
+          animation-delay: 0.3s;
+        }
+
+        & span {
           position: absolute;
-          content: "";
           bottom: 44%;
           left: 44%;
           width: 22vw;
@@ -265,6 +271,7 @@
           border-radius: 50%;
           background-color: var(--#{$siteName}_sub-color);
           z-index: 100;
+          animation-delay: 0.5s;
 
           @include mediaQuery(m) {
             width: 44vw;

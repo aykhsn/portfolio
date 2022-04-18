@@ -44,6 +44,7 @@
       & p {
         position: relative;
         margin-left: calc(((100% - 2rem * 2) / 3 ) + 2rem);
+        animation-delay: 0.1s;
 
         @include mediaQuery(m) {
           margin-left: 0;

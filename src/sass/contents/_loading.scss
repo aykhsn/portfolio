@@ -10,13 +10,14 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		transition: var(--#{$siteName}_transition);
+		transition: all 1s ease-in-out;
 		background-color: var(--#{$siteName}_bg-color);
 		z-index: 9999;
 
 		&.loaded {
-			opacity: 0;
+			left: 100%;
 			visibility: hidden;
+			background-color: var(--#{$siteName}_main-color);
 		}
 
 		& img {
