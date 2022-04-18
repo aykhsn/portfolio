@@ -280,7 +280,7 @@ p {
  footer
 ***********************/
 .ah_footer {
-  background-color: var(--ah_main-color);
+  background-color: #ffffff;
 }
 .ah_footer .ah_mv-language {
   position: unset;

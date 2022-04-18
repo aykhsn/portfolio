@@ -5,7 +5,7 @@
 ***********************/
 .#{$siteName} {
 	&_footer {
-		background-color: var(--#{$siteName}_main-color);
+		background-color: #ffffff;
 
 		& .#{$siteName}_mv-language {
 			position: unset;

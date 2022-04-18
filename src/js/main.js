@@ -32,6 +32,9 @@ window.onload = () => {
 	// 指定要素の位置を判定する
 	setElementPosition();
 
+	// GSAPを初期化する
+	initGsapAnimation();
+
 	window.addEventListener('scroll', () => {
 		position.scrollTop = window.scrollY;
 		position.windowHeight = window.innerHeight;
@@ -69,6 +72,31 @@ const closeLoadingScreen = () => {
 	element.body.style.overflow = 'auto';
 	element.loading.classList.add('loaded');
 };
+
+/**********************
+ Logo Animation
+***********************/
+const initGsapAnimation = () => {
+	gsap.to('.ah_footer', {
+		backgroundColor: '#FFBD99',
+		scrollTrigger: {
+			trigger: '.ah_footer',
+			start: 'top center',
+			end: 'center center',
+			scrub: true,
+		}
+	});
+
+	gsap.to('.ah_navigation-items button', {
+		color: '#FFFFFF',
+		scrollTrigger: {
+			trigger: '.ah_footer',
+			start: 'top center',
+			end: 'center center',
+			scrub: true,
+		}
+	});
+}
 
 /**********************
  Slide Animation
