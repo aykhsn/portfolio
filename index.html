@@ -675,8 +675,8 @@
 		<a href="https://www.facebook.com/ayaka.hoshino.7" target="_blank">
 			<img src="dist/assets/facebook-icon.svg" alt="facebook icon">
 		</a>
-		<p v-if="isEn">WEBサイト制作のオーダーは<br class="ah_sp--view">お知り合いの方のみ承っております。</p>
-		<p v-else>I only accept orders for website production <br class="ah_sp--view">from people I know.</p>
+		<p v-if="isEn">I only accept orders for website production <br class="ah_sp--view">from people I know.</p>
+		<p v-else>WEBサイト制作のオーダーは<br class="ah_sp--view">お知り合いの方のみ承っております。</p>
 	</div>
 	<div class="ah_mv-language fadeInUp">
 		<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
