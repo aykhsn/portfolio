@@ -25,17 +25,6 @@
 				padding: 16rem 0 6rem;
 			}
 
-			& p {
-				margin-top: 2rem;
-				font-size: 0.9rem;
-				font-family: 'Montserrat Alternates', sans-serif;
-				color: var(--#{$siteName}_accent-color);
-
-				@include mediaQuery(m) {
-					font-size: 0.7rem;
-				}
-			}
-
 			& span {
 				position: relative;
 				display: block;

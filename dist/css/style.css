@@ -301,17 +301,6 @@ p {
     padding: 16rem 0 6rem;
   }
 }
-.ah_footer-content p {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  font-family: "Montserrat Alternates", sans-serif;
-  color: var(--ah_accent-color);
-}
-@media screen and (max-width: 768px) {
-  .ah_footer-content p {
-    font-size: 0.7rem;
-  }
-}
 .ah_footer-content span {
   position: relative;
   display: block;
