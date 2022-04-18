@@ -49,6 +49,7 @@
         @include mediaQuery(m) {
           margin-left: 0;
           margin-top: 1.5rem;
+          animation-delay: 0;
         }
 
         &::before {

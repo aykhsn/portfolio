@@ -53,6 +53,7 @@
 	  transition-delay: 0.06s * ($i - 1);
   }
 }
+
 .slideInUp span:nth-child(2) {
   transition-delay: 0.06s;
 }
@@ -76,7 +77,6 @@
 @keyframes typing {
     from {
     	width: 0;
-	    opacity: 1;
 	}
 	to {
 		opacity: 1;
