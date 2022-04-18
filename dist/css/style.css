@@ -293,12 +293,23 @@ p {
   }
 }
 .ah_footer-content {
-  padding: 28rem 0 4rem;
+  padding: 28rem 0 5rem;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .ah_footer-content {
     padding: 16rem 0 6rem;
+  }
+}
+.ah_footer-content p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: var(--ah_accent-color);
+}
+@media screen and (max-width: 768px) {
+  .ah_footer-content p {
+    font-size: 0.7rem;
   }
 }
 .ah_footer-content span {
@@ -349,7 +360,7 @@ p {
   }
 }
 .ah_footer-license {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   text-align: center;
 }
 .ah_footer-license p {

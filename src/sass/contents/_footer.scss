@@ -18,11 +18,22 @@
 		}
 
 		&-content {
-			padding: 28rem 0 4rem;
+			padding: 28rem 0 5rem;
 			text-align: center;
 
 			@include mediaQuery(m) {
 				padding: 16rem 0 6rem;
+			}
+
+			& p {
+				margin-top: 2rem;
+				font-size: 0.9rem;
+				font-family: 'Montserrat Alternates', sans-serif;
+				color: var(--#{$siteName}_accent-color);
+
+				@include mediaQuery(m) {
+					font-size: 0.7rem;
+				}
 			}
 
 			& span {
@@ -75,7 +86,7 @@
 		}
 
 		&-license {
-			padding-bottom: 4rem;
+			padding-bottom: 5rem;
 			text-align: center;
 
 			& p {
