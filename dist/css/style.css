@@ -849,7 +849,7 @@ p {
 .ah_navigation-items {
   position: absolute;
   left: calc(100vw - 1rem);
-  top: 4rem;
+  top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -859,13 +859,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60vh;
+  width: calc(100vh - 12rem);
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transform-origin: top left;
       -ms-transform-origin: top left;
           transform-origin: top left;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-items {
@@ -878,7 +879,7 @@ p {
     -webkit-transform: unset;
         -ms-transform: unset;
             transform: unset;
-    background-color: rgba(254, 173, 129, 0.95);
+    background-color: rgba(251, 154, 101, 0.95);
     -webkit-box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
             box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
     z-index: 10000;
@@ -886,32 +887,45 @@ p {
     transition: all 0.4s ease-in-out;
   }
 }
+.ah_navigation-items.show button {
+  margin-top: 0;
+}
 @media screen and (max-width: 768px) {
   .ah_navigation-items.show {
+    left: 0;
     bottom: 0;
   }
 }
 .ah_navigation-items button {
   display: block;
-  font-size: 1rem;
+  margin-top: -2rem;
+  font-size: 0.9rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: var(--ah_link-color);
+  color: #fe9760;
   -webkit-transition: var(--ah_transition);
   transition: var(--ah_transition);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-items button {
+    margin-top: 0;
     padding: 1rem 0;
     font-size: 0.9rem;
-    font-weight: 500;
     letter-spacing: 0.02em;
     color: #ffffff;
   }
 }
 .ah_navigation-items button.active {
+  font-weight: 600;
   color: var(--ah_accent-color) !important;
+}
+@media screen and (max-width: 768px) {
+  .ah_navigation-items button.active {
+    font-weight: 500;
+  }
 }
 
 /**********************
