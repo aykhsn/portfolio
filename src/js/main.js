@@ -198,6 +198,14 @@ const vm = new Vue ({
 			this.isEn = isEn;
 
 			localStorage.setItem('isEn', isEn);
+
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+
+			// GSAPのスクロール計算を初期化する
+			ScrollTrigger.refresh();
 		},
 
 		switchWorks: function() {
