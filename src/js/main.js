@@ -199,13 +199,16 @@ const vm = new Vue ({
 
 			localStorage.setItem('isEn', isEn);
 
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth',
+			this.$nextTick(function () {
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
+
+				// GSAPのスクロール計算を初期化する
+				ScrollTrigger.refresh();
 			});
 
-			// GSAPのスクロール計算を初期化する
-			ScrollTrigger.refresh();
 		},
 
 		switchWorks: function() {
