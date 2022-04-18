@@ -51,6 +51,12 @@
 
       & li {
         width: 25%;
+
+        @for $i from 2 through 4 {
+          &:nth-child(#{$i}) img {
+            animation-delay: 0.16s * ($i - 1);
+          }
+        }
       }
     }
   }
