@@ -1,3 +1,10 @@
+.v_fade-enter-active, .v_fade-leave-active {
+  transition: var(--#{$siteName}_transition);
+}
+.v_fade-enter, .v_fade-leave-to {
+  opacity: 0;
+}
+
 .slideInLeftToRight {
 	animation-name: slideInLeftToRight;
 	animation-duration: 1.4s;
@@ -33,29 +40,8 @@
 	animation-duration: 1.6s;
 	animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 	animation-fill-mode: forwards;
-	transform: translateX(4rem);
+	/*transform: translateY(4rem);*/
 	opacity: 0;
-}
-
-.slideInUp {
-	& span {
-		transform: translate(0, 105%);
-		transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-	}
-
-	&.show span {
-		transform: translate(0, 0);
-	}
-}
-
-@for $i from 2 through 10 {
-  .slideInUp span:nth-child(#{$i}) {
-	  transition-delay: 0.06s * ($i - 1);
-  }
-}
-
-.slideInUp span:nth-child(2) {
-  transition-delay: 0.06s;
 }
 
 .rotate {
