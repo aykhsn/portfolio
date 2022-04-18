@@ -157,8 +157,6 @@ const vm = new Vue ({
 			this.isEn = isEn;
 
 			localStorage.setItem('isEn', isEn);
-
-			this.scrollToTarget('Top');
 		},
 
 		switchWorks: function() {
