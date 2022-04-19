@@ -98,10 +98,11 @@
 
             &.ah_text-s {
               font-size: 1.5rem;
-              line-height: 1.35;
+              line-height: calc(1.6875rem * 1.2 / 1.5rem);
 
               @include mediaQuery(m) {
                 font-size: calc(0.55rem + 2.4vw);
+                line-height: calc(1.6875rem * 1.2 / 1.5rem * 1.02);
               }
             }
           }

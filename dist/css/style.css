@@ -612,6 +612,7 @@ p {
 @media screen and (max-width: 768px) {
   .ah_mv-block_left h2 span.ah_text-s {
     font-size: calc(0.55rem + 2.4vw);
+    line-height: 1.377;
   }
 }
 .ah_mv-block_top {
