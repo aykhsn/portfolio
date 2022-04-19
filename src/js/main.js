@@ -23,12 +23,16 @@ window.addEventListener('DOMContentLoaded', () => {
 	element.navigation = document.getElementById('Navigation');
 	element.about = document.getElementById('About');
 	element.fadeInUp = document.getElementsByClassName('fadeInUp');
+	element.loadedAnimation = document.getElementsByClassName('loaded-animation');
 	element.typing = document.getElementById('typing');
 });
 
 window.onload = () => {
 	// 読み込み完了後にローディング画面を閉じる
 	closeLoadingScreen();
+
+	// トップのアニメーションを開始する
+	showLoadedAnimation();
 
 	// 指定要素の位置を判定する
 	setElementPosition();
@@ -165,6 +169,12 @@ const showFadeInUpAnimation = () => {
 		if(position.scrollTop > position.fadeInUp.items[key]) {
 			element.fadeInUp[key].classList.add('show');
 		}
+	}
+}
+
+const showLoadedAnimation = () => {
+	for (let i = 0; i < element.loadedAnimation.length; i++) {
+		element.loadedAnimation[i].classList.add('show');
 	}
 }
 

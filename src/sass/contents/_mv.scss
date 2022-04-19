@@ -163,7 +163,7 @@
         flex-direction: column;
         justify-content: flex-end;
         width: calc((100% - 2rem * 2) / 3);
-        animation-delay: 0.08s * 3;
+        animation-delay: 0.08s;
 
         @include mediaQuery(m) {
           display: block;
@@ -299,6 +299,7 @@
     &-triangle {
       width: 1.6rem;
       height: auto;
+      animation-delay: 0.08s * 5;
 
       &_wrapper {
         position: absolute;

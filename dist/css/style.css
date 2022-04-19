@@ -691,8 +691,8 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: calc((100% - 4rem) / 3);
-  -webkit-animation-delay: 0.24s;
-          animation-delay: 0.24s;
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
 }
 @media screen and (max-width: 768px) {
   .ah_mv-block_right {
@@ -828,6 +828,8 @@ p {
 .ah_mv-triangle {
   width: 1.6rem;
   height: auto;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .ah_mv-triangle_wrapper {
   position: absolute;
@@ -1557,7 +1559,7 @@ p {
   opacity: 0;
 }
 
-.slideInLeftToRight {
+.slideInLeftToRight.show {
   -webkit-animation-name: slideInLeftToRight;
           animation-name: slideInLeftToRight;
   -webkit-animation-duration: 1.4s;
@@ -1572,7 +1574,7 @@ p {
   opacity: 0;
 }
 
-.slideInRightToLeft {
+.slideInRightToLeft.show {
   -webkit-animation-name: slideInRightToLeft;
           animation-name: slideInRightToLeft;
   -webkit-animation-duration: 1.4s;
@@ -1587,7 +1589,7 @@ p {
   opacity: 0;
 }
 
-.fadeIn {
+.fadeIn.show {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1.4s;
@@ -1599,7 +1601,7 @@ p {
   opacity: 0;
 }
 
-.fadeInColor {
+.fadeInColor.show {
   -webkit-animation-name: fadeInColor;
           animation-name: fadeInColor;
   -webkit-animation-duration: 1.4s;
@@ -1632,7 +1634,7 @@ p {
   opacity: 1;
 }
 
-.typing {
+.typing.show {
   opacity: 0;
   padding-right: 0.3rem;
   width: 100%;
@@ -1643,7 +1645,7 @@ p {
           animation: typing 2.4s steps(19, end) forwards, cursor 0.24s steps(19, end) infinite;
 }
 
-.typingBack {
+.typingBack.show {
   opacity: 1;
   -webkit-animation: typingBack 2.4s steps(19, end) forwards, cursor 0.24s steps(19, end) infinite;
           animation: typingBack 2.4s steps(19, end) forwards, cursor 0.24s steps(19, end) infinite;

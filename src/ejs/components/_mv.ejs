@@ -1,7 +1,7 @@
 <section id="Top" class="ah_block ah_mv">
 	<div class="ah_block-inner ah_mv-inner">
 		<div class="ah_mv-header">
-			<div class="ah_mv-language fadeIn">
+			<div class="ah_mv-language fadeIn loaded-animation">
 				<button type="button" :disabled="isEn" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active' : '']" @click="switchLang(true)">EN</button>
 				<span>/</span>
 				<button type="button" :disabled="!isEn" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active']" @click="switchLang(false)">JA</button>
@@ -9,27 +9,27 @@
 		</div>
 		<div class="ah_mv-block">
 			<div class="ah_mv-block_left">
-				<div class="ah_mv-block_top slideInLeftToRight">
+				<div class="ah_mv-block_top slideInLeftToRight loaded-animation">
 					<h1>
 						<img class="ah_pc--view" src="dist/assets/name-right.svg" alt="Ayaka Hoshino">
 						<img class="ah_sp--view" src="dist/assets/name-left.svg" alt="Ayaka Hoshino">
 					</h1>
 				</div>
 				<div class="ah_mv-block_middle">
-					<h2 id="typing" class="cssanimation typing">
+					<h2 id="typing" class="cssanimation typing loaded-animation">
 						<span v-if="isEnTyping">Front End Developer</span>
 						<span class="ah_text-s" v-else>フロントエンドエンジニア</span>
 					</h2>
 				</div>
 			</div>
 			<div class="ah_mv-block_center">
-				<span class="ah_mv-block_center-bg fadeInColor"></span>
+				<span class="ah_mv-block_center-bg fadeInColor loaded-animation"></span>
 				<div class="ah_mv-picture_wrapper">
-					<img class="ah_mv-picture fadeInUp show" src="dist/assets/mv_picture.svg" alt="profile picture">
-					<span class="fadeInUp show"></span>
+					<img class="ah_mv-picture fadeInUp loaded-animation" src="dist/assets/mv_picture.svg" alt="profile picture">
+					<span class="fadeInUp loaded-animation"></span>
 				</div>
 			</div>
-			<div class="ah_mv-block_right slideInRightToLeft">
+			<div class="ah_mv-block_right slideInRightToLeft loaded-animation">
 				<transition name="v_fade">
 					<p key="fade-a" v-if="isEn">Hello! I’m a Front End Developer / Web Designer based in Tokyo. I also like to draw illustrations.</p>
 					<p key="fade-b" v-else>東京を拠点にフロントエンドエンジニア・WEBデザイナーとして活動しています。イラストを描くことも好きです。</p>
@@ -38,7 +38,7 @@
 		</div>
 		<div class="ah_mv-footer">
 			<div class="ah_mv-triangle_wrapper">
-				<img class="ah_mv-triangle fadeInUp show" src="dist/assets/triangle.svg">
+				<img class="ah_mv-triangle fadeInUp loaded-animation" src="dist/assets/triangle.svg">
 			</div>
 		</div>
 	</div>

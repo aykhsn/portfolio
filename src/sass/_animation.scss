@@ -5,7 +5,7 @@
   opacity: 0;
 }
 
-.slideInLeftToRight {
+.slideInLeftToRight.show {
 	animation-name: slideInLeftToRight;
 	animation-duration: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -14,7 +14,7 @@
 	opacity: 0;
 }
 
-.slideInRightToLeft {
+.slideInRightToLeft.show {
 	animation-name: slideInRightToLeft;
 	animation-duration: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -23,7 +23,7 @@
 	opacity: 0;
 }
 
-.fadeIn {
+.fadeIn.show {
 	animation-name: fadeIn;
 	animation-duration: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -31,7 +31,7 @@
 	opacity: 0;
 }
 
-.fadeInColor {
+.fadeInColor.show {
 	animation-name: fadeInColor;
 	animation-duration: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -55,7 +55,7 @@
 	opacity: 1;
 }
 
-.typing {
+.typing.show {
 	opacity: 0;
 	padding-right: 0.3rem;
     width: 100%;
@@ -65,7 +65,7 @@
     animation: typing 2.4s steps(19, end) forwards, cursor .24s steps(19, end) infinite;
 }
 
-.typingBack {
+.typingBack.show {
 	opacity: 1;
 	animation: typingBack 2.4s steps(19, end) forwards, cursor .24s steps(19, end) infinite;
 }
