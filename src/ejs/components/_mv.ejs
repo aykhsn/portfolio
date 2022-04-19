@@ -2,9 +2,9 @@
 	<div class="ah_block-inner ah_mv-inner">
 		<div class="ah_mv-header">
 			<div class="ah_mv-language fadeIn">
-				<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
+				<button type="button" :disabled="isEn" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active' : '']" @click="switchLang(true)">EN</button>
 				<span>/</span>
-				<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JA</button>
+				<button type="button" :disabled="!isEn" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active']" @click="switchLang(false)">JA</button>
 			</div>
 		</div>
 		<div class="ah_mv-block">
@@ -16,10 +16,14 @@
 					</h1>
 				</div>
 				<div class="ah_mv-block_middle">
-					<h2 class="cssanimation typing">Front End Developer</h2>
+					<h2 id="typing" class="cssanimation typing">
+						<span v-if="isEnTyping">Front End Developer</span>
+						<span class="ah_text-s" v-else>フロントエンドエンジニア</span>
+					</h2>
 				</div>
 			</div>
 			<div class="ah_mv-block_center">
+				<span class="ah_mv-block_center-bg fadeInColor"></span>
 				<div class="ah_mv-picture_wrapper">
 					<img class="ah_mv-picture fadeInUp show" src="dist/assets/mv_picture.svg" alt="profile picture">
 					<span class="fadeInUp show"></span>

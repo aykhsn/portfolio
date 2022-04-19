@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	element.navigation = document.getElementById('Navigation');
 	element.about = document.getElementById('About');
 	element.fadeInUp = document.getElementsByClassName('fadeInUp');
+	element.typing = document.getElementById('typing');
 });
 
 window.onload = () => {
@@ -185,12 +186,15 @@ const vm = new Vue ({
 
 	data: {
 		isEn : true,
+		isEnTyping : true,
 		navigationItems : navigation.items,
 		worksAllShow : false
 	},
 
 	created : function() {
 		this.isEn = JSON.parse(localStorage.getItem('isEn')) ?? 'true';
+		
+		this.isEnTyping = this.isEn;
 	},
 
 	methods: {
@@ -200,10 +204,14 @@ const vm = new Vue ({
 			localStorage.setItem('isEn', isEn);
 
 			this.$nextTick(function () {
+				// トップにスクロールする
 				window.scrollTo({
 					top: 0,
 					behavior: 'smooth',
 				});
+
+				// タイピングアニメーションを切り替える
+				this.switchTypingAnimation(isEn);
 
 				// GSAPのスクロール計算を初期化する
 				ScrollTrigger.refresh();
@@ -244,6 +252,15 @@ const vm = new Vue ({
 				top: targePositionTop,
 				behavior: 'smooth',
 			});
+		},
+
+		switchTypingAnimation: function(isEnTyping) {
+			element.typing.classList.add('typingBack');
+
+			setTimeout(() => {
+				element.typing.classList.remove('typingBack');
+				this.isEnTyping = isEnTyping;
+			}, 2500);
 		}
 	}
 });

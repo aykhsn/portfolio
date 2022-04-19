@@ -1,8 +1,7 @@
 /**********************
  Import fonts
 ***********************/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Tenor+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Montserrat+Alternates:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Tenor+Sans&display=swap');
 @font-face {
 	font-family: 'Bangla MN';
 	src: url('dist/assets/BanglaMN.svg#Bangla MN') format('svg'); /* iOS 4.1- */
@@ -15,7 +14,7 @@ $siteName: 'ah';
 
 :root {
 	--#{$siteName}_full-width: 90rem;
-	--#{$siteName}_font-family: 'Montserrat', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
+	--#{$siteName}_font-family: 'Montserrat', 'BIZ UDGothic', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
 	--#{$siteName}_main-color: #FFBD99;
 	--#{$siteName}_accent-color: #F4732B;
 	--#{$siteName}_sub-color: #829BEF;

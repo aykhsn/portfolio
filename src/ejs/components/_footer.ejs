@@ -6,9 +6,9 @@
 		</a>
 	</div>
 	<div class="ah_mv-language fadeInUp">
-		<button type="button" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active disabled' : '']" @click="switchLang(true)">EN</button>
+		<button type="button" :disabled="isEn" :class="['ah_mv-language_button', isEn? 'ah_mv-language_button--active' : '']" @click="switchLang(true)">EN</button>
 		<span>/</span>
-		<button type="button" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active disabled']" @click="switchLang(false)">JA</button>
+		<button type="button" :disabled="!isEn" :class="['ah_mv-language_button', isEn? '' : 'ah_mv-language_button--active']" @click="switchLang(false)">JA</button>
 	</div>
 	<div class="ah_footer-license">
 		<p>&copy;Ayaka Hoshino</p>

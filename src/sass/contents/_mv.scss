@@ -81,18 +81,31 @@
         }
 
         & h2 {
-          font-size: 1.6875rem;
-          font-family: 'Montserrat Alternates', sans-serif;
-          font-weight: 400;
-          letter-spacing: 0.02em;
-          white-space: nowrap;
-          text-align: right;
-          color: var(--#{$siteName}_link-color);
+          & span {
+            font-size: 1.6875rem;
+            font-family: 'Montserrat Alternates', 'BIZ UDGothic', sans-serif;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+            text-align: right;
+            color: var(--#{$siteName}_link-color);
 
-          @include mediaQuery(m) {
-            font-size: calc(0.7rem + 2.4vw);
-            text-align: left;
+            @include mediaQuery(m) {
+              font-size: calc(0.7rem + 2.4vw);
+              text-align: left;
+            }
+
+            &.ah_text-s {
+              font-size: 1.5rem;
+              line-height: 1.35;
+
+              @include mediaQuery(m) {
+                font-size: calc(0.55rem + 2.4vw);
+              }
+            }
           }
+
         }
       }
 
@@ -107,7 +120,7 @@
         right: 0;
         transform: translateY(-50%);
         z-index: 1001;
-        animation-delay: 0.1s;
+        animation-delay: 0.08s;
 
         @include mediaQuery(m) {
           display: inline-block;
@@ -130,17 +143,16 @@
           width: 100%;
         }
 
-        &::before {
+        &-bg {
           position: absolute;
           display: block;
-          content: "";
           left: calc(50% - 150vw);
           bottom: 50%;
           width: 300vw;
           height: 150vw;
           transform: rotate(-45deg);
           transform-origin: bottom;
-          background-color: var(--#{$siteName}_main-color);
+          background-color: var(--#{$siteName}_bg-color);
           z-index: 10;
         }
       }
@@ -150,7 +162,7 @@
         flex-direction: column;
         justify-content: flex-end;
         width: calc((100% - 2rem * 2) / 3);
-        animation-delay: 0.3s;
+        animation-delay: 0.08s * 3;
 
         @include mediaQuery(m) {
           display: block;
@@ -205,7 +217,7 @@
       right: calc((100vw - 100vh)/2);
       top: 6vh;
       z-index: 100;
-      animation-delay: 0.3s;
+      animation-delay: 0.08s * 3;
 
       @include mediaQuery(m) {
         top: 1rem;
@@ -261,7 +273,7 @@
         }
 
         & img {
-          animation-delay: 0.3s;
+          animation-delay: 0.08s * 2;
         }
 
         & span {
@@ -273,7 +285,7 @@
           border-radius: 50%;
           background-color: var(--#{$siteName}_sub-color);
           z-index: 100;
-          animation-delay: 0.5s;
+          animation-delay: 0.08s * 4;
 
           @include mediaQuery(m) {
             width: 44vw;
