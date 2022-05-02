@@ -29,6 +29,7 @@
 
       @include mediaQuery(m) {
         margin-top: 3rem;
+        padding-right: 2rem;
       }
 
       & a {

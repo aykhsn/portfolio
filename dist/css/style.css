@@ -146,7 +146,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .ah_block-inner {
-    padding: 0 1rem;
+    padding: 0 2rem 0 1rem;
   }
 }
 .ah_block-header {
@@ -522,6 +522,7 @@ p {
   .ah_mv-inner {
     display: block;
     height: auto;
+    padding-right: 1rem;
   }
 }
 .ah_mv-header {
@@ -758,7 +759,6 @@ p {
 }
 .ah_mv-language_button {
   font-size: 1.4rem;
-  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.07em;
   color: var(--ah_bg-color);
@@ -853,11 +853,6 @@ p {
   width: 100%;
   z-index: 1001;
 }
-@media screen and (max-width: 768px) {
-  .ah_navigation {
-    position: relative;
-  }
-}
 .ah_navigation-logo {
   position: absolute;
   left: 2rem;
@@ -869,7 +864,6 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-logo {
-    position: fixed;
     left: 0.5rem;
     top: 0.5rem;
     width: 5rem;
@@ -900,37 +894,18 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-items {
-    position: fixed;
-    top: unset;
-    left: 0;
-    bottom: -5rem;
-    width: 100%;
-    padding: 0 1rem;
-    -webkit-transform: unset;
-        -ms-transform: unset;
-            transform: unset;
-    background-color: rgba(251, 154, 101, 0.95);
-    -webkit-box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
-            box-shadow: 0 1px 6px 0 rgb(210, 186, 172);
-    z-index: 10000;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    left: calc(100vw - 0.5rem);
+    top: 1rem;
+    width: calc(100vh - 2rem);
   }
 }
 .ah_navigation-items.show button {
   margin-top: 0;
 }
-@media screen and (max-width: 768px) {
-  .ah_navigation-items.show {
-    left: 0;
-    bottom: 0;
-  }
-}
 .ah_navigation-items button {
   display: block;
   margin-top: -2rem;
   font-size: 0.9rem;
-  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: #fe9760;
@@ -941,21 +916,12 @@ p {
 }
 @media screen and (max-width: 768px) {
   .ah_navigation-items button {
-    margin-top: 0;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    letter-spacing: 0.02em;
-    color: #ffffff;
+    font-size: 0.75rem;
   }
 }
 .ah_navigation-items button.active {
   font-weight: 600;
   color: var(--ah_accent-color) !important;
-}
-@media screen and (max-width: 768px) {
-  .ah_navigation-items button.active {
-    font-weight: 500;
-  }
 }
 
 /**********************
@@ -990,6 +956,7 @@ p {
 @media screen and (max-width: 768px) {
   .ah_other-content {
     margin-top: 3rem;
+    padding-right: 2rem;
   }
 }
 .ah_other-content a {
