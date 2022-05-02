@@ -154,6 +154,11 @@
 
         & a {
           display: block;
+          transform: perspective(3000px) rotateY(0deg);
+
+          &:hover {
+            transform: perspective(1500px) rotateY(5deg);
+          }
         }
 
         & img {
