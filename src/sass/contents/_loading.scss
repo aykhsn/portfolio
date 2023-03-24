@@ -15,7 +15,7 @@
 		z-index: 9999;
 
 		&.loaded {
-			left: 100%;
+			opacity: 0;
 			visibility: hidden;
 			background-color: var(--#{$siteName}_main-color);
 		}

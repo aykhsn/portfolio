@@ -381,7 +381,7 @@ p {
   z-index: 9999;
 }
 .ah_loading.loaded {
-  left: 100%;
+  opacity: 0;
   visibility: hidden;
   background-color: var(--ah_main-color);
 }
