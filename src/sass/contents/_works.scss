@@ -123,8 +123,8 @@
       &_image {
         position: relative;
         margin-top: 1.5rem;
-        padding: 0 0 2rem 2rem;
-        width: calc(24rem + 5vw);
+        padding: 0 0 3rem 3rem;
+        width: calc(24rem + 10vw);
         float: right;
 
         @include mediaQuery(m) {
@@ -139,8 +139,8 @@
           content: "";
           left: 0;
           bottom: 0;
-          width: calc((24rem + 5vw) / 2);
-          height: calc((24rem + 5vw) / 2);
+          width: calc((24rem + 10vw) / 2);
+          height: calc((24rem + 10vw) / 2);
           background-color: #FFBD99;
           z-index: 0;
 

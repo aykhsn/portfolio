@@ -1292,8 +1292,8 @@ p {
 .ah_works-content_image {
   position: relative;
   margin-top: 1.5rem;
-  padding: 0 0 2rem 2rem;
-  width: calc(24rem + 5vw);
+  padding: 0 0 3rem 3rem;
+  width: calc(24rem + 10vw);
   float: right;
 }
 @media screen and (max-width: 768px) {
@@ -1309,8 +1309,8 @@ p {
   content: "";
   left: 0;
   bottom: 0;
-  width: calc((24rem + 5vw) / 2);
-  height: calc((24rem + 5vw) / 2);
+  width: calc((24rem + 10vw) / 2);
+  height: calc((24rem + 10vw) / 2);
   background-color: #FFBD99;
   z-index: 0;
 }
@@ -1328,8 +1328,8 @@ p {
           transform: perspective(3000px) rotateY(0deg);
 }
 .ah_works-content_image a:hover {
-  -webkit-transform: perspective(1500px) rotateY(5deg);
-          transform: perspective(1500px) rotateY(5deg);
+  -webkit-transform: perspective(1500px) rotateY(15deg);
+          transform: perspective(1500px) rotateY(15deg);
 }
 .ah_works-content_image img {
   position: relative;
