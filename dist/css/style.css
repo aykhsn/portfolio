@@ -976,6 +976,7 @@ p {
           align-items: center;
   margin-left: calc((100% - 4rem) / 3 + 2rem);
   width: calc((100% - 2rem) / 2);
+  row-gap: 1rem;
 }
 @media screen and (max-width: 768px) {
   .ah_other-content ul {

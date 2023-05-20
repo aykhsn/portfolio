@@ -43,6 +43,7 @@
         align-items: center;
         margin-left: calc((100% - 4rem) / 3 + 2rem);
         width: calc((100% - 2rem) / 2);
+        row-gap: 1rem;
 
         @include mediaQuery(m) {
           margin-left: 0;
