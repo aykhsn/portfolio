@@ -195,8 +195,8 @@ const vm = new Vue ({
 	el : '#vm',
 
 	data: {
-		isEn : true,
-		isEnTyping : true,
+		isEn : false,
+		isEnTyping : false,
 		navigationItems : navigation.items,
 		worksAllShow : false
 	},
